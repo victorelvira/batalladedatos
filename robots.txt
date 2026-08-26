@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://batalladedatos.es/sitemap.xml

@@ -1,0 +1,1781 @@
+:root {
+  --bg: #f6f1ea;
+  --panel: #fffdfa;
+  --ink: #221716;
+  --muted: #6d5a55;
+  --line: #e3d9cd;
+  --line-soft: #efe7dc;
+  --rose: #b6465f;
+  --rose-soft: #fbeef1;
+  --gold: #ad7a28;
+  --leaf: #345d50;
+  --sky: #5b7f96;
+  --bar: #fbf7f1;
+  --nav: #1d1818;
+
+  /* Un color por tipo de dato. Lo que se puede pinchar lleva el color de su
+     tipo, siempre el mismo, en la tabla, en los chips y en las fichas: a los
+     dos minutos ya sabes que lo violeta es una carroza sin tener que probar. */
+  --t-year: #2a6f97;    /* año       */
+  --t-year-bg: #eaf2f7;
+  /* Naranja, no rosa: el rojo queda reservado para avisar de lo que falta. */
+  --t-group: #b5651d;   /* grupo     */
+  /* Categorias del palmares. Nada que ver con los colores por tipo de dato:
+   * aqui A y B son dos competiciones distintas, no dos entidades. */
+  --cat-a: #2a6f97;     /* A: azul     */
+  --cat-b: #b1379a;     /* B: magenta  */
+  --cat-none: #9a8d80;  /* lista unica */
+  /* Avisos: hueco de datos o dato sin confirmar. */
+  --alerta: #b3261e;
+  --alerta-borde: #e9b6b1;
+  --alerta-bg: #fdeceb;
+  --t-group-bg: #fdf0e3;
+  --t-float: #7b4a8c;   /* carroza   */
+  --t-float-bg: #f4eef7;
+  --t-route: #2f6b57;   /* recorrido */
+  --t-route-bg: #eaf3ef;
+  --navbar-h: 26px;
+  --bar-h: 52px;
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  color: var(--ink);
+  background: var(--bg);
+  font: 14px/1.45 "Avenir Next", "Segoe UI", system-ui, sans-serif;
+}
+
+a { color: inherit; }
+
+/* ── navbar compartida entre proyectos ─────────────────────────────────── */
+
+#navbar {
+  display: flex; align-items: center; gap: 8px;
+  padding: 5px 16px; background: var(--nav); font-size: 12.5px;
+}
+#navbar .wordmark { color: #fff; font-weight: 700; text-decoration: none; letter-spacing: .2px; }
+#navbar .nav-sep { color: #8a7f72; }
+#navbar .nav-home { color: #cbbfae; text-decoration: none; }
+#navbar a:hover { text-decoration: underline; }
+#navbar .build { margin-left: auto; color: #8a7f72; font-size: 6.5px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+/* ── barra de título y filtros ─────────────────────────────────────────── */
+
+#bar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start; gap: 6px 14px;
+  padding: 8px 16px;
+  background: var(--bar);
+  border-bottom: 1px solid var(--line);
+}
+.bar-main { min-width: 0; }
+
+.bar-title { display: flex; align-items: center; gap: 8px; min-width: 0; }
+
+.home {
+  display: inline-flex; align-items: center; gap: var(--logo-gap);
+  text-decoration: none; color: inherit; border-radius: 6px;
+}
+.home:hover h1 { color: var(--rose); }
+.home:focus-visible { outline: 2px solid var(--rose); outline-offset: 3px; }
+
+:root { --logo: 28px; --logo-gap: 7px; }
+
+.dalia {
+  width: var(--logo); height: var(--logo); flex: none;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #e7cdd6;
+  box-shadow: 0 1px 3px rgba(122, 40, 62, 0.22);
+  transition: transform 0.35s ease;
+}
+.home:hover .dalia { transform: scale(1.08) rotate(8deg); }
+.bar-title h1 {
+  margin: 0;
+  font-size: 19px;
+  letter-spacing: -0.2px;
+}
+.bar-title h1 .of { font-weight: 400; }
+/* Sangrada para arrancar donde arranca «Batalla», no debajo de la dalia. */
+.bar-sub {
+  margin: 5px 0 0;
+  max-width: 62ch;
+  color: #8b7b73;
+  font-size: 12px; line-height: 1.3;
+}
+.bar-actions { display: flex; flex-direction: column; gap: 5px; align-items: stretch; }
+.bar-actions .pill { justify-content: flex-start; white-space: nowrap; }
+.pill {
+  font: inherit; font-size: 11.5px; padding: 3px 11px; cursor: pointer;
+  border: 1px solid var(--line); border-radius: 999px; background: #fff; color: var(--muted);
+}
+.pill:hover { border-color: var(--rose); color: var(--rose); }
+.pill, .share { display: inline-flex; align-items: center; gap: 5px; }
+.pill-icon { width: 12px; height: 12px; flex: none; fill: currentColor; stroke: currentColor; }
+
+/* Ficha de carroza: campos etiquetados en vez de chips sueltos. Hay sitio de
+   sobra y asi se lee «Año: 2012» en vez de adivinar que es cada cosa. */
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(124px, 1fr)); gap: 8px; margin: 10px 0; }
+.facts > div { padding: 7px 9px; border: 1px solid var(--line-soft); border-radius: 10px; background: #fffaf5; }
+.facts dt {
+  margin: 0 0 2px; color: var(--muted);
+  font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+}
+.facts dd { margin: 0; font-size: 14.5px; }
+.facts dd b { font-size: 17px; font-variant-numeric: tabular-nums; }
+.facts .of-total { color: var(--muted); font-size: 12.5px; }
+.facts .muted-val { color: var(--muted); font-style: italic; font-size: 13px; }
+
+.legend-types { display: flex; flex-wrap: wrap; gap: 5px; }
+.legend-types span {
+  padding: 2px 9px; border-radius: 999px; font-size: 12px; border: 1px solid;
+}
+.legend-types .t-year  { color: var(--t-year);  border-color: #cadde8; background: var(--t-year-bg); }
+.legend-types .t-group { color: var(--t-group); border-color: #e8cfae; background: var(--t-group-bg); }
+.legend-types .t-float { color: var(--t-float); border-color: #ddcde5; background: var(--t-float-bg); }
+.legend-types .t-route { color: var(--t-route); border-color: #c9ded4; background: var(--t-route-bg); }
+
+.grid-sort {
+  font: inherit; font-size: 11.5px; padding: 2px 6px;
+  border: 1px solid var(--line); border-radius: 7px; background: #fff; color: var(--muted);
+}
+
+.about-lead { margin: 6px 0 4px; font-size: 14px; line-height: 1.45; }
+#detail p { margin: 0 0 8px; line-height: 1.45; }
+#detail p a { color: var(--sky); }
+
+.bar-title h1 .years {
+  color: var(--muted); font-weight: 400; font-size: 0.78em;
+  font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+
+.stats {
+  display: flex; gap: 12px; flex-wrap: wrap;
+  margin-top: 3px;
+  color: var(--muted); font-variant-numeric: tabular-nums; font-size: 12.5px;
+}
+.stats b { color: var(--ink); font-variant-numeric: tabular-nums; }
+
+/* `hidden` es solo display:none de la hoja del navegador, y cualquier regla de
+ * display le gana: sin esto el atributo se ponia y los controles seguian ahi. */
+.controls[hidden] { display: none; }
+
+.controls {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  padding: 9px 12px; border-bottom: 1px solid var(--line-soft); background: #fffaf5;
+}
+
+/* Buscador y selectores tienen que salir del mismo molde: misma letra y misma
+   altura. No basta con darles el mismo padding, porque el `select` ignora el
+   `line-height` declarado y usa `normal`, asi que su caja interior salia de 20 px
+   y la del buscador de 16,9: 30 px contra 26,9 en pantalla. Se fija la altura de
+   los tres en una variable y se acabo la discusion. */
+:root { --control-h: 30px; }
+
+.controls input[type="search"],
+.controls select {
+  font: inherit; font-size: 12.5px;
+  padding: 4px 8px; line-height: 1.35;
+  min-height: var(--control-h);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+  color: inherit;
+}
+.controls input[type="search"] { width: 200px; }
+.controls input[type="search"]:focus-visible,
+.controls select:focus-visible { outline: 2px solid var(--rose); outline-offset: 1px; }
+/* La barra entera a un solo tamano. "Limpiar" y "Con palmares" iban a 14 px
+   heredados y desentonaban al lado de los tres controles. */
+.controls .ghost, .controls .toggle { font-size: 12.5px; }
+.controls .ghost { min-height: var(--control-h); }
+/* `applyFilters` marca "Limpiar" con `hidden` cuando no hay nada que limpiar.
+   En pantalla ancha eso NO se obedece: sobra sitio, y hacerlo aparecer y
+   desaparecer empujaba los dos desplegables de lado mientras se escribia. Lo
+   obedece la pantalla estrecha, donde esos 64 px son justo los que le faltan al
+   buscador para caber. La misma afirmacion, dos respuestas. */
+.controls .ghost[hidden] { display: inline-flex; }
+
+.toggle { display: inline-flex; align-items: center; gap: 5px; color: var(--muted); white-space: nowrap; }
+/* El mismo toggle, pero dentro de la barra de la pestana Carrozas: ahi convive
+ * con botones, asi que se le da su caja para que no flote suelto. */
+.tool-toggle {
+  padding: 3px 9px 3px 7px; border: 1px solid var(--line); border-radius: 999px;
+  background: var(--panel); font-size: 12px; cursor: pointer;
+}
+.tool-toggle:hover { border-color: var(--gold); }
+.tool-toggle:has(input:checked) {
+  border-color: var(--gold); background: #fdf6e8; color: var(--gold); font-weight: 600;
+}
+.tool-toggle svg { width: 13px; height: 13px; vertical-align: -2px; }
+.tool-toggle span { display: inline-flex; align-items: center; gap: 4px; }
+
+.ghost {
+  font: inherit; padding: 4px 10px; cursor: pointer;
+  border: 1px solid var(--line); border-radius: 6px; background: #fff; color: var(--muted);
+}
+.ghost:hover { border-color: var(--rose); color: var(--rose); }
+
+/* ── layout de dos paneles, cada uno con su scroll ─────────────────────── */
+
+.layout {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  /* El ancho de la ficha lo puede mover el lector arrastrando el borde. Se
+     guarda en localStorage: una tabla de palmarés con seis columnas y una
+     galería piden anchos distintos según lo que estés mirando. */
+  grid-template-columns: minmax(0, 1fr) 6px minmax(0, var(--ficha-ancho, 430px));
+  gap: 6px;
+  padding: 12px 16px;
+}
+
+/* Tirador entre las dos columnas. Fino, y solo se nota al acercarse. */
+.divisor {
+  cursor: col-resize; border-radius: 3px; background: transparent;
+  transition: background .12s;
+}
+.divisor:hover, .divisor.arrastrando { background: var(--line); }
+.divisor::after {
+  content: ""; display: block; width: 2px; height: 26px; margin: 0 auto;
+  position: relative; top: calc(50% - 13px); border-radius: 2px; background: var(--line);
+}
+.divisor:hover::after, .divisor.arrastrando::after { background: var(--rose); }
+body.redimensionando { cursor: col-resize; user-select: none; }
+
+.pane {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pane-head {
+  display: flex; align-items: center; gap: 6px 12px; flex-wrap: wrap;
+  padding: 7px 12px;
+  border-bottom: 1px solid var(--line-soft);
+  background: #fffaf5;
+}
+
+.pane-body { flex: 1; min-height: 0; overflow-y: auto; padding: 12px; }
+
+/* Círculo, que es lo que todo el mundo reconoce como «cerrar» en una capa;
+   un cuadrado se lee como botón de barra. */
+.detail-close {
+  /* En el PC también. Estaba solo en móvil, así que en pantalla ancha se podía
+     abrir una ficha y no había manera de cerrarla: cambiabas a Estadísticas y
+     la edición seguía ahí al lado, sin cruz y sin explicación. */
+  display: none;
+  position: absolute; top: 8px; right: 10px; z-index: 2;
+  padding: 0; cursor: pointer; border: 0; line-height: 1;
+}
+/* En el PC, discreta: la ficha no es una capa que tape nada, así que un botón
+   rosa de 42 px pesaría más que lo que cierra. */
+body.hay-ficha .detail-close {
+  display: block;
+  width: 26px; height: 26px; border-radius: 50%;
+  background: var(--bar); color: var(--muted);
+  border: 1px solid var(--line); font-size: 14px;
+}
+body.hay-ficha .detail-close:hover { border-color: var(--rose); color: var(--rose); }
+.detail-close:active { transform: scale(0.94); }
+.pane-detail { position: relative; }
+
+.tabs { display: flex; gap: 4px; flex-wrap: wrap; }
+.tab {
+  font: inherit; font-size: 12.5px; padding: 4px 12px; cursor: pointer;
+  border: 1px solid var(--line); border-radius: 999px; background: #fff; color: var(--muted);
+}
+.tab:hover { color: var(--t-year); }
+.tab.is-active { background: var(--t-year-bg); border-color: #b9d2e0; color: var(--t-year); font-weight: 600; }
+
+.muted { color: var(--muted); font-size: 12px; margin: 0; }
+.count {
+  margin: 0; color: var(--muted); text-align: right;
+  font-size: 11.5px; font-style: italic; font-variant-numeric: tabular-nums;
+}
+
+/* ── rejilla de años ───────────────────────────────────────────────────── */
+
+.decade-row {
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  gap: 8px;
+  align-items: start;
+  padding: 5px 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+.decade-row:last-child { border-bottom: 0; }
+
+.decade-label {
+  padding: 6px 0 0;
+  border: 0; background: none; cursor: default;
+  color: var(--muted);
+  font: inherit; font-size: 12px; text-align: left;
+  font-variant-numeric: tabular-nums;
+}
+.decade-count { display: none; }
+
+.year-grid { display: flex; flex-wrap: wrap; gap: 5px; }
+
+.year {
+  position: relative;
+  display: flex; flex-direction: column; align-items: center; gap: 1px;
+  min-width: 52px; padding: 4px 6px 5px; cursor: pointer;
+  border: 1px solid var(--line); border-radius: 7px; background: #fff;
+  font: inherit; color: inherit;
+  font-variant-numeric: tabular-nums;
+}
+.year:hover { border-color: var(--rose); }
+.year.is-active { background: var(--t-year); border-color: var(--t-year); color: #fff; }
+.year.is-active .year-num { color: #fff; }
+.year.is-active .year-meta { color: rgba(255, 255, 255, 0.85); }
+
+.year-num { font-size: 13px; font-weight: 600; letter-spacing: -0.2px; }
+.year-meta { font-size: 10.5px; color: var(--muted); line-height: 1.1; }
+
+.year-bar {
+  width: 100%; height: 3px; margin-top: 2px; border-radius: 2px;
+  background: currentColor; opacity: 0.85;
+}
+.tier-full { color: var(--leaf); }
+.tier-partial { color: var(--gold); }
+.tier-planned { color: #e07a1f; }
+.tier-none { color: #b9aca0; }
+
+/* La edición por celebrar se marca también en el número y el borde: solo la
+   barra de color no basta para distinguirla de una parcial. */
+.year.tier-planned { border-color: #f0cba6; background: #fff8f1; }
+.year.tier-planned .year-num { color: #c9661a; }
+.year.tier-planned:not(.is-active) .year-meta { color: #c9661a; }
+
+/* ── lista de grupos ───────────────────────────────────────────────────── */
+
+.rows { display: flex; flex-direction: column; }
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 12px;
+  align-items: baseline;
+  width: 100%;
+  padding: 6px 8px; cursor: pointer; text-align: left;
+  border: 0; border-bottom: 1px solid var(--line-soft); background: none;
+  font: inherit; color: inherit;
+}
+.row:hover { background: var(--rose-soft); }
+.row.is-active { background: var(--t-group-bg); box-shadow: inset 2px 0 0 var(--t-group); }
+.rows-floats .row.is-active { background: var(--t-float-bg); box-shadow: inset 2px 0 0 var(--t-float); }
+.rows-routes .row.is-active { background: var(--t-route-bg); box-shadow: inset 2px 0 0 var(--t-route); }
+.row-name { font-weight: 600; }
+.row-meta { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.row-sub { grid-column: 1 / -1; color: var(--muted); font-size: 12px; }
+
+/* Lista de grupos en columnas: nombre + desde/hasta + recuentos. */
+/* Nombre a la izquierda, cifras a la derecha: es lo que deja comparar columnas
+   de números de un vistazo. El nombre cede ancho, que le sobraba. */
+.rows-groups .row-head,
+.rows-groups .row {
+  grid-template-columns: minmax(0, 1fr) 54px 54px 74px 74px 56px 14px;
+  align-items: baseline;
+}
+.rows-groups .row-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.row-head {
+  display: grid;
+  gap: 4px 12px;
+  padding: 4px 8px 5px;
+  position: sticky;
+  top: -12px;
+  z-index: 1;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 10.5px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+}
+.col-num { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* Cabeceras ordenables (lista de grupos). */
+.row-head .sort {
+  font: inherit; color: inherit; letter-spacing: inherit; text-transform: inherit;
+  padding: 0; border: 0; background: none; cursor: pointer; text-align: left;
+  white-space: nowrap;
+}
+.row-head .sort.col-num { text-align: right; }
+.row-head .sort:hover { color: var(--t-year); }
+.row-head .sort.is-sorted { color: var(--t-year); }
+.rows-groups .row .col-num { color: var(--muted); font-size: 12.5px; }
+
+/* ── detalle ───────────────────────────────────────────────────────────── */
+
+.detail-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 4px; }
+.detail-head .source-note { color: var(--muted); font-size: 11.5px; }
+
+/* Cifras de la edición en la propia cabecera: ocupan una línea en vez de
+   cuatro tarjetas. */
+/* Las dos cifras de la edición, en disco, a la derecha del título. */
+/* Año grande, centrado con los discos, y todo agrupado a la izquierda: pegados
+   al borde derecho se confundían con el botón rojo de cerrar. */
+.edition-head { align-items: center; gap: 12px; padding-right: 54px; }
+
+/* Anterior y siguiente edición. Los `<span>` vacíos de los extremos —1908 no
+   tiene anterior, 2026 no tiene siguiente— mantienen el `space-between`, para
+   que "siguiente" no se deslice a la izquierda en el primer año. */
+.edicion-nav { display: flex; justify-content: space-between; gap: 8px; margin: 2px 0 6px; }
+.nav-edicion {
+  padding: 3px 9px; border: 1px solid var(--line); border-radius: 999px;
+  background: var(--panel); color: var(--muted); cursor: pointer;
+  font: inherit; font-size: 12px; font-variant-numeric: tabular-nums;
+}
+.nav-edicion:hover { border-color: var(--rose); color: var(--rose); }
+
+.discs { display: inline-flex; gap: 6px; flex-wrap: wrap; }
+/* «114ª edición» en pastilla achatada, a la misma altura que los discos.
+   Con el rótulo completo se partía en cuatro líneas. */
+.disc-wide { width: auto; padding: 0 16px; border-radius: 999px; white-space: nowrap; }
+.disc {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  width: 52px; height: 52px; flex: none; border-radius: 50%;
+  background: #f3ece3; color: var(--muted); font-size: 9px; line-height: 1.1;
+}
+.disc b { color: var(--ink); font-size: 17px; font-variant-numeric: tabular-nums; }
+
+/* Miniatura como columna del palmarés. */
+table.palmares col.c-photo, table.palmares th.c-photo, table.palmares td.c-photo {
+  width: var(--col-foto, var(--miniatura, 54px));
+}
+table.palmares.ajustable th[data-col] { position: relative; }
+/* Zona de agarre: los últimos 8 px de la cabecera. El resto sigue ordenando. */
+table.palmares.ajustable th[data-col] { padding-left: 7px; }
+table.palmares.ajustable th[data-col]:first-child { padding-left: 0; }
+table.palmares.ajustable th[data-col]::after {
+  content: ""; position: absolute; top: 4px; bottom: 4px; right: 0; width: 8px;
+  cursor: col-resize; border-right: 2px solid transparent;
+}
+table.palmares.ajustable th[data-col]:hover::after { border-right-color: var(--line); }
+table.palmares.ajustable th[data-col]:last-child::after { display: none; }
+
+table.palmares.ajustable th[data-col="puesto"],
+table.palmares.ajustable td.pos { width: var(--col-puesto, 62px); }
+/* Las cabeceras no se parten ni se recortan: si no cabe el título, la columna
+   está mal medida. */
+table.palmares.ajustable th { white-space: nowrap; }
+table.palmares th.c-photo { text-align: left; }
+/* «Carroza» tenía que tener su anchura como las demás.
+   Era la única sin regla, así que absorbía todo lo que las otras ganaban al
+   arrastrarlas y se podía aplastar hasta desaparecer: ensanchabas «Fuentes» y
+   el nombre de la carroza se quedaba en dos letras y puntos suspensivos. */
+table.palmares.ajustable th[data-col="carroza"],
+table.palmares.ajustable td.name { width: var(--col-carroza, auto); }
+table.palmares.ajustable th[data-col="grupo"],
+table.palmares.ajustable td.group { width: var(--col-grupo, auto); }
+
+/* Y un suelo para todas. Con `table-layout: fixed` el `min-width` de una celda
+   no se respeta, así que el suelo se pone en la TABLA: si la suma de columnas
+   baja de aquí, la tabla deja de encoger y el panel se desliza. Encoger es
+   preferible a aplastar, pero solo hasta que se deja de leer. */
+/* El mínimo real lo calcula `setupColumnasAjustables` sumando lo que necesita
+   cada columna; aquí solo queda el suelo de emergencia por si el JS no corre. */
+table.palmares.ajustable { min-width: 340px; }
+/* Y si la tabla no cabe, el panel se desliza en vez de recortarla. */
+.pane-detail .pane-body { overflow-x: auto; }
+table.palmares.ajustable th[data-col="fuentes"],
+table.palmares.ajustable td:last-child { width: var(--col-fuentes, 116px); }
+/* La miniatura llena su celda, no mide lo suyo.
+ *
+ * Iba clavada a `--miniatura`, que la calcula el divisor de la ficha. Asi que
+ * al arrastrar la separacion de la cabecera «Foto» se ensanchaba la columna y
+ * la imagen se quedaba igual, con un hueco blanco al lado: la unica razon para
+ * ensanchar esa columna es ver la foto mas grande.
+ *
+ * Ahora la celda manda y la imagen la llena. La celda mide `--col-foto` si
+ * alguien la ha ajustado a mano, y si no, `--miniatura`: una anchura elegida a
+ * proposito gana a la que se deduce sola. */
+table.palmares td.c-photo .thumb {
+  display: block; width: 100%;
+  padding: 0; border: 0; background: none; cursor: pointer;
+}
+table.palmares td.c-photo .thumb img {
+  width: 100%; height: auto; aspect-ratio: 1;
+  object-fit: cover; object-position: center 35%;
+  border-radius: 4px;
+}
+.gallery {
+  display: block;
+  columns: var(--galeria, 168px);
+  column-gap: 8px;
+}
+.gallery .shot {
+  break-inside: avoid;
+  margin: 0 0 8px;
+  display: inline-block;
+  width: 100%;
+}
+.gallery img { height: auto; width: 100%; }
+.thumb { padding: 0; border: 0; background: none; cursor: pointer; display: block; }
+.thumb img {
+  display: block; width: 46px; height: 34px; object-fit: cover;
+  border-radius: 5px; border: 1px solid var(--line); background: #f1e9df;
+}
+.thumb:hover img { border-color: var(--t-float); }
+
+.map-thumbstrip svg { max-width: 240px; }
+.span-note { margin: 2px 0 8px; color: var(--muted); font-size: 12.5px; }
+
+.share {
+  font: inherit; font-size: 11.5px; padding: 2px 10px; cursor: pointer;
+  border: 1px solid var(--line); border-radius: 999px; background: #fff; color: var(--muted);
+}
+.share:hover { border-color: var(--rose); color: var(--rose); }
+
+/* Pie de cada foto: el archivo no guarda autor ni fecha exacta, pero sí la
+   carroza, el año y el grupo, que es lo que permite reconocerla. */
+.shot { margin: 0; }
+/* El recorte a una línea es SOLO para el título de la carroza. Estaba en el
+   `figcaption` entero y se llevaba por delante el crédito: se leía «Foto cedida
+   por Santi Fernández (bat» y ahí se acababa. Truncar una atribución es media
+   atribución, que en esta página es peor que ninguna. */
+.shot figcaption { margin-top: 3px; color: var(--ink); font-size: 11px; line-height: 1.25; }
+.shot-name {
+  display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.shot figcaption small { display: block; color: var(--muted); font-size: 10px; }
+
+.provenance .codes { margin: 6px 0 0; }
+.provenance .codes .tag { margin-right: 2px; }
+
+/* Tabla de carrozas. En escritorio el grupo tiene columna propia; en movil se
+   cae y aparece como segunda linea bajo el nombre, que ocupa menos. */
+.rows-floats .row-head,
+.rows-floats .row {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.7fr) 44px 34px 48px 122px 14px;
+  align-items: baseline;
+}
+.rows-floats .row-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rows-floats .row-name small { display: none; }
+.rows-floats .col-grp {
+  color: var(--muted); font-size: 12.5px;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.rows-floats .row .col-num { color: var(--muted); font-size: 12.5px; }
+
+/* Conmutador lista / cuadricula, junto al contador. */
+.count { display: inline-flex; align-items: center; gap: 8px; }
+.view-toggle { display: inline-flex; border: 1px solid var(--line); border-radius: 7px; overflow: hidden; }
+.view {
+  font: inherit; font-size: 13px; line-height: 1; padding: 3px 8px; cursor: pointer;
+  border: 0; background: #fff; color: var(--muted);
+}
+.view + .view { border-left: 1px solid var(--line); }
+.view.is-on { background: var(--t-year-bg); color: var(--t-year); }
+
+/* «Solo ganadoras» va suelto, no dentro de `.view-toggle`, así que se pone su
+   propio marco. Y en oro cuando está puesto: es el color de las ganadoras en
+   todos los gráficos, así que el botón dice de qué habla sin leerlo. */
+.solo-ganadoras {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 3px 9px; border: 1px solid var(--line); border-radius: 7px;
+}
+.solo-ganadoras:hover { border-color: var(--gold); }
+.solo-ganadoras.is-on { background: #fdf4e0; border-color: var(--gold); color: #8a6410; }
+.solo-ganadoras .kpi-icon { width: 13px; height: 13px; fill: currentColor; }
+
+/* Cuadricula de fotos. */
+.float-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(122px, 1fr)); gap: 8px; }
+.tile {
+  display: flex; flex-direction: column; padding: 0; cursor: pointer; text-align: left;
+  border: 1px solid var(--line); border-radius: 9px; background: #fff; overflow: hidden;
+  font: inherit; color: inherit;
+}
+.tile img { display: block; width: 100%; height: 92px; object-fit: cover; background: #f1e9df; }
+.tile-name {
+  padding: 5px 7px 0; font-size: 12px; font-weight: 600; line-height: 1.2;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.tile-meta { padding: 1px 7px 6px; color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+.tile:hover { border-color: var(--rose); }
+.tile.is-active { border-color: var(--t-float); box-shadow: 0 0 0 2px var(--t-float-bg); }
+
+/* auto-fit con tope: una sola foto crece hasta 240 px en vez de quedarse en la
+   primera columna de 150, y varias siguen embaldosando. */
+.gallery-big { grid-template-columns: repeat(auto-fit, minmax(160px, 240px)); }
+.gallery-big img { height: 165px; }
+
+/* ── gráficos ──────────────────────────────────────────────────────────── */
+
+.stats-block { padding-bottom: 6px; }
+.chart { display: block; width: 100%; height: auto; margin: 4px 0 2px; }
+/* El tope de línea era 66ch, la «medida óptima» de los manuales. Pero a 11,5 px
+   eso son 440 px, y el panel mide 828: la nota se plegaba en cuatro líneas
+   dejando 388 px en blanco al lado. Una medida que en un libro es cómoda, en
+   una columna ancha se lee como texto encajonado.
+   `min()` para que siga cediendo en pantallas estrechas, donde 92ch no caben. */
+.chart-note {
+  margin: 0 0 6px; color: var(--muted); font-size: 11.5px; line-height: 1.35;
+  max-width: min(100%, 92ch);
+}
+/* El enlace al libro mayor: destacado, porque es la prueba de todo lo que la
+   página afirma y si pasa por un enlace más del párrafo no lo abre nadie. */
+.descarga {
+  margin: 8px 0; padding: 9px 12px;
+  border: 1px solid var(--line-soft); border-left: 3px solid var(--rose);
+  border-radius: 8px; background: #fffaf5;
+}
+.chart-tabs { display: flex; gap: 5px; margin-bottom: 6px; }
+.zoom-tabs { align-items: center; }
+.zoom-label { color: var(--muted); font-size: 11px; margin-right: 1px; }
+.zoom-hint { color: var(--muted); font-size: 11px; font-style: italic; }
+/* El zoom no escala la imagen: la redibuja mas ancha y aqui se desliza, asi
+ * que el texto de los ejes sigue nitido en vez de emborronarse. */
+.chart-scroll { overflow-x: auto; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; }
+.chart-scroll.is-zoomed { cursor: grab; }
+.chart-scroll .chart { max-width: none; }
+.grid-line { stroke: var(--line-soft); stroke-width: 1; opacity: 0.55; }
+.prize-list {
+  margin: 10px 0 0; padding: 8px 10px 4px;
+  border: 1px solid var(--line-soft); border-radius: 10px; background: #fffaf5;
+}
+.prize-list h4 { margin: 0 0 4px; font-size: 13px; }
+.prize-table { font-size: 12.5px; table-layout: auto; }
+.prize-table th { font-size: 9.5px; }
+.prize-table td { padding: 4px 8px 4px 0; vertical-align: top; }
+.prize-table td.pos { width: 1%; white-space: nowrap; }
+.cell-sub { display: block; color: var(--muted); font-size: 10.5px; line-height: 1.2; }
+.chart-legend { display: flex; gap: 12px; margin-bottom: 4px; color: var(--muted); font-size: 11px; }
+.chart-legend i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 4px; }
+.chart-legend i.key { width: 14px; height: 4px; border-radius: 2px; }
+.chart-legend .kpi-icon { width: 12px; height: 12px; margin-right: 4px; vertical-align: -2px; }
+.chart-legend .win-key { color: var(--gold); }
+.chart-legend .win-key .kpi-icon { fill: var(--gold); }
+.chart-legend .podium-key { color: var(--t-group); }
+.chart-legend .podium-key .kpi-icon { fill: var(--t-group); }
+.key.tier-full { background: var(--leaf); }
+.key.tier-partial { background: var(--gold); }
+.key.tier-planned { background: #e07a1f; }
+.key.tier-none { background: #cfc4b8; }
+.key.key-A { background: var(--cat-a); }
+.key.key-B { background: var(--cat-b); }
+.key.key-none { background: var(--cat-none); }
+.chart-legend .cup-key { color: var(--muted); }
+.chart-legend .cup-key .kpi-icon { fill: var(--muted); }
+
+.axis-line { stroke: var(--line-soft); stroke-width: 1; }
+.axis-label { fill: var(--muted); font-size: 9px; text-anchor: middle; }
+
+/* Trayectorias: los nombres clavados y el tiempo deslizándose por debajo.
+ *
+ * Los nombres estaban dentro del SVG, así que al mover el gráfico se iban con
+ * él y a los dos segundos ya no se sabía de quién era cada fila. Ahora son una
+ * columna de verdad, `sticky` a la izquierda del contenedor que se desliza: el
+ * navegador la deja quieta sin que haya que sincronizar nada a mano. */
+.carreras {
+  display: flex; align-items: flex-start;
+  overflow-x: auto; overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  margin: 4px 0 2px;
+}
+.carreras.hay-scroll { cursor: grab; }
+.carreras.arrastrando { cursor: grabbing; user-select: none; }
+.carreras-nombres {
+  position: sticky; left: 0; z-index: 2; flex: 0 0 128px;
+  width: 128px;
+  /* Degradado en vez de corte seco: al pasar una fila larga por debajo se ve
+     que sigue, no que se ha acabado. */
+  background: linear-gradient(to right, var(--panel) 86%, rgba(255, 250, 245, 0));
+}
+.carrera-nombre {
+  position: absolute; right: 8px; transform: translateY(-50%);
+  max-width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  padding: 0; border: 0; background: none; cursor: pointer;
+  font: inherit; font-size: 9.5px; color: var(--ink); text-align: right;
+}
+.carreras-svg { display: block; flex: none; }
+.career-hit { fill: transparent; cursor: pointer; }
+.career.alt .career-hit { fill: rgba(34, 23, 22, 0.022); }
+.career:hover .career-hit,
+.career.hover-fila .career-hit { fill: var(--rose-soft); }
+.carrera-nombre:hover,
+.carrera-nombre.hover-fila { color: var(--rose); font-weight: 600; }
+.zoom-hint[hidden] { display: none; }
+/* El filtro de categoría, con la forma de los demás filtros y no la de un
+   enlace: es algo puesto que hay que poder quitar, no un sitio al que ir. */
+.chip-filtro {
+  background: #fdf4e0; border-color: var(--gold); color: #8a6410;
+}
+.chip-filtro:hover { border-color: var(--rose); color: var(--rose); }
+
+/* La edición que se sale de la costumbre del último viernes de agosto. Sale en
+   tres de veintiséis, así que cuando aparece es porque hay algo que contar. */
+/* El cartel, junto al año. Pequeño a propósito: lo primero que se lee es el
+   año, y el cartel lo acompaña como acompaña la portada a un libro. */
+.cartel-mini {
+  flex: none; padding: 0; border: 0; background: none; cursor: pointer;
+  line-height: 0; margin-right: 2px;
+}
+.cartel-mini img {
+  display: block; width: 46px; height: 62px; object-fit: cover;
+  border-radius: 4px; border: 1px solid var(--line); background: #f1e9df;
+}
+.cartel-mini:hover img { border-color: var(--rose); }
+
+/* Las curiosidades. Cada una con su procedencia debajo, porque una curiosidad
+   sin fuente es una anécdota, y aquí no publicamos anécdotas. */
+.curiosidades { margin: 4px 0 0; padding-left: 18px; line-height: 1.5; }
+.curiosidades li { margin-bottom: 8px; }
+.curiosidades small {
+  display: block; margin-top: 2px; color: var(--muted);
+  font-size: 11px; line-height: 1.4;
+}
+/* Las fuentes de la fecha, una por línea y sin viñeta doble. */
+.prov-fuentes { margin: 3px 0 0; padding-left: 14px; }
+.prov-fuentes li { margin-bottom: 2px; }
+
+.fecha-rara {
+  margin: 6px 0; padding: 7px 10px;
+  border: 1px solid var(--line-soft); border-left: 3px solid var(--gold);
+  border-radius: 8px; background: #fdf9f0;
+  font-size: 12px; line-height: 1.45; color: var(--ink);
+}
+.span { stroke: #d9cec4; stroke-width: 1.5; }
+
+.dot.win { fill: var(--gold); }
+.dot.podium { fill: var(--t-group); }
+.dot.ran { fill: #bfb2a6; }
+i.dot.win { background: var(--gold); }
+i.dot.podium { background: var(--t-group); }
+i.dot.ran { background: #bfb2a6; }
+
+/* Todas solidas: el discontinuo se leia como "dato estimado" cuando lo unico
+ * que distingue a las series es la categoria. El color ya las separa.
+ *
+ * Y los puntos van del color de su linea, no del puesto: con dos categorias
+ * mezcladas, un punto dorado no decia si era el mejor de A o el de B. Quien
+ * gana lleva copa encima, tambien del color de su categoria. */
+.serie-line { fill: none; stroke-width: 1.8; opacity: 0.75; }
+.serie circle { cursor: pointer; }
+.serie-dot { stroke: var(--panel); stroke-width: 1; }
+.trophy { pointer-events: none; }
+
+.serie-A .serie-line { stroke: var(--cat-a); }
+.serie-A .serie-dot, .trophy-A { fill: var(--cat-a); }
+.serie-B .serie-line { stroke: var(--cat-b); }
+.serie-B .serie-dot, .trophy-B { fill: var(--cat-b); }
+/* La lista unica anterior a 2011 comparte el azul de A: la A es la categoria
+ * que hereda el peso de la fiesta, y con un color propio la trayectoria de un
+ * grupo se rompia en dos. Lo que marca el cambio es la vertical de 2011. */
+.serie-none .serie-line { stroke: var(--cat-a); }
+.serie-none .serie-dot, .trophy-none { fill: var(--cat-a); }
+
+.split-line { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 3 3; opacity: 0.55; }
+.split-label { fill: var(--muted); font-size: 9px; }
+.key.key-split {
+  width: 14px; height: 0; border-radius: 0; background: none;
+  border-top: 2px dashed var(--muted); align-self: center;
+}
+
+.tip {
+  position: fixed; z-index: 90; pointer-events: none;
+  padding: 5px 9px; max-width: 260px;
+  border-radius: 7px; background: rgba(34, 23, 22, 0.93); color: #fff;
+  font-size: 11.5px; line-height: 1.35; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+}
+.tip b { display: block; font-weight: 600; margin-top: 1px; }
+.tip[hidden] { display: none; }
+
+.bar-group { cursor: pointer; }
+.bar-hit { fill: transparent; }
+.bar-group:hover .bar-hit { fill: rgba(42, 111, 151, 0.09); }
+.bar { pointer-events: none; }
+.bar.tier-full { fill: var(--leaf); }
+.bar.tier-partial { fill: var(--gold); }
+.bar.tier-planned { fill: #e07a1f; }
+.bar.tier-none { fill: #cfc4b8; }
+.bar-group:hover .bar { fill: var(--t-year); }
+
+.row-go { color: var(--line); font-size: 16px; line-height: 1; }
+.row:hover .row-go, .row.is-active .row-go { color: var(--t-year); }
+.detail-head h2 { margin: 0; font-size: 26px; letter-spacing: -0.4px; font-variant-numeric: tabular-nums; }
+.edition-head h2 { font-size: 52px; line-height: 1; letter-spacing: -1.5px; }
+.detail-head .label { color: var(--muted); font-size: 13px; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 5px; margin: 6px 0 10px; }
+.chip {
+  padding: 2px 8px; border-radius: 999px; font-size: 11.5px;
+  border: 1px solid var(--line); background: #fff; color: var(--muted);
+}
+.chip.rose { border-color: #eccdd5; background: var(--rose-soft); color: var(--rose); }
+.chip.leaf { border-color: #cfe0d9; background: #eff6f3; color: var(--leaf); }
+.chip.gold { border-color: #e8dabc; background: #fbf4e6; color: var(--gold); }
+.chip.sky  { border-color: #cfdde5; background: #eff5f8; color: var(--sky); }
+.link-chip {
+  font: inherit; font-size: 11.5px; cursor: pointer;
+  border-color: #cfdde5; background: #eff5f8; color: var(--sky); font-weight: 600;
+}
+.link-chip:hover { background: var(--sky); border-color: var(--sky); color: #fff; }
+
+/* Cada cifra en su tarjeta: antes el numero y su etiqueta flotaban sueltos y no
+   se veia que fueran la misma cosa, y con iconos de distinta altura la linea
+   base bailaba. Ahora el icono se centra contra el numero, no contra el texto. */
+.kpis {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(78px, 1fr));
+  gap: 6px; margin: 8px 0 10px;
+}
+.kpi {
+  padding: 7px 9px 6px;
+  border: 1px solid var(--line-soft); border-radius: 10px;
+  background: #fffaf5;
+}
+.kpi span {
+  display: flex; align-items: center; gap: 4px;
+  font-size: 19px; font-weight: 600; font-variant-numeric: tabular-nums;
+  line-height: 1.1;
+}
+.kpi small { display: block; margin-top: 2px; color: var(--muted); font-size: 11px; line-height: 1.2; }
+.kpi-icon { width: 14px; height: 14px; flex: none; fill: var(--gold); }
+
+h3.section {
+  margin: 14px 0 6px;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ── mapa de recorridos ────────────────────────────────────────────────── */
+
+.map { margin: 10px 0 0; }
+.map svg {
+  display: block; width: 100%; height: auto;
+  border: 1px solid var(--line); border-radius: 8px;
+  background: #eef4f7;   /* mar */
+}
+.map-compact svg { max-width: 300px; }
+
+/* Miniatura en la lista de recorridos: mismo marco para las tres, que es lo
+   que deja compararlas de un vistazo. */
+.rows-routes .row-route {
+  grid-template-columns: 128px minmax(0, 1fr);
+  gap: 10px; align-items: center; padding: 8px;
+}
+.route-copy { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.route-copy .row-sub { grid-column: auto; }
+.map-thumb { display: block; }
+.map-thumb svg {
+  display: block; width: 128px; height: auto;
+  border: 1px solid var(--line); border-radius: 6px; background: #eef4f7;
+}
+.map-thumb.is-empty {
+  display: flex; align-items: center; justify-content: center;
+  width: 128px; height: 84px;
+  border: 1px dashed var(--line); border-radius: 6px; background: #fffaf5;
+  color: var(--muted); font-size: 11px; font-style: italic;
+}
+.row-route:hover .map-thumb svg,
+.row-route.is-active .map-thumb svg { border-color: var(--t-route); }
+.map figcaption { margin-top: 4px; color: var(--muted); font-size: 11px; }
+.map figcaption a { color: var(--sky); }
+
+/* Paleta del plano, en la gama cálida del proyecto en vez del gris de OSM. */
+.map-coastline { fill: #fdfaf6; stroke: #c3d5de; stroke-width: 1; }
+.map-beach { fill: #f6ebd6; stroke: none; }
+.map-sand { fill: #f6ebd6; stroke: none; }
+.map-green { fill: #dce8d5; stroke: #cadcc1; stroke-width: 0.5; }
+.map-water { fill: #d8e6ee; stroke: none; }
+.map-building { fill: #eee5da; stroke: #e2d6c8; stroke-width: 0.4; }
+.map-street { fill: none; stroke: #fff; stroke-width: 2.2; stroke-linecap: round; }
+.map-label {
+  fill: #8b7b73; font-size: 6.5px; letter-spacing: 0.02em;
+  text-anchor: middle; paint-order: stroke;
+  stroke: #fdfaf6; stroke-width: 2.2; stroke-linejoin: round;
+}
+.map-route {
+  fill: none; stroke: #b4a49b; stroke-width: 2.5;
+  stroke-linecap: round; stroke-linejoin: round; cursor: pointer;
+}
+.map-route:hover { stroke: var(--rose); }
+.map-arrow { fill: var(--rose); stroke: #fff; stroke-width: 0.8; stroke-linejoin: round; }
+.map-scale line { stroke: var(--muted); stroke-width: 1; }
+.map-scale text { fill: var(--muted); font-size: 9px; text-anchor: middle; font-family: inherit; }
+.map-route.is-active {
+  stroke: var(--rose); stroke-width: 4.5;
+  filter: drop-shadow(0 1px 3px rgba(182, 70, 95, 0.35));
+}
+
+
+.gallery a { display: block; border-radius: 6px; overflow: hidden; border: 1px solid var(--line); background: #f1e9df; }
+.gallery .shot a { display: block; }
+.gallery img { display: block; width: 100%; object-fit: cover; }
+.gallery a:hover { border-color: var(--rose); }
+
+table.palmares { width: 100%; border-collapse: collapse; font-size: 13px; table-layout: fixed; }
+table.palmares td.name small.prizes { display: block; color: var(--muted); font-weight: 400; font-size: 11px; }
+table.palmares col.c-pos { width: 34px; }
+table.palmares col.c-src { width: 116px; }
+table.palmares th {
+  text-align: left; font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--muted); font-weight: 600; padding: 0 6px 4px 0; border-bottom: 1px solid var(--line);
+  cursor: pointer; user-select: none; white-space: nowrap;
+}
+table.palmares th:hover { color: var(--t-year); }
+table.palmares th[aria-sort="ascending"],
+table.palmares th[aria-sort="descending"] { color: var(--t-year); }
+table.palmares th[aria-sort="ascending"]::after { content: " ▲"; font-size: 8px; }
+table.palmares th[aria-sort="descending"]::after { content: " ▼"; font-size: 8px; }
+table.palmares td { padding: 5px 6px 5px 0; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+table.palmares td.pos { font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--muted); }
+table.palmares td.name { font-weight: 600; }
+table.palmares td.group { color: var(--muted); }
+table.palmares tr:hover td { background: #fffaf5; }
+/* Enlace interno, coloreado por tipo de dato. */
+.link { background: none; border: 0; padding: 0; font: inherit; cursor: pointer; text-align: left; }
+.link:hover { text-decoration: underline; }
+.link.t-year  { color: var(--t-year); font-variant-numeric: tabular-nums; }
+.link.t-group { color: var(--t-group); }
+.link.t-float { color: var(--t-float); }
+.link.t-route { color: var(--t-route); }
+.group-link { background: none; border: 0; padding: 0; font: inherit; color: var(--t-group); cursor: pointer; text-align: left; }
+.group-link:hover { text-decoration: underline; }
+
+/* Chip clicable del mismo tipo. */
+.link-chip.t-year  { border-color: #cadde8; background: var(--t-year-bg);  color: var(--t-year); }
+.link-chip.t-group { border-color: #e8cfae; background: var(--t-group-bg); color: var(--t-group); }
+.link-chip.t-float { border-color: #ddcde5; background: var(--t-float-bg); color: var(--t-float); }
+.link-chip.t-route { border-color: #c9ded4; background: var(--t-route-bg); color: var(--t-route); }
+.link-chip.t-year:hover  { background: var(--t-year); color: #fff; }
+.link-chip.t-group:hover { background: var(--t-group); color: #fff; }
+.link-chip.t-float:hover { background: var(--t-float); color: #fff; }
+.link-chip.t-route:hover { background: var(--t-route); color: #fff; }
+
+.src { display: inline-flex; gap: 4px; align-items: center; flex-wrap: wrap; }
+.src a { color: var(--sky); text-decoration: none; font-size: 11.5px; }
+.src a:hover { text-decoration: underline; }
+.src .tag {
+  font-size: 9.5px; letter-spacing: .03em; padding: 1px 5px; border-radius: 4px;
+  border: 1px solid var(--line); background: #fff; color: var(--muted);
+}
+/* El codigo de fuente se pulsa: lleva a la ficha con la procedencia abierta.
+   Tiene que verse que es un boton sin convertir la columna en un semaforo. */
+.tag-src { cursor: pointer; font-family: inherit; }
+
+/* Un par código+enlace por fuente. Se apilan: en escritorio caben en línea y en
+   el móvil bajan solos sin cortar nada. */
+.src { display: flex; flex-wrap: wrap; gap: 3px 6px; justify-content: flex-end; }
+.src-one { display: inline-flex; align-items: center; gap: 2px; white-space: nowrap; }
+.src-one .tag-src { padding: 1px 4px; }
+.src { gap: 2px 4px; }
+/* La fuente que no es una página web: un punto apagado en lugar de la flecha,
+   para que se vea que ahí no falta un enlace, es que no lo hay. */
+.src-nolink { color: var(--line); font-size: 11.5px; cursor: help; }
+/* Fuente citada pero no enlazable (el libro). No es un hueco: es una cita, y
+   se marca como tal para que no parezca que falta un enlace. */
+.src-cita { color: var(--gold); font-size: 10px; cursor: help; }
+
+/* Procedencia por afirmación. El sello de corroboración solo aparece cuando de
+   verdad hay orígenes distintos: el palmarés y la ficha de carroza son la misma
+   web y no cuentan como dos. */
+.tag.corrobora {
+  border-color: #bcd9c6; background: #eef7f1; color: var(--leaf);
+  font-size: 9.5px; padding: 1px 5px; border-radius: 4px; border: 1px solid #bcd9c6;
+  white-space: nowrap;
+}
+.prov-disputa { color: var(--alerta); }
+.prov-cita { color: var(--muted); }
+.prov-list a { color: var(--t-year); }
+/* La leyenda explica cada código al pasar por encima: el acrónimo no se explica
+   solo y expandirlo a otra frase corta tampoco decía de dónde sale el dato. */
+.codes-ayuda { border-bottom: 1px dotted var(--line); cursor: help; }
+
+/* Marca de dato en disputa dentro de la columna de auditoría. */
+/* Columna de auditoría en la lista de carrozas: las etiquetas se apilan si no
+   caben, sin empujar al resto de la fila. */
+.col-src { min-width: 0; }
+/* La fila de la lista pasó de <button> a <div role="button"> para poder llevar
+   enlaces dentro: hay que devolverle lo que heredaba del botón. */
+.rows-floats .row[role="button"] { cursor: pointer; text-align: left; font: inherit; }
+.rows-floats .row[role="button"]:focus-visible {
+  outline: 2px solid var(--rose); outline-offset: -2px;
+}
+.col-src .src { justify-content: flex-start; }
+/* Las flechas pegadas a un dato suelto en la ficha. */
+/* Letra de categoría junto al puesto, solo en la vista "Todas". */
+.pos-cat {
+  display: inline-block; margin-right: 3px; padding: 0 3px; border-radius: 3px;
+  font-size: 9.5px; font-weight: 700; vertical-align: 1px;
+}
+.pos-cat.cat-a { background: #eaf2f7; color: var(--cat-a); }
+.pos-cat.cat-b { background: #fbeaf7; color: var(--cat-b); }
+/* Los identificadores, en la cabecera de la ficha: es lo que se usa para citar
+   y para decidir, así que tiene que estar a la vista y no en un fichero. */
+/* Deslizador de tamaño, en la propia cabecera de la sección. */
+.zoom-fotos {
+  float: right; display: inline-flex; align-items: center; gap: 5px;
+  font-size: 10px; color: var(--line); font-weight: 400;
+}
+.zoom-fotos input[type="range"] { width: 84px; accent-color: var(--rose); cursor: pointer; }
+
+.ids { margin: 2px 0 6px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+  font-size: 10.5px; color: var(--line); }
+.id-par { cursor: help; letter-spacing: .02em; }
+/* Aviso de que dos nombres se han fundido: quien busca el que no se muestra
+   tiene derecho a saber que está aquí. */
+.alias-note {
+  margin: 6px 0; padding: 7px 10px; border-radius: 8px;
+  background: var(--bar); border: 1px solid var(--line-soft);
+  font-size: 12px; color: var(--muted); line-height: 1.45;
+}
+.alias-note b { color: var(--ink); font-weight: 600; }
+/* El texto de «¿Qué es esta página?» viene de un Markdown, así que llega como
+   párrafos y listas normales y necesita su propio espaciado. */
+.about-texto p { margin: 0 0 10px; line-height: 1.55; }
+.about-texto p:first-of-type { font-size: 14px; color: var(--ink); }
+.about-texto ul { margin: 0 0 10px; padding-left: 18px; line-height: 1.55; }
+.about-texto li { margin-bottom: 4px; }
+/* `hidden` a secas pierde contra cualquier regla de `display`, y esta caja
+   tiene padding y borde propios: sin esto se plegaba pero seguía ocupando. */
+.alias-note[hidden] { display: none; }
+/* El desplegable va al final de la frase, en línea con ella: es una nota al
+   pie de lo que se acaba de leer, no un control aparte. */
+.alias-toggle {
+  font: inherit; font-size: 11.5px; line-height: 1.2;
+  padding: 1px 7px; margin-left: 2px; vertical-align: 1px;
+  border: 1px solid var(--line); border-radius: 999px;
+  background: var(--bar); color: var(--muted); cursor: pointer;
+  white-space: nowrap;
+}
+.alias-toggle:hover { border-color: var(--rose); color: var(--rose); }
+.alias-toggle[aria-expanded="true"] { border-color: var(--rose); color: var(--rose); }
+.ids code {
+  font-size: 11px; padding: 1px 6px; border-radius: 4px; cursor: help;
+  background: var(--bar); border: 1px solid var(--line-soft); color: var(--muted);
+}
+.ids .id-principal { color: var(--ink); font-weight: 600; }
+
+.dato-src { margin-left: 5px; white-space: nowrap; }
+.dato-src a { color: var(--t-year); text-decoration: none; font-size: 11px; }
+.dato-src a:hover { text-decoration: underline; }
+
+.dato-duda {
+  color: var(--alerta); font-weight: 700; font-size: 10px; cursor: pointer;
+  border: 1px solid var(--alerta-borde); border-radius: 3px; padding: 0 4px;
+  background: var(--alerta-bg); font-family: inherit; line-height: 1.5;
+}
+.dato-duda:hover { background: #f8d5d2; border-color: var(--alerta); }
+/* Las gracias por las fotos: una vez por edición, con tono de reconocimiento
+   y no de auditoría. */
+.gracias {
+  margin: 14px 0 0; padding: 8px 11px; border-radius: 8px;
+  background: var(--bar); border: 1px solid var(--line-soft);
+  font-size: 12.5px; color: var(--muted); line-height: 1.5;
+}
+.gracias b { color: var(--ink); }
+
+/* Tablas de convenciones: qué nombre dice la fuente y cuál mostramos. */
+.conv { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 6px; }
+.conv td { padding: 3px 6px; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+.conv .conv-flecha { color: var(--muted); width: 18px; text-align: center; }
+.conv .conv-n { color: var(--muted); text-align: right; white-space: nowrap; font-size: 11px; }
+
+/* Galería de lo que no sabemos: se distingue a simple vista de la documentada
+   para que nadie la confunda con carrozas identificadas. */
+.gallery-anon .shot img { filter: saturate(.82); }
+.gallery-anon .shot { border: 1px dashed var(--line); border-radius: 8px; padding: 4px; }
+.gallery-anon figcaption { font-size: 10px; line-height: 1.35; }
+.gallery-anon .ask { margin-top: 3px; font-size: 10px; padding: 2px 6px; }
+
+/* Dos preguntas, dos líneas. Arriba de quién es la foto; debajo, por qué
+   decimos que es de esta carroza. La segunda se marca cuando la conclusión es
+   nuestra: es la que puede estar equivocada. */
+.asigna {
+  display: block; font-size: 10px; line-height: 1.3; color: var(--muted);
+  margin-top: 1px; cursor: help;
+  /* Bajo una miniatura estrecha el texto se cortaba a media palabra. */
+  white-space: normal; overflow-wrap: anywhere;
+}
+.asigna-deducida { color: var(--gold); }
+.asigna-deducida::before { content: "≈ "; font-weight: 700; }
+.lb-asigna {
+  display: block; font-size: 11px; opacity: .78; margin-top: 2px; cursor: help;
+}
+.lb-asigna.asigna-deducida { opacity: .95; }
+.tag-src:hover { border-color: var(--sky); color: var(--sky); background: #f2f7fa; }
+.tag-src:focus-visible { outline: 2px solid var(--sky); outline-offset: 1px; }
+
+/* Leyenda pegada a la tabla del palmares. */
+.codes-inline {
+  margin: 7px 0 0; font-size: 11px; color: var(--muted); line-height: 1.7;
+}
+.codes-inline .tag {
+  font-size: 9.5px; letter-spacing: .03em; padding: 1px 5px; border-radius: 4px;
+  border: 1px solid var(--line); background: #fff; color: var(--muted);
+  margin-right: 2px;
+}
+
+ul.plain { margin: 0; padding-left: 16px; color: var(--muted); font-size: 12.5px; }
+ul.plain li { margin-bottom: 3px; }
+ul.plain a { color: var(--sky); word-break: break-all; }
+
+.empty { color: var(--muted); font-size: 12.5px; font-style: italic; padding: 4px 0; }
+
+.placeholder { color: var(--muted); font-size: 13px; max-width: 42ch; padding: 6px 2px; }
+.placeholder p { margin: 0 0 10px; }
+.placeholder-lead { color: var(--ink); font-size: 16px; font-weight: 600; }
+.placeholder-hint { font-variant-numeric: tabular-nums; }
+
+.provenance {
+  margin-top: 14px; padding: 8px 10px;
+  border: 1px solid var(--line-soft); border-radius: 8px; background: #fffaf5;
+  color: var(--muted); font-size: 11.5px;
+}
+.provenance b { color: var(--ink); }
+.provenance ul { margin: 4px 0 0; padding-left: 16px; }
+
+/* ── leyenda y pie ─────────────────────────────────────────────────────── */
+
+/* El ancho fijo evita que los botones salten al cambiar de vista: «Fotos» y
+   «Lista» no miden lo mismo y el desplegable de orden solo existe en fotos. */
+/* `wrap` y no `nowrap`: son cuatro controles y en un móvil no caben en una
+   línea. Sin esto el último —«Solo ganadoras»— se salía por la derecha y se
+   leía «Solo ganador…», que es justo el botón que costó encontrar. */
+/* Sin `margin-left: auto`: la barra iba empujada contra el borde derecho,
+   lejos de las pestañas y de la rejilla que gobierna, y por eso «Solo
+   ganadoras» no se veía. Los controles de una vista van donde está la vista. */
+.tools { display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+/* Ninguno de los tres se parte por dentro: o cabe entero o baja de línea. */
+.tools > * { flex: none; }
+.solo-ganadoras { white-space: nowrap; }
+.view-toggle .view { min-width: 62px; justify-content: center; display: inline-flex; }
+.grid-sort { min-width: 96px; }
+.sort-slot { display: inline-flex; align-items: center; gap: 6px; }
+.sort-slot.is-hidden { visibility: hidden; }
+.tools:empty { display: none; }
+.count:empty { display: none; }
+.row-head .short { display: none; }   /* solo en móvil se abrevia */
+
+.legend[hidden] { display: none; }
+.legend {
+  display: flex; gap: 12px; flex-wrap: wrap;
+  padding: 6px 12px; border-top: 1px solid var(--line-soft);
+  color: var(--muted); font-size: 11.5px; background: #fffaf5;
+}
+.legend i { display: inline-block; width: 14px; height: 3px; border-radius: 2px; background: currentColor; margin-right: 5px; vertical-align: middle; }
+.legend b { font-variant-numeric: tabular-nums; }
+
+#credits {
+  padding: 6px 16px 8px;
+  border-top: 1px solid var(--line);
+  color: var(--muted); font-size: 11.5px; line-height: 1.4;
+}
+#credits p { margin: 0; }
+#credits a { color: var(--sky); }
+
+
+/* ── responsive ────────────────────────────────────────────────────────── */
+
+@media (max-width: 720px) {
+  /* En movil se cae "Ediciones", no "Victorias": las victorias son el dato que
+     ordena la lista y el que se venia perdiendo por el borde. */
+  /* La copa se montaba encima de «Ediciones»: la cabecera necesitaba más ancho
+     y que el texto se recorte en vez de desbordarse. */
+  .rows-groups .row-head,
+  .rows-groups .row {
+    grid-template-columns: minmax(0, 1fr) 38px 38px 34px 24px 10px;
+    gap: 2px 5px;
+    font-size: 13px;
+  }
+  .col-floats { display: none; }
+  .rows-groups .row-head .sort { white-space: nowrap; font-size: 8.5px; }
+  .controls { padding: 8px; }
+
+  /* La tabla del palmarés en móvil: fuente reducida a la flecha, grupo más
+     estrecho y sin partir palabras a lo bestia. */
+  .src .long { display: none; }
+  table.palmares { font-size: 12.5px; }
+  table.palmares col.c-src, table.palmares th:last-child { width: 84px; }
+  table.palmares td.group { hyphens: auto; }
+  .thumb img { width: 40px; height: 30px; }
+  table.palmares col.c-photo, table.palmares th.c-photo, table.palmares td.c-photo { width: 46px; }
+  /* «Ediciones» no cabe: se queda en «Edic.» sin perder sentido. */
+  .row-head .long { display: none; }
+  .row-head .short { display: inline; }
+
+  .rows-floats .row-head,
+  .rows-floats .row {
+    grid-template-columns: minmax(0, 1fr) 44px 40px 12px;
+    gap: 2px 6px; font-size: 13px;
+  }
+  .rows-floats .col-grp, .rows-floats .col-cat { display: none; }
+  .rows-floats .row-name small {
+    display: block; color: var(--muted); font-size: 11px; font-weight: 400;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .rows-floats .row .col-num,
+  .rows-floats .row-head .sort.col-num { text-align: left; font-size: 11.5px; }
+  .rows-floats .row { padding: 5px 6px; }
+  .rows-groups .row .col-num { font-size: 11.5px; }
+  .rows-groups .row-head { font-size: 9px; letter-spacing: 0.02em; }
+  .rows-groups .row { padding: 5px 6px; }
+}
+
+@media (max-width: 900px) {
+  body { height: auto; }
+
+  /* Filtros que en movil solo estorban: el estado y el toggle de palmarés. */
+  .desk-only { display: none; }
+  .controls { gap: 6px; }
+  /* 12,5, como el buscador y el desplegable. Estaba en 12 y se notaba: la
+     queja era exactamente que la barra no iba toda a un tamano. */
+  .controls .ghost { padding: 4px 8px; }
+
+  /* Cabecera más apretada: el bloque de cifras ocupaba media pantalla. */
+  #bar { grid-template-columns: 1fr; padding: 6px 12px; gap: 6px; }
+  /* Los botones en columna a la derecha estrujaban el título; aquí van debajo. */
+  .bar-actions { flex-direction: row; flex-wrap: wrap; }
+  .bar-title h1 { font-size: 17px; }
+  .stats { gap: 10px; font-size: 12px; flex-wrap: wrap; }
+  .stats span { display: inline-flex; align-items: baseline; gap: 3px; }
+
+  .pane-head { padding: 6px 6px; }
+  /* Fotos / Lista pegados a la izquierda, y el hueco del orden reservado para
+     que no bailen al cambiar de vista. */
+  .tools { margin-left: 0; flex-basis: 100%; justify-content: flex-start; }
+  .count { margin-left: auto; }
+  /* Las cinco pestañas se pasaban por un pelo y saltaban a una segunda fila. */
+  .tabs { gap: 3px; }
+  .tab { padding: 5px 9px; font-size: 12.5px; }
+  .pane-body { padding: 2px 10px 8px; }
+  .decade-row:first-child .decade-label { padding-top: 4px; }
+
+  .layout { grid-template-columns: 1fr; height: auto; }
+  .pane { max-height: none; }
+  .pane-body { overflow-y: visible; max-height: none; }
+  .controls { margin-left: 0; width: 100%; }
+  /* Los tres en una linea: el buscador cede el ancho que haga falta. Con
+     min-width 140 no cabia "Limpiar" y se caia a una segunda fila. */
+  .controls { flex-wrap: nowrap; gap: 5px; }
+  .controls input[type="search"] { flex: 1 1 150px; width: auto; min-width: 0; }
+  /* Quien no puede desplazar su texto, no encoge.
+     El desplegable ensena una etiqueta fija: si le falta un pixel, se lee
+     "Todas las decada" y no hay forma de ver el resto. El buscador si puede
+     encogerse, porque su texto se desplaza solo al escribir. Asi que el ancho
+     que falte se lo come el buscador entero. */
+  .controls select { flex: 0 0 auto; min-width: 0; font-size: 12.5px; padding: 4px 6px; }
+  .controls .ghost { flex: none; }
+  .controls .ghost[hidden] { display: none; }
+
+  /* Los nombres de los carrocistas, mas estrechos: 128 px de 375 son un tercio
+     de la pantalla dedicado a la columna que NO es el grafico. */
+  .carreras-nombres { flex-basis: 92px; width: 92px; }
+  .carrera-nombre { max-width: 86px; font-size: 9px; }
+
+  /* Décadas plegables. Cerradas fluyen como fichas, cuatro o cinco por línea,
+     con forma distinta a los años para que no se confundan: pastilla con tinte,
+     sin barra de color. La abierta rompe la línea y despliega su rejilla. */
+  .decades { display: flex; flex-wrap: wrap; gap: 6px; align-content: flex-start; }
+  .decade-row { display: contents; }
+  /* Las décadas se parecían demasiado a los años. Ahora son etiquetas macizas
+     sin borde y en versalitas; los años siguen siendo fichas blancas. */
+  .decade-row .decade-label {
+    width: auto; padding: 5px 11px;
+    border: 0; border-radius: 6px; background: #eee4d7;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.06em; color: #6d5a55;
+  }
+  .decade-row.is-open .decade-label { background: var(--t-year); color: #fff; }
+  .decade-row.is-open .decade-count { color: rgba(255, 255, 255, 0.75); }
+  .decade-row .year-grid { flex-basis: 100%; }
+
+  /* La década abierta deja de ser una etiqueta suelta y pasa a ser un bloque
+     que abraza sus años, con el mismo azul de la selección. */
+  .decade-row.is-open {
+    display: block; flex-basis: 100%;
+    margin: 4px 0 2px; padding: 7px 8px 3px;
+    border-radius: 12px; background: var(--t-year-bg);
+    border: 1px solid #cadde8;
+  }
+  .decade-row.is-open .decade-label { background: none; color: var(--t-year); padding: 0 2px 6px; }
+  .decade-row.is-open .decade-count { color: var(--t-year); opacity: 0.7; }
+  .decade-row.is-open .year-grid { padding: 0 0 4px; }
+  .decade-label { display: inline-flex; align-items: center; gap: 5px; cursor: pointer; }
+  .decade-count { display: inline; color: var(--muted); font-size: 11px; font-weight: 400; }
+  .decade-row:not(.is-open) .year-grid { display: none; }
+  .decade-row.is-open .year-grid { padding: 2px 0 8px; }
+  .year { min-width: 68px; }
+
+  /* El detalle se superpone al índice, con cruz para cerrar. */
+  .pane-detail {
+    position: fixed; inset: 0; z-index: 60;
+    display: none; border-radius: 0; border: 0;
+    box-shadow: 0 -8px 40px rgba(34, 23, 22, 0.25);
+  }
+  body.detail-open { overflow: hidden; }
+  body.detail-open .pane-detail { display: flex; }
+  body.detail-open .pane-detail .pane-body { overflow-y: auto; max-height: none; }
+  /* En móvil sí es una capa que tapa la pantalla entera, así que la cruz vuelve
+     a ser el círculo grande que todo el mundo reconoce. */
+  body.detail-open .detail-close {
+    display: block;
+    width: 42px; height: 42px; border-radius: 50%; border: 0;
+    background: var(--rose); color: #fff; font-size: 19px;
+    box-shadow: 0 2px 10px rgba(182, 70, 95, 0.3);
+  }
+  .detail-head { padding-right: 40px; }
+}
+
+.tour {
+  display: inline-block; padding: 5px 12px; border-radius: 999px;
+  border: 1px solid #cadde8; background: var(--t-year-bg); color: var(--t-year);
+  font-size: 13px; font-weight: 600; text-decoration: none;
+}
+.tour:hover { background: var(--t-year); color: #fff; }
+
+/* Copa junto al primer puesto del palmarés. */
+table.palmares td.pos .kpi-icon { width: 11px; height: 11px; fill: var(--gold); margin-right: 2px; vertical-align: -1px; }
+
+/* Acumulados de premios especiales. */
+.prize-tops { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 8px 16px; margin-top: 8px; }
+.prize-top h5 { margin: 0 0 3px; color: var(--muted); font-size: 10.5px; letter-spacing: 0.07em; text-transform: uppercase; }
+.prize-top ol { margin: 0; padding-left: 18px; font-size: 12.5px; }
+.prize-top li { margin-bottom: 2px; }
+
+/* Marca de dato sin aclarar: visible pero discreta, no una alarma. El dato es
+ * bueno, solo que hay algo que no cuadra y se dice. */
+/* Copa dorada sobre la miniatura de las ganadoras. Encima de la foto y no al
+ * lado del nombre: en la cuadricula lo que se mira es la imagen. */
+.win-badge {
+  position: absolute; top: 5px; left: 5px; z-index: 1;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 20px; height: 20px; border-radius: 50%;
+  background: rgba(255, 252, 245, 0.94); box-shadow: 0 1px 3px rgba(34, 23, 22, 0.28);
+}
+.win-badge .kpi-icon { width: 12px; height: 12px; fill: var(--gold); }
+.win-badge.inline {
+  position: static; width: 14px; height: 14px; margin-right: 4px;
+  background: none; box-shadow: none; vertical-align: -2px;
+}
+.win-badge.inline .kpi-icon { width: 11px; height: 11px; }
+.tile { position: relative; }
+
+/* Un circulito ambar con interrogacion. Ambar y no rojo a proposito: el dato
+ * no esta mal, esta sin confirmar, y el rojo se lee como error. */
+.review-mark {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 15px; height: 15px; margin-left: 5px; cursor: help;
+  border: 1px solid var(--alerta-borde); border-radius: 50%;
+  background: var(--alerta-bg); color: var(--alerta);
+  font-size: 10px; font-weight: 700; line-height: 1; vertical-align: 1px;
+  cursor: pointer; font-family: inherit; vertical-align: super;
+}
+.review-mark:hover { background: #f8d5d2; }
+
+/* En la ficha de la carroza no basta el circulito: se explica entero. */
+.review-box {
+  margin: 8px 0 4px; padding: 9px 11px;
+  border: 1px solid var(--alerta-borde); border-left: 3px solid var(--alerta); border-radius: 8px;
+  background: var(--alerta-bg); font-size: 12.5px; line-height: 1.45;
+}
+.review-box b { color: var(--alerta); }
+.review-box ul { margin: 4px 0 0; padding-left: 16px; color: var(--ink); }
+.review-box p { margin: 8px 0 0; color: var(--muted); }
+
+/* Citas de hemeroteca. El texto del periodico va en cursiva y con su enlace al
+ * escaneo: es la prueba, no un adorno, asi que se lee entero y se puede abrir. */
+.cite-head { margin: 9px 0 0; font-weight: 600; color: var(--ink) !important; }
+.cite-list {
+  margin: 5px 0 0; padding: 0; list-style: none;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.cite-list li {
+  padding: 6px 9px; border-radius: 6px;
+  background: var(--panel); border: 1px solid var(--line-soft);
+  font-size: 12px; line-height: 1.5; color: var(--ink);
+  font-style: italic;
+}
+.cite-list li b { font-style: normal; color: var(--ink); }
+.cite-list a {
+  font-style: normal; white-space: nowrap; font-weight: 600;
+  color: var(--t-year);
+}
+.open-list .cite-list { margin: 6px 0 2px; }
+
+/* La lista de "Por confirmar" dentro de una edición: misma información que la
+   pestaña Pendiente, pero incrustada donde el lector la necesita. */
+.open-list-edicion { list-style: none; padding: 0; margin: 6px 0 0; }
+.open-list-edicion li {
+  padding: 7px 10px; margin-bottom: 6px;
+  border: 1px solid var(--alerta-borde); border-left: 3px solid var(--alerta);
+  border-radius: 8px; background: var(--alerta-bg);
+  font-size: 12.5px; line-height: 1.5;
+}
+.open-list-edicion .cite-list li {
+  border: 1px solid var(--line-soft); border-left-width: 1px;
+  background: var(--panel); font-style: italic;
+}
+.pill.know {
+  padding: 5px 12px; font-size: 12.5px;
+  border-color: var(--alerta-borde); background: var(--alerta-bg); color: var(--alerta);
+}
+.pill.know:hover { background: #f8d5d2; border-color: var(--alerta); }
+.pill.know .pill-icon { fill: var(--alerta); }
+.open-note { margin: 0; font-size: 12.5px; line-height: 1.5; color: var(--muted); }
+.open-note b { color: var(--ink); }
+
+.open-block { margin: 0 0 12px; }
+.open-block h4 {
+  display: flex; align-items: center; gap: 7px; margin: 0 0 4px;
+  font-size: 12.5px; color: var(--ink);
+}
+.open-count {
+  padding: 1px 7px; border-radius: 999px;
+  background: var(--line-soft); color: var(--muted); font-size: 11px; font-weight: 600;
+}
+.open-list { margin: 0; padding-left: 16px; font-size: 12.5px; line-height: 1.5; color: var(--muted); }
+.open-list li { margin-bottom: 3px; }
+.open-list b { color: var(--ink); font-weight: 600; }
+
+.prov-urls { margin-top: 7px; }
+.prov-urls li { margin-bottom: 5px; }
+.prov-urls small { display: block; color: var(--muted); font-size: 10.5px; word-break: break-all; }
+
+/* La fecha, apilada justo encima del año y con su mismo ancho. `inline-block`
+   para que la caja se ciña al texto y se pueda medir: en `block` mediría el
+   contenedor entero y la cuenta del ajuste daría cualquier cosa. */
+.anio-bloque { display: flex; flex-direction: column; align-items: flex-start; }
+.fecha-desfile {
+  display: inline-block; margin-top: 1px; white-space: nowrap;
+  color: var(--muted); font-size: 12px; line-height: 1.1;
+}
+
+/* ── visor de fotos ───────────────────────────────────────────────────────
+ * Encima de la aplicacion, no en otra pestaña. */
+.lightbox {
+  position: fixed; inset: 0; z-index: 200;
+  display: flex; align-items: center; justify-content: center;
+  padding: 44px 12px 12px;
+  background: rgba(24, 16, 15, 0.94);
+}
+.lightbox[hidden] { display: none; }
+body.lb-abierto { overflow: hidden; }
+
+.lb-figura { margin: 0; display: flex; flex-direction: column; align-items: center; max-height: 100%; }
+.lb-figura img {
+  max-width: 100%; max-height: calc(100vh - 150px);
+  border-radius: 6px; background: #000; object-fit: contain;
+}
+
+/* El pie va superpuesto sobre la foto, no debajo: asi la imagen manda y los
+ * datos acompanan sin robarle alto. */
+.lb-pie {
+  position: relative; margin-top: -54px; z-index: 1;
+  width: 100%; max-width: 760px; padding: 26px 14px 10px;
+  background: linear-gradient(to top, rgba(0,0,0,0.82), rgba(0,0,0,0));
+  border-radius: 0 0 6px 6px; color: #fff; text-align: left;
+}
+.lb-nombre { display: block; font-size: 15px; font-weight: 700; line-height: 1.25; }
+/* El nombre del pie es la salida del carrusel hacia la ficha: se ve que se
+   puede pulsar, pero sin gritar, que la protagonista es la foto. */
+.lb-link {
+  border: 0; padding: 0; background: none; cursor: pointer;
+  color: inherit; font: inherit; text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, .35);
+}
+.lb-link:hover { border-bottom-color: currentColor; }
+.lb-datos { display: flex; flex-wrap: wrap; gap: 4px 10px; margin-top: 2px; font-size: 12.5px; opacity: 0.92; }
+.lb-datos b { font-weight: 600; }
+.lb-puesto {
+  padding: 0 7px; border-radius: 999px;
+  background: rgba(255,255,255,0.18); font-variant-numeric: tabular-nums;
+}
+.lb-credito { display: block; margin-top: 3px; font-size: 11px; font-style: italic; opacity: 0.72; }
+.lb-contador {
+  position: fixed; top: 14px; right: 62px; z-index: 3;
+  font-size: 12.5px; font-variant-numeric: tabular-nums; letter-spacing: .02em;
+  color: #fff; background: rgba(0, 0, 0, .42); padding: 4px 10px; border-radius: 999px;
+  backdrop-filter: blur(4px);
+}
+
+.lb-close, .lb-nav {
+  position: absolute; cursor: pointer; color: #fff;
+  border: 1px solid rgba(255,255,255,0.28); border-radius: 50%;
+  background: rgba(0,0,0,0.45); font: inherit; line-height: 1;
+}
+.lb-close { top: 10px; right: 12px; width: 38px; height: 38px; font-size: 17px; }
+.lb-nav { top: 50%; transform: translateY(-50%); width: 42px; height: 42px; font-size: 26px; }
+.lb-prev { left: 10px; }
+.lb-next { right: 10px; }
+.lb-close:hover, .lb-nav:hover { background: rgba(0,0,0,0.75); border-color: rgba(255,255,255,0.6); }
+
+/* La foto es pulsable: que se note. */
+.shot-btn {
+  display: block; width: 100%; padding: 0; cursor: zoom-in;
+  border: 0; background: none; font: inherit;
+}
+.shot-btn img { display: block; width: 100%; }
+
+@media (max-width: 619px) {
+  .lb-nav { width: 36px; height: 36px; font-size: 22px; }
+  .lb-figura img { max-height: calc(100vh - 170px); }
+}
+
+/* Procedencia de una carroza, plegada. Abierta de oficio solo cuando la foto
+ * esta asignada por deduccion, que es cuando conviene mirarla. */
+.proc-foto { margin: 12px 0 4px; font-size: 12.5px; }
+.proc-foto summary {
+  cursor: pointer; padding: 6px 0; color: var(--muted);
+  border-top: 1px solid var(--line-soft);
+}
+.proc-foto summary:hover { color: var(--ink); }
+.proc-aviso {
+  margin-left: 5px; padding: 1px 8px; border-radius: 999px;
+  background: var(--alerta-bg); color: var(--alerta); font-size: 11px;
+}
+.proc-foto .prov-list { margin-top: 4px; }
+.proc-foto small { color: var(--muted); font-size: 11.5px; }
+
+/* Credito de la foto, bajo cada imagen. Discreto pero siempre presente: es de
+ * quien la hizo. */
+.about-note { margin: -4px 0 10px; color: var(--muted); font-size: 12px; line-height: 1.45; }
+
+.credito {
+  display: block; margin-top: 2px; color: var(--muted); font-size: 10.5px;
+  font-style: italic;
+  /* Envuelve, no se corta. Y parte las palabras larguísimas —una URL de origen—
+     antes que desbordar la columna. */
+  white-space: normal; overflow-wrap: anywhere; line-height: 1.3;
+}
+
+/* Mapa de Leaflet de la Noche Magica. */
+.mapa-montaje {
+  height: 300px; margin: 4px 0 2px;
+  border: 1px solid var(--line); border-radius: 10px;
+  background: var(--line-soft);
+}
+.mapa-pie { margin-top: 5px; }
+.montaje-icon span {
+  display: flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; border-radius: 50%;
+  background: #2f7d4f; color: #fff; border: 2px solid #fffaf5;
+  font-size: 12px; font-weight: 700;
+  box-shadow: 0 1px 4px rgba(34, 23, 22, 0.35);
+}
+.pop-acciones { display: flex; gap: 8px; align-items: center; margin-top: 7px; }
+.pop-acciones button {
+  padding: 2px 9px; cursor: pointer; border: 1px solid var(--line);
+  border-radius: 999px; background: #fff; font: inherit; font-size: 12px;
+}
+.leaflet-yo {
+  width: 32px; height: 32px; cursor: pointer;
+  border: 1px solid rgba(34,23,22,0.25); border-radius: 5px;
+  background: #fff; font-size: 15px; line-height: 1;
+}
+.leaflet-yo:hover { background: #f2f2f2; }
+
+/* Marcas de los locales de montaje: numeradas por orden de salida, para que la
+ * tabla y el mapa se lean juntos. */
+.montaje-halo { fill: #2f7d4f; opacity: 0.18; }
+.montaje-pin { fill: #2f7d4f; stroke: #fffaf5; stroke-width: 2; }
+.montaje-num { fill: #fff; font-size: 9.5px; font-weight: 700; text-anchor: middle; }
+.montaje { cursor: help; }
+/* Lista de grupos de la Noche Magica. Cada fila: numero de salida a la
+ * izquierda y, al lado, grupo con sus carrozas y su ubicacion debajo. */
+.nm-lista { list-style: none; margin: 4px 0 2px; padding: 0; }
+.nm-lista li {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 7px 0; border-bottom: 1px solid var(--line-soft);
+}
+.nm-lista li:last-child { border-bottom: 0; }
+.nm-datos { flex: 1; min-width: 0; }
+.nm-datos b { display: block; font-size: 13.5px; font-weight: 600; line-height: 1.3; }
+.nm-datos small {
+  display: block; margin-top: 2px; color: var(--muted);
+  font-size: 12px; line-height: 1.45;
+}
+
+.nm-num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 20px; height: 20px; border-radius: 50%;
+  background: #2f7d4f; color: #fff; font-size: 11.5px; font-weight: 700;
+}
+
+/* Tabla de la Noche Magica: cuatro columnas en escritorio, dos en movil con el
+ * resto debajo del nombre del grupo. */
+@media (min-width: 620px) {
+}
+@media (max-width: 619px) {
+}
+
+/* Mapa ampliable. touch-action:none para que el navegador no se quede el
+ * gesto de arrastrar antes de que lo veamos nosotros. */
+.map-zoom { position: relative; }
+.map-zoom svg.zoomable { touch-action: none; cursor: grab; }
+.map-zoom svg.zoomable.is-zoomed { cursor: move; }
+.map-zoom svg.zoomable:active { cursor: grabbing; }
+
+.zoom-ctrl {
+  position: absolute; top: 8px; right: 8px; z-index: 2;
+  display: flex; flex-direction: column; gap: 4px;
+}
+.zoom-ctrl button {
+  width: 28px; height: 28px; padding: 0; cursor: pointer;
+  border: 1px solid var(--line); border-radius: 7px;
+  background: rgba(255, 252, 245, 0.94); color: var(--ink);
+  font: inherit; font-size: 15px; line-height: 1;
+  box-shadow: 0 1px 3px rgba(34, 23, 22, 0.18);
+}
+.zoom-ctrl button:hover { background: #fff; border-color: var(--muted); }
+
+/* Aviso de la Noche Magica: recuadro contenido, no una banda de lado a lado.
+ * Verde -ni rojo de alerta ni naranja de grupo-: es una invitacion. Solo sale
+ * en la cuenta atras y desaparece solo pasado el desfile. */
+.noche-magica {
+  display: flex; align-items: center; gap: 9px; flex-wrap: wrap;
+  margin: 8px 12px 0; padding: 8px 12px;
+  border: 1px solid #b9d9c3; border-left: 3px solid #2f7d4f; border-radius: 9px;
+  background: #f1f9f3; font-size: 12.5px; line-height: 1.4; color: #1f4d2e;
+}
+.noche-magica[hidden] { display: none; }
+.nm-flor { font-size: 15px; line-height: 1; }
+.nm-texto {
+  flex: 1 1 220px; min-width: 0;
+  border: 0; background: none; padding: 0; margin: 0;
+  font: inherit; color: inherit; text-align: left; cursor: pointer;
+}
+.nm-texto:hover b { text-decoration: underline; }
+.nm-texto:focus-visible { outline: 2px solid var(--leaf); outline-offset: 2px; border-radius: 4px; }
+.nm-texto b { color: #143d22; }
+.nm-ir {
+  flex: none; padding: 4px 11px; cursor: pointer; white-space: nowrap;
+  border: 1px solid #7fb08d; border-radius: 999px;
+  background: #fff; color: #1f4d2e; font: inherit; font-size: 12px; font-weight: 600;
+}
+.nm-ir:hover { background: #dcefe1; border-color: #4f8a63; }
+
+@media (min-width: 620px) {
+  .noche-magica { margin: 10px 14px 0; }
+}
+
+/* Informe de procedencia: una linea por tipo de dato. */
+.prov-list { margin: 4px 0 0; padding-left: 16px; line-height: 1.5; }
+/* La cita literal que justifica una fuente. Va debajo y en cursiva: es lo que
+   dice el documento, no lo que decimos nosotros. */
+.prov-cita {
+  display: block; margin: 3px 0 2px; padding-left: 8px;
+  border-left: 2px solid var(--line); color: var(--muted);
+  font-size: 11.5px; font-style: italic; line-height: 1.4;
+}
+.prov-list li { margin-bottom: 3px; }
+.prov-list b { color: var(--ink); }
+.prov-warn { color: var(--alerta); }
+.prov-warn b { color: var(--alerta); }
+.prov-list .review-mark { width: 13px; height: 13px; margin: 0 1px; font-size: 9px; }
+
+/* Boton compacto al final de cada linea. Con 37 lineas, uno del tamano normal
+ * competiria con el texto; asi se ve pero no manda. */
+.ask {
+  display: inline-flex; align-items: center; gap: 3px; margin-left: 5px;
+  padding: 1px 7px 1px 5px; cursor: pointer; white-space: nowrap;
+  border: 1px solid var(--alerta-borde); border-radius: 999px;
+  background: var(--alerta-bg); color: var(--alerta); font: inherit; font-size: 11px;
+}
+.ask:hover { background: #f8d5d2; border-color: var(--alerta); }
+.ask svg { width: 9px; height: 9px; fill: var(--alerta); }
+
+/* Rachas: el numero manda, el resto acompana. */
+.streaks { list-style: none; margin: 2px 0 10px; padding: 0; }
+.streaks li {
+  display: flex; align-items: baseline; gap: 9px;
+  padding: 4px 0; border-bottom: 1px solid var(--line-soft); font-size: 13px;
+}
+.streaks li:last-child { border-bottom: 0; }
+.streak-n {
+  min-width: 26px; text-align: center; flex: none;
+  font-size: 15px; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--muted);
+}
+.streaks li.top .streak-n { color: var(--gold); font-size: 19px; }
+.streak-years { margin-left: auto; color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.prize-top b { font-variant-numeric: tabular-nums; }
+
+/* ── formulario de corrección ──────────────────────────────────────────── */
+
+.report-back {
+  position: fixed; inset: 0; z-index: 120;
+  display: flex; align-items: flex-end; justify-content: center;
+  max-width: 100vw; overflow-x: hidden;
+  background: rgba(34, 23, 22, 0.45);
+}
+.report-back[hidden] { display: none; }
+
+.report {
+  width: 100%; max-width: min(460px, 100vw); max-height: 92vh; overflow-y: auto;
+  overscroll-behavior: contain;
+  /* En moviles con muesca o barra de gestos, el borde de la pantalla no es el
+   * borde util: sin esto la hoja se sale por el lado. */
+  padding: 14px max(16px, env(safe-area-inset-right)) max(16px, env(safe-area-inset-bottom))
+           max(16px, env(safe-area-inset-left));
+  border-radius: 16px 16px 0 0; background: var(--panel);
+  box-shadow: 0 -8px 40px rgba(34, 23, 22, 0.3);
+}
+.report-head { display: flex; align-items: center; gap: 10px; }
+.report-head h3 { margin: 0; font-size: 17px; }
+.report-x {
+  margin-left: auto; width: 32px; height: 32px; padding: 0; cursor: pointer;
+  border: 1px solid var(--line); border-radius: 50%; background: #fff; color: var(--muted);
+}
+.report-ctx {
+  margin: 4px 0 10px; padding: 4px 10px; display: inline-block;
+  border-radius: 999px; background: var(--t-year-bg); color: var(--t-year); font-size: 12px;
+}
+.report label { display: block; margin-bottom: 9px; font-size: 12px; color: var(--muted); }
+.report .opt { font-style: italic; }
+.report input[type="text"], .report input:not([type]), .report input[type="email"], .report textarea {
+  display: block; width: 100%; margin-top: 3px; padding: 7px 9px;
+  font: inherit; font-size: 13.5px; color: var(--ink);
+  border: 1px solid var(--line); border-radius: 8px; background: #fff;
+}
+.report textarea { resize: vertical; }
+.report input:focus-visible, .report textarea:focus-visible { outline: 2px solid var(--t-year); outline-offset: 1px; }
+.file-label input[type="file"] { display: block; margin-top: 4px; font-size: 12px; max-width: 100%; }
+.file-note { display: block; margin-top: 3px; color: var(--t-route); font-size: 11.5px; }
+.report-foot { display: flex; align-items: center; gap: 10px; margin-top: 4px; }
+.report-msg { color: var(--muted); font-size: 12px; }
+.pill.send {
+  margin-left: auto; padding: 7px 20px; font-size: 13px;
+  border-color: var(--t-year); background: var(--t-year); color: #fff;
+}
+.pill.send:hover { background: #24597a; border-color: #24597a; color: #fff; }
+.pill.send:disabled { opacity: 0.6; cursor: default; }
+
+@media (min-width: 620px) {
+  .report-back { align-items: center; }
+  .report { border-radius: 16px; }
+}
+
+/* iOS amplia la pagina al enfocar un campo cuya letra baje de 16 px. La hoja
+ * del formulario es position:fixed, asi que tras ese zoom se sale por la
+ * derecha.
+ *
+ * Durante tres intentos esto se "arreglo" subiendo el buscador a 16 px. Pero el
+ * buscador va en una fila con "Limpiar" y "Todas las decadas", que siguen a
+ * 12,5: quedaba con la letra visiblemente mas gorda que sus dos vecinos, y
+ * encima el texto no le cabia ("Carroza, grup"). Igualar la ALTURA no arreglaba
+ * nada, porque lo que se ve distinto es la LETRA.
+ *
+ * El zoom se ataca ahora donde nace, en `frenarZoomAlEnfocar()` (app.js), y los
+ * tres controles vuelven a la misma tipografia. El formulario se queda en 16 px
+ * porque ahi es comodidad para escribir, no un parche: ocupa el ancho entero y
+ * no tiene con quien descuadrarse. */
+@media (max-width: 619px) {
+  /* Mismos selectores que la regla base: con `.report input` a secas ganaba
+   * ella por especificidad y dos campos se quedaban en 13,5 px. */
+  .report input[type="text"], .report input:not([type]), .report input[type="email"],
+  .report textarea { font-size: 16px; }
+  :root { --control-h: 32px; }
+  /* El desplegable pinta su flecha dentro de la caja: sin sitio reservado se
+     comia la ultima letra y se leia "Todas las decada". */
+  .controls select { padding-right: 18px; }
+}

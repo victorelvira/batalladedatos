@@ -107,11 +107,13 @@ a { color: inherit; }
 /* El titulo que se despliega, una vez por visitante.
  *
  * El HTML dice siempre el titulo final; lo que hace la animacion es taparlo
- * un momento para que arranque escrito como el dominio, «Batallaendatos», y
+ * un momento para que arranque escrito como el dominio, «Batalladedatos», y
  * se abra a «Batalla de Flores de Laredo en datos». Dos piezas:
  *
  *   .hueco  los espacios, que se abren desde ancho cero
- *   .brote  las palabras que faltan, que crecen
+ *   .brote  las palabras que faltan, que crecen; su data-paso dice en que
+ *           compas entran (2 «Flores» y «en» · 3 «de Laredo» · 4 los anos),
+ *           y por eso abrir cada una es inline y no una clase del h1
  *
  * Las palabras que sobreviven al arranque —«Batalla», «en», «datos»— no
  * cambian de forma en ningun momento: solo se juntan. Hubo una version que
@@ -131,7 +133,6 @@ h1.anim .brote {
   transition: max-width var(--t-brote, 950ms) cubic-bezier(.22,.61,.36,1),
               opacity calc(var(--t-brote, 950ms) * .7) ease;
 }
-h1.anim.paso2 .brote { opacity: 1; }
 
 @media (prefers-reduced-motion: reduce) {
   h1.anim .hueco, h1.anim .brote { max-width: none !important; opacity: 1 !important; transition: none; }

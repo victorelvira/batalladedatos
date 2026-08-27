@@ -107,13 +107,16 @@ a { color: inherit; }
 /* El titulo que se despliega, una vez por visitante.
  *
  * El HTML dice siempre el titulo final; lo que hace la animacion es taparlo
- * un momento para que arranque escrito como el dominio, «BatallaDeDatos», y
- * se abra a «Batalla de Flores de Laredo en datos». Tres piezas:
+ * un momento para que arranque escrito como el dominio, «Batallaendatos», y
+ * se abra a «Batalla de Flores de Laredo en datos». Dos piezas:
  *
  *   .hueco  los espacios, que se abren desde ancho cero
  *   .brote  las palabras que faltan, que crecen
- *   .may    «de» y «datos», en mayuscula por CSS mientras dura el arranque,
- *           sin tocar el texto real
+ *
+ * Las palabras que sobreviven al arranque —«Batalla», «en», «datos»— no
+ * cambian de forma en ningun momento: solo se juntan. Hubo una version que
+ * arrancaba en «BatallaDeDatos» y tenia que bajar dos mayusculas por el
+ * camino; ese salto se veia, y quitarlo salio gratis.
  *
  * Sin la clase .anim —sin JS, o a la segunda visita— esto no hace nada y el
  * titulo sale entero desde el primer fotograma.
@@ -128,13 +131,10 @@ h1.anim .brote {
   transition: max-width var(--t-brote, 950ms) cubic-bezier(.22,.61,.36,1),
               opacity calc(var(--t-brote, 950ms) * .7) ease;
 }
-h1.anim .may { text-transform: capitalize; }
-h1.anim.minus .may { text-transform: none; }
 h1.anim.paso2 .brote { opacity: 1; }
 
 @media (prefers-reduced-motion: reduce) {
   h1.anim .hueco, h1.anim .brote { max-width: none !important; opacity: 1 !important; transition: none; }
-  h1.anim .may { text-transform: none; }
 }
 /* Sangrada para arrancar donde arranca «Batalla», no debajo de la dalia. */
 .bar-sub {

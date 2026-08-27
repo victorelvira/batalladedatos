@@ -4451,7 +4451,7 @@ fetch("batalla_de_flores/data/map.json", { cache: "no-cache" })
   .catch(() => {});
 
 /* El titulo de bienvenida se despliega: arranca escrito como el dominio,
- * «BatallaDeDatos», y se abre a «Batalla de Flores de Laredo en datos».
+ * «Batallaendatos», y se abre a «Batalla de Flores de Laredo en datos».
  *
  * Quien decide SI se anima es el script en linea del HTML, no esto: tiene que
  * decidirse antes del primer fotograma, y app.js se carga al final del body.
@@ -4494,25 +4494,20 @@ function desplegarTitulo({ reiniciando = false } = {}) {
   h1.style.setProperty("--t-brote", BROTE + "ms");
   void h1.offsetWidth;
 
-  // 1 · se abren los espacios: BatallaDeDatos -> Batalla De Datos
+  // 1 · se abren los espacios: Batallaendatos -> Batalla en datos
   const luego = (fn, ms) => desplegarTitulo.relojes.push(setTimeout(fn, ms));
 
   luego(() => {
     huecos.forEach((nodo, i) => { nodo.style.maxWidth = anchoHueco[i] + "px"; });
   }, ESPERA);
 
-  // 2 · y solo cuando ya estan abiertos bajan las mayusculas. Yendo a la vez
-  //     se leia «Batalladedatos» todo junto y en minuscula, que no era ni el
-  //     dominio ni el titulo.
-  luego(() => h1.classList.add("minus"), ESPERA + HUECO);
-
-  // 3 · brotan las palabras que faltan
+  // 2 · brotan las palabras que faltan
   luego(() => {
     h1.classList.add("paso2");
     brotes[0].style.maxWidth = anchoBrote[0] + "px";
   }, ESPERA + ENTRE);
 
-  // 4 · y los anos entran los ultimos
+  // 3 · y los anos entran los ultimos
   luego(() => {
     brotes[1].style.maxWidth = anchoBrote[1] + "px";
   }, ESPERA + ENTRE + YEARS);

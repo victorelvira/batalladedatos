@@ -3634,7 +3634,8 @@ function renderGroupDetail(group) {
                    alt="${esc(entry.name)}" loading="lazy"></button>`
               : ""}</td>` : ""}
             <td class="pos" data-sort="${entry.year}"><button class="link t-year" type="button" data-year="${entry.year}">${entry.year}</button></td>
-            <td class="name" data-sort="${esc(normalizeText(entry.name))}">${esc(entry.name)}</td>
+            <td class="name" data-sort="${esc(normalizeText(entry.name))}"><button
+              class="link t-float" type="button" data-float="${esc(entry.id)}">${esc(entry.name)}</button>${reviewMark(entry)}</td>
             <td class="pos" data-sort="${esc(positionSortKey(entry))}">${entry.category ? esc(entry.category) : ""}${entry.position != null ? `${entry.position}.º` : "–"}</td>
             <td data-sort="${esc(sourceShort(entry.source_type))}">${sourceCell(entry)}</td>
           </tr>`).join("")}

@@ -28,7 +28,7 @@
   <meta name="twitter:image" content="https://batalladedatos.es/batalla_de_flores/og.jpg?v=0136bc10">
   <link rel="icon" href="batalla_de_flores/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="batalla_de_flores/apple-touch-icon.png">
-  <link rel="stylesheet" href="batalla_de_flores/style.css?v=25c7c68a">
+  <link rel="stylesheet" href="batalla_de_flores/style.css?v=250df98d">
 </head>
 <body>
   <nav id="navbar">
@@ -36,6 +36,11 @@
     <span class="nav-sep">·</span>
     <a class="nav-home" href="https://victorelvira.github.io/personal_projects.html">otros proyectos interactivos</a>
     <span id="build" class="build" title="Versión del dataset publicado"></span>
+    <a class="nav-ig" href="https://www.instagram.com/victelvi/" target="_blank" rel="noopener"
+       aria-label="Instagram de Víctor Elvira" title="Instagram">
+      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor"
+           stroke-width="2" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.3" fill="currentColor" stroke="none"/></svg>
+    </a>
   </nav>
 
   <header id="bar">
@@ -170,14 +175,23 @@
       <input type="hidden" name="ficha" id="report-ficha">
       <input type="hidden" name="url" id="report-url">
 
-      <label>Tu nombre y apellidos
-        <input name="nombre" required autocomplete="name" placeholder="Para poder citarte si lo incorporo">
+      <!-- El nombre y el email son opcionales a proposito, y no es cortesia:
+           es la minimizacion del RGPD. Para corregir un dato del archivo no
+           hace falta saber quien avisa, asi que solo lo imprescindible es
+           obligatorio. Darlos es consentir su unico uso, que el propio campo
+           dice. -->
+      <label>Tu nombre <span class="opt">(opcional: para dirigirme a ti y, si lo incorporo, citarte)</span>
+        <input name="nombre" autocomplete="name" placeholder="O deja el aviso sin firmar">
       </label>
       <label>Qué dato está mal o falta
         <textarea name="mal" rows="2" required placeholder="Ej.: el grupo de la carroza «Aiko» no es ese"></textarea>
       </label>
-      <label>Cuál es el dato correcto
-        <textarea name="correcto" rows="2" required placeholder="Ej.: la llevó el Grupo Pejino, no Come Golayu"></textarea>
+      <!-- Opcional a proposito: saber que algo esta mal sin saber el valor
+           bueno tambien es una aportacion. Es la regla de la casa: contradecir
+           no es elegir, y el dato pasa a revision aunque nadie tenga aun el
+           correcto. -->
+      <label>Cuál es el dato correcto <span class="opt">(si lo sabes: avisar de que algo falla ya ayuda)</span>
+        <textarea name="correcto" rows="2" placeholder="Ej.: la llevó el Grupo Pejino, no Come Golayu"></textarea>
       </label>
       <label>Evidencia <span class="opt">(opcional, pero ayuda mucho)</span>
         <textarea name="evidencia" rows="2" placeholder="Un enlace, el nombre del periódico y la fecha, o de dónde lo sabes"></textarea>
@@ -186,9 +200,16 @@
         <input id="report-file" type="file" accept="image/*">
         <span class="file-note" id="report-file-note"></span>
       </label>
-      <label>Tu email <span class="opt">(opcional, por si necesito preguntarte)</span>
+      <label>Tu email <span class="opt">(opcional: por si hace falta aclarar algo contigo)</span>
         <input name="email" type="email" autocomplete="email" placeholder="nombre@correo.com">
       </label>
+
+      <p class="report-legal">Lo que envíes va a una hoja de cálculo privada mía, alojada en Google, y
+queda guardado como registro de la corrección. El nombre y el email son
+opcionales: sirven sobre todo para poder aclarar contigo lo que mandes y,
+si lo incorporo, para citarte.
+Por esta misma vía puedes pedir corregirlos o borrarlos, y si algo quedara
+sin resolver, existe la Agencia Española de Protección de Datos.</p>
 
       <div class="report-foot">
         <span class="report-msg" id="report-msg"></span>
@@ -197,7 +218,7 @@
     </form>
   </div>
 
-  <script src="batalla_de_flores/app.js?v=075a3021"></script>
+  <script src="batalla_de_flores/app.js?v=8f41e70d"></script>
 <!-- Tracking: Google Analytics tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GHT1L88XYZ"></script>
 <script>

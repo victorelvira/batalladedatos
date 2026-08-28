@@ -69,7 +69,15 @@ a { color: inherit; }
    replicarlo en los demas. */
 #navbar .nav-ig { margin-left: 10px; color: #cbbfae; display: inline-flex; align-items: center; }
 #navbar .nav-ig:hover { color: #fff; }
-#navbar .build { margin-left: auto; color: #8a7f72; font-size: 6.5px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+/* Version encima, fecha debajo, alineadas a la derecha. En columna caben las
+   dos hasta en el movil: dos lineas de 6.5px suman menos alto que la linea de
+   12.5px de al lado, asi que la barra no crece. */
+#navbar .build {
+  margin-left: auto; color: #8a7f72; font-size: 6.5px;
+  font-variant-numeric: tabular-nums; white-space: nowrap;
+  display: inline-flex; flex-direction: column; align-items: flex-end;
+  line-height: 1.25;
+}
 
 /* ── barra de título y filtros ─────────────────────────────────────────── */
 
@@ -1297,9 +1305,6 @@ ul.plain a { color: var(--sky); word-break: break-all; }
   .controls .ghost { padding: 4px 8px; }
 
   /* Cabecera más apretada: el bloque de cifras ocupaba media pantalla. */
-  /* La fecha del sello no cabe en 375px y era lo que doblaba la navbar:
-     la version se queda, que es la que sirve para diagnosticar. */
-  #navbar .build-fecha { display: none; }
   #bar { grid-template-columns: 1fr; padding: 6px 12px; gap: 6px; }
   /* Los botones en columna a la derecha estrujaban el título; aquí van debajo. */
   .bar-actions { flex-direction: row; flex-wrap: wrap; }

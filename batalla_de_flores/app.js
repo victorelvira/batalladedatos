@@ -323,7 +323,7 @@ function renderNocheMagica() {
   // empuja el contenido real hacia abajo.
   const dia = esc(nm.fecha.replace(/ de \d{4}$/, "").replace(" de agosto", ""));
   const detalle = esDiaDesfile
-    ? `${nm.float_count} carrozas de ${nm.grupos.length} grupos en la Alameda Miramar.`
+    ? `${nm.desfile_hora ? `A las ${esc(nm.desfile_hora)}, ` : ""}${nm.float_count} carrozas de ${nm.grupos.length} grupos en la Alameda Miramar.`
     : `${dia} de agosto, ${esc(nm.hora)}. Locales abiertos de los ${nm.grupos.length} grupos.`;
 
   caja.hidden = false;
@@ -332,7 +332,7 @@ function renderNocheMagica() {
     <button class="nm-texto" type="button" data-year="${nm.year}"
       title="${esDiaDesfile ? "Ver la edición" : "Ver el mapa y los locales"}"><b>${titular}</b> · ${detalle}</button>
     <button class="nm-ir" type="button" data-year="${nm.year}">${
-      esDiaDesfile ? "Ver la edición →" : "Ver el mapa →"}</button>`;
+      esDiaDesfile ? `Ver la edición ${nm.year} →` : "Ver el mapa →"}</button>`;
 }
 
 function renderStats() {
@@ -345,10 +345,11 @@ function renderStats() {
     `<span><b>${num(summary.group_count)}</b> grupos</span>`,
   ].join("");
   const version = state.dataset.version ? `v${state.dataset.version}` : "sin versión";
-  // La fecha va en su propio span porque en movil se esconde: la barra pedia
-  // 405px en una pantalla de 375 y el enlace largo se doblaba en dos lineas.
-  // La version se queda siempre: es la que deja diagnosticar una cache vieja.
-  els.build.innerHTML = `${esc(version)}<span class="build-fecha"> · ${esc(
+  // Version y fecha en dos spans: la CSS los apila en columna. Asi caben los
+  // dos en el movil sin que la barra crezca —dos lineas de letra diminuta
+  // suman menos alto que una del texto normal de al lado— y sin separador,
+  // que apilado sobraria.
+  els.build.innerHTML = `<span>${esc(version)}</span><span class="build-fecha">${esc(
     state.dataset.built_at || state.dataset.updated_at || "s/f")}</span>`;
 }
 

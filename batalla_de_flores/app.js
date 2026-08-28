@@ -323,7 +323,7 @@ function renderNocheMagica() {
   // empuja el contenido real hacia abajo.
   const dia = esc(nm.fecha.replace(/ de \d{4}$/, "").replace(" de agosto", ""));
   const detalle = esDiaDesfile
-    ? `${nm.desfile_hora ? `A las ${esc(nm.desfile_hora)}, ` : ""}${nm.float_count} carrozas de ${nm.grupos.length} grupos en la Alameda Miramar.`
+    ? `${nm.desfile_hora ? `A las ${esc(nm.desfile_hora)} ` : ""}en la Alameda Miramar, ${nm.float_count} carrozas.`
     : `${dia} de agosto, ${esc(nm.hora)}. Locales abiertos de los ${nm.grupos.length} grupos.`;
 
   caja.hidden = false;

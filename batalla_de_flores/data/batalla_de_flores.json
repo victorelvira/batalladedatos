@@ -121755,7 +121755,7 @@
           "points": null,
           "group_raw": "Abelardo Landera",
           "group_canonical": "Abelardo Landera",
-          "source_type": "archive_palmares+press_clipping+photo_archive",
+          "source_type": "archive_palmares+press_clipping+photo_cedida",
           "source_urls": [
             "https://www.batalladeflores.net/batalla-de-flores-de-laredo-palmares-de-la-edicion-2009/",
             "https://www.batalladeflores.net/revista-de-prensa-batalla-de-flores-de-laredo-del-ano-2009/"
@@ -121792,10 +121792,10 @@
               "url": "https://www.batalladeflores.net/revista-de-prensa-batalla-de-flores-de-laredo-del-ano-2009/"
             },
             {
-              "kind": "photo_archive",
+              "kind": "photo_cedida",
               "cita": "Foto cedida por María Unzueta",
               "ficheros": [
-                "97732.jpg"
+                "maria-unzueta/97732.jpg"
               ],
               "carpeta": "data/fotos_cedidas"
             }
@@ -121848,7 +121848,7 @@
                   "url": "https://www.batalladeflores.net/revista-de-prensa-batalla-de-flores-de-laredo-del-ano-2009/"
                 },
                 {
-                  "kind": "photo_archive",
+                  "kind": "photo_cedida",
                   "url": "batalla_de_flores/fotos/2009-sinfonia-del-cantabrico.jpg"
                 }
               ],
@@ -121865,7 +121865,7 @@
                   "url": "https://www.batalladeflores.net/revista-de-prensa-batalla-de-flores-de-laredo-del-ano-2009/"
                 },
                 {
-                  "kind": "photo_archive",
+                  "kind": "photo_cedida",
                   "url": "batalla_de_flores/fotos/2009-sinfonia-del-cantabrico.jpg"
                 }
               ],
@@ -121880,7 +121880,7 @@
               "url": "batalla_de_flores/fotos/2009-sinfonia-del-cantabrico.jpg",
               "origen": "Cedida por María Unzueta",
               "por": "fuente",
-              "evidencia": "97732.jpg",
+              "evidencia": "maria-unzueta/97732.jpg",
               "asignacion": "identificada por María Unzueta al cederla: «Foto carroza Sinfonías del Cantábrico Abelardo Landera»",
               "asignada_por": "fuente"
             }
@@ -124379,7 +124379,7 @@
           "points": null,
           "group_raw": "Abelardo Landera",
           "group_canonical": "Abelardo Landera",
-          "source_type": "archive_palmares+press_clipping+photo_archive",
+          "source_type": "archive_palmares+press_clipping+photo_cedida",
           "source_urls": [
             "https://www.batalladeflores.net/batalla-de-flores-de-laredo-palmares-de-la-edicion-2009/",
             "https://www.batalladeflores.net/revista-de-prensa-batalla-de-flores-de-laredo-del-ano-2009/"
@@ -124416,10 +124416,10 @@
               "url": "https://www.batalladeflores.net/revista-de-prensa-batalla-de-flores-de-laredo-del-ano-2009/"
             },
             {
-              "kind": "photo_archive",
+              "kind": "photo_cedida",
               "cita": "Foto cedida por María Unzueta",
               "ficheros": [
-                "97732.jpg"
+                "maria-unzueta/97732.jpg"
               ],
               "carpeta": "data/fotos_cedidas"
             }
@@ -124472,7 +124472,7 @@
                   "url": "https://www.batalladeflores.net/revista-de-prensa-batalla-de-flores-de-laredo-del-ano-2009/"
                 },
                 {
-                  "kind": "photo_archive",
+                  "kind": "photo_cedida",
                   "url": "batalla_de_flores/fotos/2009-sinfonia-del-cantabrico.jpg"
                 }
               ],
@@ -124489,7 +124489,7 @@
                   "url": "https://www.batalladeflores.net/revista-de-prensa-batalla-de-flores-de-laredo-del-ano-2009/"
                 },
                 {
-                  "kind": "photo_archive",
+                  "kind": "photo_cedida",
                   "url": "batalla_de_flores/fotos/2009-sinfonia-del-cantabrico.jpg"
                 }
               ],
@@ -124504,7 +124504,7 @@
               "url": "batalla_de_flores/fotos/2009-sinfonia-del-cantabrico.jpg",
               "origen": "Cedida por María Unzueta",
               "por": "fuente",
-              "evidencia": "97732.jpg",
+              "evidencia": "maria-unzueta/97732.jpg",
               "asignacion": "identificada por María Unzueta al cederla: «Foto carroza Sinfonías del Cantábrico Abelardo Landera»",
               "asignada_por": "fuente"
             }
@@ -184843,7 +184843,7 @@
     "Asociacion de Carrocistas y festejos de Laredo": "festejos-laredo",
     "Grupo Atalaya": "atalaya"
   },
-  "version": "3.0.10",
+  "version": "3.0.11",
   "about": {
     "url": "https://batalladedatos.es/",
     "compiled_by": "Víctor Elvira",
@@ -184861,7 +184861,7 @@
     ],
     "note": "Base de datos derivada y estructurada, no una réplica del contenido editorial de las fuentes. Cada entrada lleva su `source_type` y sus `source_urls`. Si reutilizas esto, cita a las fuentes originales."
   },
-  "built_at": "2026-08-30 20:36",
+  "built_at": "2026-08-30 20:48",
   "map_features": [
     {
       "id": "route_origin_1908",

@@ -3311,8 +3311,18 @@ function provenanceBlock(entries, sources, edition) {
             : `Lo confirman <b>${fuentes.length} fuentes independientes</b>`;
           const cita = edition.parade_date_nota
             ? `<div class="prov-cita">${esc(edition.parade_date_nota)}</div>` : "";
-          return `<li><b>La fecha del desfile:</b> ${esc(edition.parade_date_text)}.
-            ${cuantas}:<ul class="prov-fuentes">${lista}</ul>${cita}</li>`;
+          // La otra candidata y el motivo de la duda van aquí, con el mismo
+          // formato que las disputas de una carroza: valor, quién lo dice, y
+          // por qué no se elige. El razonamiento es parte del dato.
+          const disputa = (edition.parade_date_disputa || []).map(d => `
+            <div class="prov-disputa"><b>Otra fecha candidata:</b>
+              ${esc(d.fecha)}${d.fuente ? `, según ${esc(d.fuente)}` : ""}${d.enlace
+                ? ` <a href="${esc(d.enlace)}" target="_blank" rel="noopener">↗</a>` : ""}.</div>`).join("");
+          const porQue = edition.parade_date_duda
+            ? `<div class="prov-duda"><b>Por qué no está resuelta:</b> ${esc(edition.parade_date_duda)}</div>`
+            : "";
+          return `<li id="duda-fecha-${edition.year}"><b>La fecha del desfile:</b> ${esc(edition.parade_date_text)}.
+            ${cuantas}:<ul class="prov-fuentes">${lista}</ul>${cita}${disputa}${porQue}</li>`;
         })() : ""}
         ${edition?.cartel ? `<li><b>El cartel:</b> procede de
           ${esc(edition.cartel.origen)} —
@@ -3496,7 +3506,16 @@ function renderEditionDetail(edition) {
         // El ancho lo iguala `ajustarFechaAlAno()`: la fecha mide exactamente
         // lo que el año, así que las dos líneas forman un bloque.
         ? `<span class="fecha-desfile" title="Fuente: ${esc(edition.parade_date_source || "")}">${
-            esc(edition.parade_date_text.replace(/ de \d{4}$/, ""))}</span>` : ""}
+            esc(edition.parade_date_text.replace(/ de \d{4}$/, ""))}${
+            // Una fecha en disputa lo dice DONDE se lee la fecha, no solo en el
+            // bloque de procedencia del final: quien mira el año tiene que
+            // saber ahí mismo que ese día no está cerrado.
+            (edition.parade_date_disputa || []).length
+              ? ` <button class="dato-duda" type="button" data-duda-fecha="${edition.year}"
+                   title="${esc(`Hay otra fecha candidata: ${edition.parade_date_disputa[0].fecha}`
+                     + (edition.parade_date_disputa[0].fuente ? `, según ${edition.parade_date_disputa[0].fuente}` : "")
+                     + ". Pulsa para ver por qué no está resuelta.")}">?</button>`
+              : ""}</span>` : ""}
       </div>
       <span class="discs">
         ${edition.edition_number
@@ -4936,6 +4955,22 @@ function bindEvents() {
     }
     if (!barra && state.barraArmada && !event.target.closest(".bar-caja")) {
       cerrarCajaBarra();
+    }
+
+    // El «?» de la fecha: despliega la procedencia y lleva el ojo a la línea de
+    // la fecha, que es donde está la explicación. Sin esto el aviso decía «hay
+    // duda» y dejaba al lector buscándola.
+    const dudaFecha = event.target.closest("[data-duda-fecha]");
+    if (dudaFecha) {
+      const bloque = document.querySelector(".provenance")?.closest("details");
+      if (bloque) bloque.open = true;
+      const linea = document.getElementById(`duda-fecha-${dudaFecha.dataset.dudaFecha}`);
+      if (linea) {
+        linea.scrollIntoView({ behavior: "smooth", block: "center" });
+        linea.classList.add("resaltada");
+        setTimeout(() => linea.classList.remove("resaltada"), 2200);
+      }
+      return;
     }
 
     const target = event.target.closest("[data-year], [data-group], [data-route], [data-float]");

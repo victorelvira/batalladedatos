@@ -69584,8 +69584,8 @@
     },
     {
       "year": 1968,
-      "edition_number": null,
-      "edition_label": "Batalla de Flores 1968",
+      "edition_number": 59,
+      "edition_label": "59ª Batalla de Flores",
       "status": "published",
       "coverage": "strong",
       "parade_date": "1968-08-28",
@@ -69597,6 +69597,10 @@
         {
           "nombre": "Diario de Burgos, 1968-08-21 (hemeroteca digital)",
           "enlace": "https://prensahistorica.mcu.es/es/catalogo_imagenes/grupo.do?path=1000457424&idImagen=1003375031"
+        },
+        {
+          "nombre": "Cartel anunciador de la 59ª edición, que lleva impreso «28 AGOSTO 1968»: lo dice el propio cartel, no una crónica escrita después",
+          "enlace": "https://www.facebook.com/webbatalladeflores.net"
         }
       ],
       "parade_date_disputa": [],
@@ -71168,11 +71172,25 @@
             {
               "nombre": "Diario de Burgos, 1968-08-21 (hemeroteca digital)",
               "enlace": "https://prensahistorica.mcu.es/es/catalogo_imagenes/grupo.do?path=1000457424&idImagen=1003375031"
+            },
+            {
+              "nombre": "Cartel anunciador de la 59ª edición, que lleva impreso «28 AGOSTO 1968»: lo dice el propio cartel, no una crónica escrita después",
+              "enlace": "https://www.facebook.com/webbatalladeflores.net"
             }
           ],
           "texto": "Cayó en miércoles, no en viernes. El último viernes de agosto de 1968 fue el 30."
         }
-      ]
+      ],
+      "cartel": {
+        "anio": 1968,
+        "url": "batalla_de_flores/fotos/carteles/cartel-1968.jpg",
+        "mini": "batalla_de_flores/fotos/carteles/cartel-1968-mini.jpg",
+        "origen": "Batalla de Flores Laredo (batalladeflores.net), publicado en su página de Facebook",
+        "original": "https://www.facebook.com/webbatalladeflores.net",
+        "asignacion": "el propio cartel dice «BATALLA DE FLORES · 28 AGOSTO 1968 · LAREDO ESPAÑA» y, al pie, «59 EDICIÓN - FIESTA DE INTERÉS TURÍSTICO»; va firmado abajo a la derecha. Lo publicó batalladeflores.net en su página de Facebook como el cartel de 1968. No consta aquí el enlace del post concreto, solo el de la página.",
+        "asignada_por": "fuente",
+        "color": "#dad8d5"
+      }
     },
     {
       "year": 1969,
@@ -176514,6 +176532,10 @@
         {
           "nombre": "Ayuntamiento de Laredo, ficha de agenda «BATALLA DE FLORES» (fecha del evento: 30 de agosto de 2019)",
           "enlace": "https://www.laredo.es/09/agenda_ampliada.php?id_Agenda=2667"
+        },
+        {
+          "nombre": "Cartel anunciador de la 110ª edición, que lleva impreso «VIERNES 30 AGOSTO» y lo repite al pie en inglés y francés",
+          "enlace": "https://www.facebook.com/webbatalladeflores.net"
         }
       ],
       "parade_date_disputa": [],
@@ -178904,7 +178926,17 @@
       "documentadas": 9,
       "desfilaron": null,
       "notes_derivadas": [],
-      "curiosidades": []
+      "curiosidades": [],
+      "cartel": {
+        "anio": 2019,
+        "url": "batalla_de_flores/fotos/carteles/cartel-2019.jpg",
+        "mini": "batalla_de_flores/fotos/carteles/cartel-2019-mini.jpg",
+        "origen": "Batalla de Flores Laredo (batalladeflores.net), publicado en su página de Facebook",
+        "original": "https://www.facebook.com/webbatalladeflores.net",
+        "asignacion": "el propio cartel dice «110 EDICIÓN · VIERNES 30 AGOSTO · Laredo · Batalla de Flores» y repite la fecha en inglés y francés al pie; lleva los escudos del Ayuntamiento de Laredo, el Gobierno de Cantabria y CANTUR. Lo publicó batalladeflores.net en su página de Facebook, en el post «Cartel anunciador de la Batalla de Flores 2019»: https://www.facebook.com/webbatalladeflores.net/posts/1934098753358666/",
+        "asignada_por": "fuente",
+        "color": "#ded3d3"
+      }
     },
     {
       "year": 2020,
@@ -199125,7 +199157,7 @@
     "Asociacion de Carrocistas y festejos de Laredo": "festejos-laredo",
     "Grupo Atalaya": "atalaya"
   },
-  "version": "3.2.4",
+  "version": "3.2.5",
   "about": {
     "url": "https://batalladedatos.es/",
     "compiled_by": "Víctor Elvira",
@@ -199143,7 +199175,7 @@
     ],
     "note": "Base de datos derivada y estructurada, no una réplica del contenido editorial de las fuentes. Cada entrada lleva su `source_type` y sus `source_urls`. Si reutilizas esto, cita a las fuentes originales."
   },
-  "built_at": "2026-09-01 23:26",
+  "built_at": "2026-09-01 23:55",
   "map_features": [
     {
       "id": "route_origin_1908",

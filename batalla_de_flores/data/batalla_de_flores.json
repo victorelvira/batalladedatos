@@ -167981,7 +167981,17 @@
         "Esto no puede ser: 2 carrozas figuran en el A2.º puesto de 2016 — «Alea Iacta Est» y «Alea Iacta Est (La suerte está echada)». Todas son del mismo grupo, así que lo más probable es que sean la misma carroza con el título escrito de varias maneras. Sin resolver.",
         "Esto no puede ser: 2 carrozas figuran en el B2.º puesto de 2016 — «Misterios» y «Misterios, S.A.». Todas son del mismo grupo, así que lo más probable es que sean la misma carroza con el título escrito de varias maneras. Sin resolver."
       ],
-      "curiosidades": []
+      "curiosidades": [],
+      "cartel": {
+        "anio": 2016,
+        "url": "batalla_de_flores/fotos/carteles/cartel-2016.jpg",
+        "mini": "batalla_de_flores/fotos/carteles/cartel-2016-mini.jpg",
+        "origen": "batalladeflores.net",
+        "original": "https://www.batalladeflores.net/wp-content/uploads/2017/11/cartel-batala-de-flores-de-laredo-2016-para-min.jpg",
+        "asignacion": "el fichero se publica en batalladeflores.net como cartel de 2016 y así lo nombra: «cartel-batala-de-flores-de-laredo-2016-para-min»",
+        "asignada_por": "fuente",
+        "color": "#e7dadb"
+      }
     },
     {
       "year": 2017,
@@ -173420,7 +173430,8 @@
       ],
       "notes": [
         "Se celebró el 24 de agosto con 15 carrozas (8 en Cat. A y 7 en Cat. B) de ocho grupos. batalladeflores.net publicó los inscritos y el sorteo del orden de salida, pero nunca la clasificación.",
-        "Esta clasificación no aparece en ninguna fuente publicada —el archivo de batalladeflores.net deja de publicar tras esta edición, el Ayuntamiento no sacó nota de resultados y la retransmisión oficial en YouTube ya no está—, así que procede del archivo fotográfico cedido por Santi Fernández (batalladeflores.net). Cuadra con el recuento oficial: 8 carrozas en categoría A y 7 en B."
+        "Esta clasificación no aparece en ninguna fuente publicada —el archivo de batalladeflores.net deja de publicar tras esta edición, el Ayuntamiento no sacó nota de resultados y la retransmisión oficial en YouTube ya no está—, así que procede del archivo fotográfico cedido por Santi Fernández (batalladeflores.net). Cuadra con el recuento oficial: 8 carrozas en categoría A y 7 en B.",
+        "De 2018 se conservan dos carteles anunciadores distintos, los dos oficiales y los dos con la misma fecha y el mismo número de edición. El Ayuntamiento publicó uno en noviembre de 2017, al abrir el plazo de inscripción de carrozas, y otro el día del desfile: cambiaron el diseño en los nueve meses que van de un anuncio al otro. Aquí se muestra el segundo, que es el que lleva también los logos de CANTUR y del sello de Bien de Interés Local Etnográfico Inmaterial. Fuente: Ayuntamiento de Laredo, laredo.es (noticias de 14-11-2017 y 24-08-2018), escaneo cartel-2018.jpg."
       ],
       "floats": [
         {
@@ -176476,7 +176487,17 @@
           ],
           "texto": "Fue viernes, pero no el último de agosto: se celebró el 24 y el último viernes era el 31. Aquel agosto tuvo 5 viernes."
         }
-      ]
+      ],
+      "cartel": {
+        "anio": 2018,
+        "url": "batalla_de_flores/fotos/carteles/cartel-2018.jpg",
+        "mini": "batalla_de_flores/fotos/carteles/cartel-2018-mini.jpg",
+        "origen": "laredo.es (Ayuntamiento de Laredo)",
+        "original": "https://www.laredo.es/09/archivos/batalla1535112133.jpg",
+        "asignacion": "el propio cartel dice «BATALLA DE FLORES · VIERNES 24 AGOSTO 2018 · LAREDO · 109 EDICIÓN» y lleva los escudos del Ayuntamiento de Laredo, el Gobierno de Cantabria y CANTUR; lo publica el Ayuntamiento en la noticia del día del desfile (https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3410). AVISO: de 2018 hay DOS carteles oficiales distintos, y aquí se enseña este. El otro, con la misma fecha y el mismo número de edición pero otro diseño, lo publicó el propio Ayuntamiento en noviembre de 2017 al abrir el plazo de inscripción: https://www.laredo.es/09/archivos/batalla-flores-20181510663126.jpg (noticia https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3099). No sabemos cuál de los dos es el definitivo; se muestra el del día del desfile por ser el más tardío y el de mayor resolución. El archivo solo admite un cartel por edición.",
+        "asignada_por": "fuente",
+        "color": "#ddcfcf"
+      }
     },
     {
       "year": 2019,
@@ -181741,6 +181762,10 @@
         {
           "nombre": "Ayuntamiento de Laredo, ficha de agenda «NOCHE MÁGICA DE LAS FLORES» (fecha del evento: 24 de agosto de 2023)",
           "enlace": "https://www.laredo.es/09/agenda_ampliada.php?id_Agenda=3488"
+        },
+        {
+          "nombre": "Cartel oficial de la 112ª edición, que lleva impreso «VIERNES 25 AGOSTO»: lo dice el propio cartel, no se deduce de otra ficha",
+          "enlace": "https://postureocantabro.com/wp-content/uploads/2023/08/112-Edicion-Batalla-de-Flores-de-Laredo-2023.jpeg"
         }
       ],
       "parade_date_disputa": [],
@@ -184573,7 +184598,17 @@
       "documentadas": 12,
       "desfilaron": null,
       "notes_derivadas": [],
-      "curiosidades": []
+      "curiosidades": [],
+      "cartel": {
+        "anio": 2023,
+        "url": "batalla_de_flores/fotos/carteles/cartel-2023.jpg",
+        "mini": "batalla_de_flores/fotos/carteles/cartel-2023-mini.jpg",
+        "origen": "Cartel oficial de 2023 (Ayuntamiento de Laredo y Gobierno de Cantabria), reproducido por postureocantabro.com",
+        "original": "https://postureocantabro.com/wp-content/uploads/2023/08/112-Edicion-Batalla-de-Flores-de-Laredo-2023.jpeg",
+        "asignacion": "el propio cartel dice «LAREDO · 112 EDICIÓN · BATALLA DE FLORES · VIERNES 25 AGOSTO» y lleva los escudos del Ayuntamiento de Laredo y del Gobierno de Cantabria; lo publica postureocantabro.com el 04-08-2023 en «Programa completo: 112 Edición Batalla de Flores de Laredo 2023» (https://postureocantabro.com/programa-completo-112-edicion-batalla-de-flores-de-laredo-2023/)",
+        "asignada_por": "fuente",
+        "color": "#e5d5cb"
+      }
     },
     {
       "year": 2024,
@@ -199090,7 +199125,7 @@
     "Asociacion de Carrocistas y festejos de Laredo": "festejos-laredo",
     "Grupo Atalaya": "atalaya"
   },
-  "version": "3.2.1",
+  "version": "3.2.4",
   "about": {
     "url": "https://batalladedatos.es/",
     "compiled_by": "Víctor Elvira",
@@ -199108,7 +199143,7 @@
     ],
     "note": "Base de datos derivada y estructurada, no una réplica del contenido editorial de las fuentes. Cada entrada lleva su `source_type` y sus `source_urls`. Si reutilizas esto, cita a las fuentes originales."
   },
-  "built_at": "2026-09-01 23:00",
+  "built_at": "2026-09-01 23:26",
   "map_features": [
     {
       "id": "route_origin_1908",

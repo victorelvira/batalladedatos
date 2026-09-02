@@ -2103,3 +2103,41 @@ body.lb-abierto { overflow: hidden; }
 }
 .parte-tenemos { border-top: none; padding-top: 0; }
 .parte-falta { margin-top: 34px; }
+
+/* La barra apilada del reparto de fuentes.
+ *
+ * Existe porque la lista de barras sola engañaba: escalada al valor mayor, el
+ * 73 % de batalladeflores.net ocupaba el carril entero y parecía el 100 %. En
+ * un reparto de un todo la longitud tiene que ser la parte, y la apilada lo
+ * enseña sin que haya que leer ningún número. */
+.fuentes-leyenda {
+  display: flex; flex-wrap: wrap; gap: 4px 18px;
+  margin: 10px 0 6px; font-size: 12.5px; color: var(--muted);
+}
+.fuentes-leyenda span { display: inline-flex; align-items: center; gap: 6px; }
+.fuentes-apilada { display: flex; gap: 2px; height: 34px; margin: 0 0 14px; }
+/* Los 4 del Libro son el 0,1 %: sin un mínimo desaparecen, y desaparecer no es
+ * lo mismo que ser pequeño. Con 3 px se ven y no mienten. */
+.fuentes-apilada i { display: block; border-radius: 2px; min-width: 3px; }
+.fuentes-apilada i:first-child { border-radius: 5px 2px 2px 5px; }
+.fuentes-apilada i:last-child { border-radius: 2px 5px 5px 2px; }
+
+/* Los subapartados de «Lo que tenemos». Van con más aire que un h4 normal
+ * porque cada uno abre un gráfico distinto y sin ese respiro se leen como una
+ * sola lista larga. */
+.fuente-h4 {
+  margin: 26px 0 8px; font-size: 15px; letter-spacing: -.01em;
+  padding-top: 14px; border-top: 1px solid var(--line-soft);
+}
+.kpis-fuentes { margin-bottom: 6px; }
+
+/* El hallazgo: una frase que el resto del bloque sostiene con números. Lleva
+ * el color del archivo —el rosa de batalladeflores.net— porque de eso habla:
+ * de cuánto dependemos de una sola casa. */
+.hallazgo {
+  background: var(--panel); border: 1px solid var(--line);
+  border-left: 3px solid var(--rose);
+  border-radius: 4px; padding: 14px 16px; margin: 6px 0 12px;
+}
+.hallazgo b { display: block; font-size: 15px; margin-bottom: 6px; }
+.hallazgo p { margin: 0; font-size: 13.5px; color: var(--muted); }

@@ -28,7 +28,7 @@
   <meta name="twitter:image" content="https://batalladedatos.es/batalla_de_flores/og.jpg?v=3f76c1a0">
   <link rel="icon" href="batalla_de_flores/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="batalla_de_flores/apple-touch-icon.png">
-  <link rel="stylesheet" href="batalla_de_flores/style.css?v=2f01fba8">
+  <link rel="stylesheet" href="batalla_de_flores/style.css?v=5777f5d4">
 </head>
 <body>
   <nav id="navbar">
@@ -186,6 +186,17 @@
       <label>Tu nombre <span class="opt">(opcional: para dirigirme a ti y, si lo incorporo, citarte)</span>
         <input name="nombre" autocomplete="name" placeholder="O deja el aviso sin firmar">
       </label>
+      <!-- El ano, aparte y no deducido del contexto.
+           Una carroza o una edicion llevan el ano en su identificador, pero un
+           RECORRIDO abarca decadas y un GRUPO tambien: la primera aportacion
+           que llego sobre el circuito de la Alameda Miramar contaba que «ese
+           ano» el recorrido se amplio, y no habia forma de saber cual era ese
+           ano. La aportacion se salvo por poco; la siguiente podia perderse. -->
+      <label id="report-anio-label">¿De qué año hablas?
+        <span class="opt" id="report-anio-opt"></span>
+        <input name="anio" id="report-anio" inputmode="numeric" pattern="[0-9]{4}"
+               maxlength="4" placeholder="Ej.: 1994">
+      </label>
       <label>Qué dato está mal o falta
         <textarea name="mal" rows="2" required placeholder="Ej.: el grupo de la carroza «Aiko» no es ese"></textarea>
       </label>
@@ -221,7 +232,7 @@ sin resolver, existe la Agencia Española de Protección de Datos.</p>
     </form>
   </div>
 
-  <script src="batalla_de_flores/app.js?v=45379576"></script>
+  <script src="batalla_de_flores/app.js?v=50c8b9af"></script>
 <!-- Tracking: Google Analytics tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GHT1L88XYZ"></script>
 <script>

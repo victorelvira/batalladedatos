@@ -1,7 +1,7 @@
 {
   "project": "batalla_de_flores",
   "title": "Batalla de Flores de Laredo",
-  "updated_at": "2026-09-01",
+  "updated_at": "2026-09-02",
   "summary": {
     "edition_count": 119,
     "published_editions": 113,
@@ -27,7 +27,25 @@
     "ediciones_sabemos_cuantas_desfilaron": 3,
     "year_min": 1908,
     "year_max": 2026,
-    "official_edition_count": 115
+    "official_edition_count": 115,
+    "hemeroteca": {
+      "total": 150,
+      "con_copia_local": 150,
+      "por_archivo": [
+        {
+          "nombre": "Biblioteca Virtual de Prensa Histórica",
+          "n": 108
+        },
+        {
+          "nombre": "Hemeroteca Digital de la BNE",
+          "n": 38
+        },
+        {
+          "nombre": "Archivo ABC",
+          "n": 4
+        }
+      ]
+    }
   },
   "editions": [
     {
@@ -12936,17 +12954,24 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/almadrena/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1920almadrena8p.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1920almadrena8p.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/5609-almadrena-5609.jpg"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/5609-almadrena-5609.jpg",
               "origen": "batalladeflores.net (biblioteca de medios)",
-              "por": "fichero",
-              "evidencia": "1920almadrena8p-2",
-              "asignacion": "el fichero se subió como «1920almadrena8p-2», que lleva el año y el nombre de esta carroza",
-              "asignada_por": "deducción",
-              "pagina": "https://www.batalladeflores.net/carrozas-con-sabor-a-la-tierruca/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2014/02/1920almadrena8p.jpg"
+              "por": "pagina",
+              "evidencia": "https://www.batalladeflores.net/almadrena/",
+              "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
+              "asignada_por": "fuente",
+              "pagina": "https://www.batalladeflores.net/almadrena/",
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2014/02/1920almadrena8p.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/2113-almadrena-2113.jpg",
+                  "origen": "batalladeflores.net"
+                }
+              ]
             }
           ],
           "image_credit": null,
@@ -35149,7 +35174,13 @@
               "asignacion": "el fichero se subió como «1935-agustina-de-aragon-2-2», que lleva el año y el nombre de esta carroza",
               "asignada_por": "deducción",
               "pagina": "https://www.batalladeflores.net/agustina-de-aragon/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/12/1935-agustina-de-aragon-21.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/12/1935-agustina-de-aragon-21.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/5077-agustinadearagon-5077.jpg",
+                  "origen": "batalladeflores.net (biblioteca de medios)"
+                }
+              ]
             },
             {
               "url": "batalla_de_flores/fotos/archivo/5077-agustinadearagon-5077.jpg",
@@ -35159,7 +35190,8 @@
               "asignacion": "el fichero se subió como «1935-agustina-de-aragon-2», que lleva el año y el nombre de esta carroza",
               "asignada_por": "deducción",
               "pagina": "https://www.batalladeflores.net/agustina-de-aragon/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/12/1935-agustina-de-aragon-2.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/12/1935-agustina-de-aragon-2.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/5096-agustinadearagon-5096.jpg"
             }
           ],
           "image_credit": null,
@@ -57713,7 +57745,13 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/ilusion-de-jueventud/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1958ilusiondejueventud3p.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1958ilusiondejueventud3p.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/2505-ilusiondejuventud-2505.jpg",
+                  "origen": "batalladeflores.net"
+                }
+              ]
             },
             {
               "url": "batalla_de_flores/fotos/archivo/2505-ilusiondejuventud-2505.jpg",
@@ -57723,7 +57761,8 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/ilusion-de-juventud/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1958ilusiondejuventudp3.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1958ilusiondejuventudp3.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/1428-1958ilusiondejueventud3p.jpg"
             }
           ],
           "image_credit": null,
@@ -58667,7 +58706,8 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/alegoria-hipica-2/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1959alegoriahipica1.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1959alegoriahipica1.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/1429-alegoriahipica-1429.jpg"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/1429-alegoriahipica-1429.jpg",
@@ -58677,7 +58717,13 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/alegoria-hipica/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1959alegoriahipica.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1959alegoriahipica.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/2103-alegoriahipica-2103.jpg",
+                  "origen": "batalladeflores.net"
+                }
+              ]
             }
           ],
           "image_credit": null,
@@ -62739,7 +62785,8 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/dulce-primavera-2/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1963dulceprimavera3esp1.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1963dulceprimavera3esp1.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/1432-dulceprimavera-1432.jpg"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/1432-dulceprimavera-1432.jpg",
@@ -62749,7 +62796,13 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/dulce-primavera/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1963dulceprimavera3esp.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1963dulceprimavera3esp.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/2449-dulceprimavera-2449.jpg",
+                  "origen": "batalladeflores.net"
+                }
+              ]
             }
           ],
           "image_credit": null,
@@ -63539,7 +63592,8 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/felicidad-2/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1964felicidad1esp1.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1964felicidad1esp1.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/1433-felicidad-1433.jpg"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/1433-felicidad-1433.jpg",
@@ -63549,7 +63603,13 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/felicidad/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1964felicidad1esp.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1964felicidad1esp.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/2450-felicidad-2450.jpg",
+                  "origen": "batalladeflores.net"
+                }
+              ]
             }
           ],
           "image_credit": null,
@@ -64740,7 +64800,8 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/reina-de-la-fiesta-2/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1965reinadelafiesta1p.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1965reinadelafiesta1p.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/2540-reinadelafiesta-2540.jpg"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/2540-reinadelafiesta-2540.jpg",
@@ -64750,7 +64811,13 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/reina-de-la-fiesta-3/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1965reinadelafiesta.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1965reinadelafiesta.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/2446-reinadelafiesta-2446.jpg",
+                  "origen": "batalladeflores.net"
+                }
+              ]
             }
           ],
           "image_credit": null,
@@ -66933,7 +67000,13 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/heroina/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1966heroina3p.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1966heroina3p.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/2541-heroina-2541.jpg",
+                  "origen": "batalladeflores.net (biblioteca de medios)"
+                }
+              ]
             },
             {
               "url": "batalla_de_flores/fotos/archivo/2541-heroina-2541.jpg",
@@ -66943,7 +67016,8 @@
               "asignacion": "el fichero se subió como «1966heroina3p-2», que lleva el año y el nombre de esta carroza",
               "asignada_por": "deducción",
               "pagina": null,
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1966heroina3p1.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1966heroina3p1.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/2259-heroina-2259.jpg"
             }
           ],
           "image_credit": null,
@@ -83806,7 +83880,8 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/gallo-rojo-2/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1981gallorojo1p1.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1981gallorojo1p1.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/1105-gallorojo-1105.jpg"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/1105-gallorojo-1105.jpg",
@@ -83816,7 +83891,13 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/gallo-rojo/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1981gallorojo1p.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1981gallorojo1p.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/1785-gallorojo-1785.jpg",
+                  "origen": "batalladeflores.net"
+                }
+              ]
             }
           ],
           "image_credit": null,
@@ -92865,7 +92946,8 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/corona-para-una-sirena-2/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1988coronapara-una-sirena4p1.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1988coronapara-una-sirena4p1.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/1114-coronaparaunasirena-1114.jpg"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/1114-coronaparaunasirena-1114.jpg",
@@ -92875,7 +92957,13 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/corona-para-una-sirena/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1988coronapara-una-sirena4p.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1988coronapara-una-sirena4p.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/1718-coronaparaunasirena-1718.jpg",
+                  "origen": "batalladeflores.net"
+                }
+              ]
             }
           ],
           "image_credit": null,
@@ -103169,17 +103257,24 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/far-west/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1995farwest1p1.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1995farwest1p1.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/349-farwest-349.jpg"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/349-farwest-349.jpg",
               "origen": "batalladeflores.net (biblioteca de medios)",
-              "por": "fichero",
-              "evidencia": "1995farwest1p",
-              "asignacion": "el fichero se subió como «1995farwest1p», que lleva el año y el nombre de esta carroza",
-              "asignada_por": "deducción",
-              "pagina": null,
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1995farwest1p.jpg"
+              "por": "pagina",
+              "evidencia": "https://www.batalladeflores.net/far-west/",
+              "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
+              "asignada_por": "fuente",
+              "pagina": "https://www.batalladeflores.net/far-west/",
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1995farwest1p.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/1138-farwest-1138.jpg",
+                  "origen": "batalladeflores.net"
+                }
+              ]
             }
           ],
           "image_credit": null,
@@ -108705,17 +108800,24 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/sonrisas-bajo-la-lona/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1999sonrisasbajolalona1.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1999sonrisasbajolalona1.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/350-sonrisasbajolalona-350.jpg"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/350-sonrisasbajolalona-350.jpg",
               "origen": "batalladeflores.net (biblioteca de medios)",
-              "por": "fichero",
-              "evidencia": "1999sonrisasbajolalona",
-              "asignacion": "el fichero se subió como «1999sonrisasbajolalona», que lleva el año y el nombre de esta carroza",
-              "asignada_por": "deducción",
-              "pagina": null,
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1999sonrisasbajolalona.jpg"
+              "por": "pagina",
+              "evidencia": "https://www.batalladeflores.net/sonrisas-bajo-la-lona/",
+              "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
+              "asignada_por": "fuente",
+              "pagina": "https://www.batalladeflores.net/sonrisas-bajo-la-lona/",
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1999sonrisasbajolalona.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/1139-sonrisasbajolalona-1139.jpg",
+                  "origen": "batalladeflores.net"
+                }
+              ]
             }
           ],
           "image_credit": null,
@@ -109706,17 +109808,24 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/aventuras/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2000aventuras1p1.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2000aventuras1p1.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/351-aventuras-351.jpg"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/351-aventuras-351.jpg",
               "origen": "batalladeflores.net (biblioteca de medios)",
-              "por": "fichero",
-              "evidencia": "2000aventuras1p",
-              "asignacion": "el fichero se subió como «2000aventuras1p», que lleva el año y el nombre de esta carroza",
-              "asignada_por": "deducción",
-              "pagina": null,
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2000aventuras1p.jpg"
+              "por": "pagina",
+              "evidencia": "https://www.batalladeflores.net/aventuras/",
+              "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
+              "asignada_por": "fuente",
+              "pagina": "https://www.batalladeflores.net/aventuras/",
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2000aventuras1p.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/1140-aventuras-1140.jpg",
+                  "origen": "batalladeflores.net"
+                }
+              ]
             }
           ],
           "image_credit": null,
@@ -111022,17 +111131,24 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/equilibrio/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2001equilibrio1.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2001equilibrio1.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/438-equilibrio-438.jpg"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/438-equilibrio-438.jpg",
               "origen": "batalladeflores.net (biblioteca de medios)",
-              "por": "fichero",
-              "evidencia": "2001equilibrio",
-              "asignacion": "el fichero se subió como «2001equilibrio», que lleva el año y el nombre de esta carroza",
-              "asignada_por": "deducción",
-              "pagina": null,
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2001equilibrio.jpg"
+              "por": "pagina",
+              "evidencia": "https://www.batalladeflores.net/equilibrio/",
+              "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
+              "asignada_por": "fuente",
+              "pagina": "https://www.batalladeflores.net/equilibrio/",
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2001equilibrio.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/2509-equilibrio-2509.jpg",
+                  "origen": "batalladeflores.net"
+                }
+              ]
             }
           ],
           "image_credit": null,
@@ -111153,17 +111269,24 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/reina-de-los-juegos/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2001reinadelosjuegos1.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2001reinadelosjuegos1.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/352-reinadelosjuegos-352.jpg"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/352-reinadelosjuegos-352.jpg",
               "origen": "batalladeflores.net (biblioteca de medios)",
-              "por": "fichero",
-              "evidencia": "2001reinadelosjuegos",
-              "asignacion": "el fichero se subió como «2001reinadelosjuegos», que lleva el año y el nombre de esta carroza",
-              "asignada_por": "deducción",
-              "pagina": null,
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2001reinadelosjuegos.jpg"
+              "por": "pagina",
+              "evidencia": "https://www.batalladeflores.net/reina-de-los-juegos/",
+              "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
+              "asignada_por": "fuente",
+              "pagina": "https://www.batalladeflores.net/reina-de-los-juegos/",
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2001reinadelosjuegos.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/1141-reinadelosjuegos-1141.jpg",
+                  "origen": "batalladeflores.net"
+                }
+              ]
             }
           ],
           "image_credit": null,
@@ -112655,17 +112778,24 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/jardines-de-nivaria/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2002jardinesdenivaria21.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2002jardinesdenivaria21.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/353-jardinesdenivaria-353.jpg"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/353-jardinesdenivaria-353.jpg",
               "origen": "batalladeflores.net (biblioteca de medios)",
-              "por": "fichero",
-              "evidencia": "2002jardinesdenivaria2",
-              "asignacion": "el fichero se subió como «2002jardinesdenivaria2», que lleva el año y el nombre de esta carroza",
-              "asignada_por": "deducción",
-              "pagina": null,
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2002jardinesdenivaria2.jpg"
+              "por": "pagina",
+              "evidencia": "https://www.batalladeflores.net/jardines-de-nivaria/",
+              "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
+              "asignada_por": "fuente",
+              "pagina": "https://www.batalladeflores.net/jardines-de-nivaria/",
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2002jardinesdenivaria2.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/1142-jardinesdenivaria-1142.jpg",
+                  "origen": "batalladeflores.net"
+                }
+              ]
             }
           ],
           "image_credit": null,
@@ -115759,17 +115889,24 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/garuda/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2003garuda1.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2003garuda1.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/354-garuda-354.jpg"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/354-garuda-354.jpg",
               "origen": "batalladeflores.net (biblioteca de medios)",
-              "por": "fichero",
-              "evidencia": "2003garuda",
-              "asignacion": "el fichero se subió como «2003garuda», que lleva el año y el nombre de esta carroza",
-              "asignada_por": "deducción",
-              "pagina": null,
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2003garuda.jpg"
+              "por": "pagina",
+              "evidencia": "https://www.batalladeflores.net/garuda/",
+              "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
+              "asignada_por": "fuente",
+              "pagina": "https://www.batalladeflores.net/garuda/",
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2003garuda.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/1143-garuda-1143.jpg",
+                  "origen": "batalladeflores.net"
+                }
+              ]
             }
           ],
           "image_credit": null,
@@ -115932,17 +116069,24 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/metamorfosis/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2003metamorfosis0411.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2003metamorfosis0411.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/439-metamorfosis-439.jpg"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/439-metamorfosis-439.jpg",
               "origen": "batalladeflores.net (biblioteca de medios)",
-              "por": "fichero",
-              "evidencia": "2003metamorfosis041",
-              "asignacion": "el fichero se subió como «2003metamorfosis041», que lleva el año y el nombre de esta carroza",
-              "asignada_por": "deducción",
-              "pagina": null,
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2003metamorfosis041.jpg"
+              "por": "pagina",
+              "evidencia": "https://www.batalladeflores.net/metamorfosis/",
+              "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
+              "asignada_por": "fuente",
+              "pagina": "https://www.batalladeflores.net/metamorfosis/",
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2003metamorfosis041.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/2511-metamorfosis-2511.jpg",
+                  "origen": "batalladeflores.net"
+                }
+              ]
             }
           ],
           "image_credit": null,
@@ -119192,7 +119336,13 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/ensueno-real/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2005ensuenoreal.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2005ensuenoreal.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/5769-ensuenoreal-5769.jpg",
+                  "origen": "batalladeflores.net (biblioteca de medios)"
+                }
+              ]
             },
             {
               "url": "batalla_de_flores/fotos/archivo/5769-ensuenoreal-5769.jpg",
@@ -119202,7 +119352,8 @@
               "asignacion": "el fichero se subió como «2005-ensuenoreal-jlgonzalezymdelossantos-2p», que lleva el año y el nombre de esta carroza",
               "asignada_por": "deducción",
               "pagina": "https://www.batalladeflores.net/el-grupo-jose-luis-gonzalez-no-participara-en-la-proxima-batalla-de-flores/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2014/03/2005-ensuenoreal-jlgonzalezymdelossantos-2p.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2014/03/2005-ensuenoreal-jlgonzalezymdelossantos-2p.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/2209-ensuenoreal-2209.jpg"
             }
           ],
           "image_credit": null,
@@ -125831,7 +125982,13 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/alebrije/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2007alebrije.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2007alebrije.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/5706-alebrije-5706.jpg",
+                  "origen": "batalladeflores.net (biblioteca de medios)"
+                }
+              ]
             },
             {
               "url": "batalla_de_flores/fotos/archivo/5706-alebrije-5706.jpg",
@@ -125841,7 +125998,8 @@
               "asignacion": "el fichero se subió como «2007alebrije-2», que lleva el año y el nombre de esta carroza",
               "asignada_por": "deducción",
               "pagina": null,
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2014/03/2007alebrije.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2014/03/2007alebrije.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/1958-alebrije-1958.jpg"
             }
           ],
           "image_credit": null,
@@ -129848,7 +130006,13 @@
               "asignacion": "el fichero se subió como «2008esenciasdemujer-2», que lleva el año y el nombre de esta carroza",
               "asignada_por": "deducción",
               "pagina": null,
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2008esenciasdemujer1.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2008esenciasdemujer1.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/355-esenciasdemujer-355.jpg",
+                  "origen": "batalladeflores.net (biblioteca de medios)"
+                }
+              ]
             },
             {
               "url": "batalla_de_flores/fotos/archivo/355-esenciasdemujer-355.jpg",
@@ -129858,7 +130022,8 @@
               "asignacion": "el fichero se subió como «2008esenciasdemujer», que lleva el año y el nombre de esta carroza",
               "asignada_por": "deducción",
               "pagina": null,
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2008esenciasdemujer.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2008esenciasdemujer.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/1144-esenciasdemujer-1144.jpg"
             }
           ],
           "image_credit": null,
@@ -131072,17 +131237,24 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/floreciendo-en-venecia/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2008floreciendoenvenecia10p.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2008floreciendoenvenecia10p.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/5770-floreciendoenvenecia-5770.jpg"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/5770-floreciendoenvenecia-5770.jpg",
               "origen": "batalladeflores.net (biblioteca de medios)",
-              "por": "fichero",
-              "evidencia": "2008-floreciendoenvenecia-jlgonzalezymdelossantos-10p",
-              "asignacion": "el fichero se subió como «2008-floreciendoenvenecia-jlgonzalezymdelossantos-10p», que lleva el año y el nombre de esta carroza",
-              "asignada_por": "deducción",
-              "pagina": "https://www.batalladeflores.net/el-grupo-jose-luis-gonzalez-no-participara-en-la-proxima-batalla-de-flores/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2014/03/2008-floreciendoenvenecia-jlgonzalezymdelossantos-10p.jpg"
+              "por": "pagina",
+              "evidencia": "https://www.batalladeflores.net/floreciendo-en-venecia/",
+              "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
+              "asignada_por": "fuente",
+              "pagina": "https://www.batalladeflores.net/floreciendo-en-venecia/",
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2014/03/2008-floreciendoenvenecia-jlgonzalezymdelossantos-10p.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/2210-floreciendoenvenecia-2210.jpg",
+                  "origen": "batalladeflores.net"
+                }
+              ]
             }
           ],
           "image_credit": null,
@@ -133779,7 +133951,8 @@
               "asignacion": "el fichero se subió como «2009desafio2p-2», que lleva el año y el nombre de esta carroza",
               "asignada_por": "deducción",
               "pagina": null,
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2009desafio2p1.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2009desafio2p1.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/356-desafio-356.jpg"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/356-desafio-356.jpg",
@@ -133789,7 +133962,13 @@
               "asignacion": "el fichero se subió como «2009desafio2p», que lleva el año y el nombre de esta carroza",
               "asignada_por": "deducción",
               "pagina": null,
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2009desafio2p.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2009desafio2p.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/1145-desafio-1145.jpg",
+                  "origen": "batalladeflores.net (biblioteca de medios)"
+                }
+              ]
             }
           ],
           "image_credit": null,
@@ -134520,17 +134699,24 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/vuelos-tropicales/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2009vuelostropicales7p.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2009vuelostropicales7p.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/5771-vuelostropicales-5771.jpg"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/5771-vuelostropicales-5771.jpg",
               "origen": "batalladeflores.net (biblioteca de medios)",
-              "por": "fichero",
-              "evidencia": "2009-vuelostropicales-jlgonzalezyalvarotorre-7p",
-              "asignacion": "el fichero se subió como «2009-vuelostropicales-jlgonzalezyalvarotorre-7p», que lleva el año y el nombre de esta carroza",
-              "asignada_por": "deducción",
-              "pagina": "https://www.batalladeflores.net/el-grupo-jose-luis-gonzalez-no-participara-en-la-proxima-batalla-de-flores/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2014/03/2009-vuelostropicales-jlgonzalezyalvarotorre-7p.jpg"
+              "por": "pagina",
+              "evidencia": "https://www.batalladeflores.net/vuelos-tropicales/",
+              "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
+              "asignada_por": "fuente",
+              "pagina": "https://www.batalladeflores.net/vuelos-tropicales/",
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2014/03/2009-vuelostropicales-jlgonzalezyalvarotorre-7p.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/2202-vuelostropicales-2202.jpg",
+                  "origen": "batalladeflores.net"
+                }
+              ]
             }
           ],
           "image_credit": null,
@@ -139128,7 +139314,8 @@
               "asignacion": "el fichero se subió como «2010odalisca2p-2», que lleva el año y el nombre de esta carroza",
               "asignada_por": "deducción",
               "pagina": null,
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2010odalisca2p1.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2010odalisca2p1.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/357-odalisca-357.jpg"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/357-odalisca-357.jpg",
@@ -139138,7 +139325,13 @@
               "asignacion": "el fichero se subió como «2010odalisca2p», que lleva el año y el nombre de esta carroza",
               "asignada_por": "deducción",
               "pagina": null,
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2010odalisca2p.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2010odalisca2p.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/1146-odalisca-1146.jpg",
+                  "origen": "batalladeflores.net (biblioteca de medios)"
+                }
+              ]
             }
           ],
           "image_credit": null,
@@ -144009,7 +144202,13 @@
               "asignacion": "publicada en la ficha de esta carroza en batalladeflores.net",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/transfiguracion/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2011transfiguracion3p1.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2011transfiguracion3p1.jpg",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/358-transfiguracion-358.jpg",
+                  "origen": "batalladeflores.net (biblioteca de medios)"
+                }
+              ]
             },
             {
               "url": "batalla_de_flores/fotos/archivo/4214-transfiguracion-4214.jpg",
@@ -144029,7 +144228,8 @@
               "asignacion": "el fichero se subió como «2011transfiguracion3p», que lleva el año y el nombre de esta carroza",
               "asignada_por": "deducción",
               "pagina": null,
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2011transfiguracion3p.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/2011transfiguracion3p.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/archivo/1147-transfiguracion-1147.jpg"
             }
           ],
           "image_credit": null,
@@ -168199,10 +168399,17 @@
             {
               "url": "batalla_de_flores/fotos/2017-habitat.jpg",
               "origen": "Santi Fernández (batalladeflores.net)",
-              "por": "fichero",
-              "evidencia": "2017-1p-habitat-come golayu (6).jpg",
-              "asignacion": "así la nombró Santi Fernández (batalladeflores.net) al cederla: «2017-1p-habitat-come golayu (6).jpg»",
-              "asignada_por": "fuente"
+              "por": "pagina",
+              "evidencia": "https://www.batalladeflores.net/habitat/",
+              "asignacion": "estaba publicada en «habitat», la entrada que batalladeflores.net dedica a esta carroza",
+              "asignada_por": "fuente",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/7610-habitat-7610.jpg",
+                  "origen": "batalladeflores.net (biblioteca de medios)"
+                }
+              ],
+              "pagina": "https://www.batalladeflores.net/habitat/"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/7614-habitat-7614.jpg",
@@ -168252,7 +168459,8 @@
               "asignacion": "estaba publicada en «habitat», la entrada que batalladeflores.net dedica a esta carroza",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/habitat/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2017/12/DSC8418-copia.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2017/12/DSC8418-copia.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/2017-habitat.jpg"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/7609-habitat-7609.jpg",
@@ -168425,10 +168633,17 @@
             {
               "url": "batalla_de_flores/fotos/2017-pink-panther.jpg",
               "origen": "Santi Fernández (batalladeflores.net)",
-              "por": "fichero",
-              "evidencia": "2017-cat b 1p-pink panther-spartans (1).jpg",
-              "asignacion": "así la nombró Santi Fernández (batalladeflores.net) al cederla: «2017-cat b 1p-pink panther-spartans (1).jpg»",
-              "asignada_por": "fuente"
+              "por": "pagina",
+              "evidencia": "https://www.batalladeflores.net/pink-panther/",
+              "asignacion": "estaba publicada en «pink-panther», la entrada que batalladeflores.net dedica a esta carroza",
+              "asignada_por": "fuente",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/7664-pinkpanther-7664.jpg",
+                  "origen": "batalladeflores.net (biblioteca de medios)"
+                }
+              ],
+              "pagina": "https://www.batalladeflores.net/pink-panther/"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/7668-pinkpanther-7668.jpg",
@@ -168478,7 +168693,8 @@
               "asignacion": "estaba publicada en «pink-panther», la entrada que batalladeflores.net dedica a esta carroza",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/pink-panther/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2017/12/DSC8221-copia.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2017/12/DSC8221-copia.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/2017-pink-panther.jpg"
             }
           ],
           "image_credit": "Santi Fernández (batalladeflores.net)",
@@ -168626,10 +168842,17 @@
             {
               "url": "batalla_de_flores/fotos/2017-bonerock.jpg",
               "origen": "Santi Fernández (batalladeflores.net)",
-              "por": "fichero",
-              "evidencia": "2017-2p-bonerock-grupo pejino (13).jpg",
-              "asignacion": "así la nombró Santi Fernández (batalladeflores.net) al cederla: «2017-2p-bonerock-grupo pejino (13).jpg»",
-              "asignada_por": "fuente"
+              "por": "pagina",
+              "evidencia": "https://www.batalladeflores.net/bonerock/",
+              "asignacion": "estaba publicada en «bonerock», la entrada que batalladeflores.net dedica a esta carroza",
+              "asignada_por": "fuente",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/7617-bonerock-7617.jpg",
+                  "origen": "batalladeflores.net (biblioteca de medios)"
+                }
+              ],
+              "pagina": "https://www.batalladeflores.net/bonerock/"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/7621-bonerock-7621.jpg",
@@ -168679,7 +168902,8 @@
               "asignacion": "estaba publicada en «bonerock», la entrada que batalladeflores.net dedica a esta carroza",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/bonerock/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2017/12/DSC8109-copia.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2017/12/DSC8109-copia.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/2017-bonerock.jpg"
             }
           ],
           "image_credit": "Santi Fernández (batalladeflores.net)",
@@ -168818,10 +169042,17 @@
             {
               "url": "batalla_de_flores/fotos/2017-payasada.jpg",
               "origen": "Santi Fernández (batalladeflores.net)",
-              "por": "fichero",
-              "evidencia": "2017-cat b 2p-payasada-carrozas oruna (1).jpg",
-              "asignacion": "así la nombró Santi Fernández (batalladeflores.net) al cederla: «2017-cat b 2p-payasada-carrozas oruna (1).jpg»",
-              "asignada_por": "fuente"
+              "por": "pagina",
+              "evidencia": "https://www.batalladeflores.net/payasada/",
+              "asignacion": "estaba publicada en «payasada», la entrada que batalladeflores.net dedica a esta carroza",
+              "asignada_por": "fuente",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/7671-payasada-7671.jpg",
+                  "origen": "batalladeflores.net (biblioteca de medios)"
+                }
+              ],
+              "pagina": "https://www.batalladeflores.net/payasada/"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/7675-payasada-7675.jpg",
@@ -168871,7 +169102,8 @@
               "asignacion": "estaba publicada en «payasada», la entrada que batalladeflores.net dedica a esta carroza",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/payasada/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2017/12/DSC8294-copia.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2017/12/DSC8294-copia.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/2017-payasada.jpg"
             }
           ],
           "image_credit": "Santi Fernández (batalladeflores.net)",
@@ -168993,10 +169225,17 @@
             {
               "url": "batalla_de_flores/fotos/2017-1-2-viene-a-por-ti.jpg",
               "origen": "Santi Fernández (batalladeflores.net)",
-              "por": "decision",
-              "evidencia": "2017-1-2-viene-a-por-ti.jpg",
-              "asignacion": "lo confirmó una persona a mano: la foto se cedió como «2017-1-2-viene-a-por-ti.jpg» y no casaba automáticamente con esta carroza. Confirmado por Víctor Elvira el 2026-08-25",
-              "asignada_por": "persona"
+              "por": "pagina",
+              "evidencia": "https://www.batalladeflores.net/12-ya-viene-a-por-ti/",
+              "asignacion": "estaba publicada en «12-ya-viene-a-por-ti», la entrada que batalladeflores.net dedica a esta carroza",
+              "asignada_por": "fuente",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/7624-12yavieneaporti-7624.jpg",
+                  "origen": "batalladeflores.net (biblioteca de medios)"
+                }
+              ],
+              "pagina": "https://www.batalladeflores.net/12-ya-viene-a-por-ti/"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/7630-12yavieneaporti-7630.jpg",
@@ -169066,7 +169305,8 @@
               "asignacion": "estaba publicada en «12-ya-viene-a-por-ti», la entrada que batalladeflores.net dedica a esta carroza",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/12-ya-viene-a-por-ti/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2017/12/DSC8192-copia.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2017/12/DSC8192-copia.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/2017-1-2-viene-a-por-ti.jpg"
             }
           ],
           "image_credit": "Santi Fernández (batalladeflores.net)",
@@ -169217,10 +169457,17 @@
             {
               "url": "batalla_de_flores/fotos/2017-con-un-poco-de-azucar.jpg",
               "origen": "Santi Fernández (batalladeflores.net)",
-              "por": "fichero",
-              "evidencia": "2017-cat b 3p-con un poco de azucar-el cantu (5).jpg",
-              "asignacion": "así la nombró Santi Fernández (batalladeflores.net) al cederla: «2017-cat b 3p-con un poco de azucar-el cantu (5).jpg»",
-              "asignada_por": "fuente"
+              "por": "pagina",
+              "evidencia": "https://www.batalladeflores.net/con-un-poco-de-azucar/",
+              "asignacion": "estaba publicada en «con-un-poco-de-azucar», la entrada que batalladeflores.net dedica a esta carroza",
+              "asignada_por": "fuente",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/7680-conunpocodeazucar-7680.jpg",
+                  "origen": "batalladeflores.net (biblioteca de medios)"
+                }
+              ],
+              "pagina": "https://www.batalladeflores.net/con-un-poco-de-azucar/"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/7688-conunpocodeazucar-7688.jpg",
@@ -169310,7 +169557,8 @@
               "asignacion": "estaba publicada en «con-un-poco-de-azucar», la entrada que batalladeflores.net dedica a esta carroza",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/con-un-poco-de-azucar/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2017/12/DSC7994-copia.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2017/12/DSC7994-copia.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/2017-con-un-poco-de-azucar.jpg"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/7679-conunpocodeazucar-7679.jpg",
@@ -169474,10 +169722,17 @@
             {
               "url": "batalla_de_flores/fotos/2017-magic.jpg",
               "origen": "Santi Fernández (batalladeflores.net)",
-              "por": "fichero",
-              "evidencia": "2017-cat b 4p-magic-grupo alegoria (1).jpg",
-              "asignacion": "así la nombró Santi Fernández (batalladeflores.net) al cederla: «2017-cat b 4p-magic-grupo alegoria (1).jpg»",
-              "asignada_por": "fuente"
+              "por": "pagina",
+              "evidencia": "https://www.batalladeflores.net/magic/",
+              "asignacion": "estaba publicada en «magic», la entrada que batalladeflores.net dedica a esta carroza",
+              "asignada_por": "fuente",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/7691-magic-7691.jpg",
+                  "origen": "batalladeflores.net (biblioteca de medios)"
+                }
+              ],
+              "pagina": "https://www.batalladeflores.net/magic/"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/7694-magic-7694.jpg",
@@ -169517,7 +169772,8 @@
               "asignacion": "estaba publicada en «magic», la entrada que batalladeflores.net dedica a esta carroza",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/magic/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2017/12/DSC8351-copia.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2017/12/DSC8351-copia.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/2017-magic.jpg"
             }
           ],
           "image_credit": "Santi Fernández (batalladeflores.net)",
@@ -169898,10 +170154,17 @@
             {
               "url": "batalla_de_flores/fotos/2017-corsaria.jpg",
               "origen": "Santi Fernández (batalladeflores.net)",
-              "por": "fichero",
-              "evidencia": "2017-5p-corsaria-carrozas oruna (1).jpg",
-              "asignacion": "así la nombró Santi Fernández (batalladeflores.net) al cederla: «2017-5p-corsaria-carrozas oruna (1).jpg»",
-              "asignada_por": "fuente"
+              "por": "pagina",
+              "evidencia": "https://www.batalladeflores.net/corsaria/",
+              "asignacion": "estaba publicada en «corsaria», la entrada que batalladeflores.net dedica a esta carroza",
+              "asignada_por": "fuente",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/7644-corsaria-7644.jpg",
+                  "origen": "batalladeflores.net (biblioteca de medios)"
+                }
+              ],
+              "pagina": "https://www.batalladeflores.net/corsaria/"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/7648-corsaria-7648.jpg",
@@ -169951,7 +170214,8 @@
               "asignacion": "estaba publicada en «corsaria», la entrada que batalladeflores.net dedica a esta carroza",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/corsaria/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2017/12/DSC8263-copia.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2017/12/DSC8263-copia.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/2017-corsaria.jpg"
             }
           ],
           "image_credit": "Santi Fernández (batalladeflores.net)",
@@ -170102,10 +170366,17 @@
             {
               "url": "batalla_de_flores/fotos/2017-venecia.jpg",
               "origen": "Santi Fernández (batalladeflores.net)",
-              "por": "fichero",
-              "evidencia": "2017-cat b 5p-venecia-carrozas oruna (1).jpg",
-              "asignacion": "así la nombró Santi Fernández (batalladeflores.net) al cederla: «2017-cat b 5p-venecia-carrozas oruna (1).jpg»",
-              "asignada_por": "fuente"
+              "por": "pagina",
+              "evidencia": "https://www.batalladeflores.net/venecia/",
+              "asignacion": "estaba publicada en «venecia», la entrada que batalladeflores.net dedica a esta carroza",
+              "asignada_por": "fuente",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/7697-venecia-7697.jpg",
+                  "origen": "batalladeflores.net (biblioteca de medios)"
+                }
+              ],
+              "pagina": "https://www.batalladeflores.net/venecia/"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/7702-venecia-7702.jpg",
@@ -170165,7 +170436,8 @@
               "asignacion": "estaba publicada en «venecia», la entrada que batalladeflores.net dedica a esta carroza",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/venecia/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2017/12/DSC8242-copia.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2017/12/DSC8242-copia.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/2017-venecia.jpg"
             }
           ],
           "image_credit": "Santi Fernández (batalladeflores.net)",
@@ -170458,10 +170730,17 @@
             {
               "url": "batalla_de_flores/fotos/2017-principe-ali.jpg",
               "origen": "Santi Fernández (batalladeflores.net)",
-              "por": "fichero",
-              "evidencia": "2017-6p-principe ali-grupo pejino (1).jpg",
-              "asignacion": "así la nombró Santi Fernández (batalladeflores.net) al cederla: «2017-6p-principe ali-grupo pejino (1).jpg»",
-              "asignada_por": "fuente"
+              "por": "pagina",
+              "evidencia": "https://www.batalladeflores.net/principe-ali/",
+              "asignacion": "estaba publicada en «principe-ali», la entrada que batalladeflores.net dedica a esta carroza",
+              "asignada_por": "fuente",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/7652-principeali-7652.jpg",
+                  "origen": "batalladeflores.net (biblioteca de medios)"
+                }
+              ],
+              "pagina": "https://www.batalladeflores.net/principe-ali/"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/7655-principeali-7655.jpg",
@@ -170501,7 +170780,8 @@
               "asignacion": "estaba publicada en «principe-ali», la entrada que batalladeflores.net dedica a esta carroza",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/principe-ali/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2017/12/DSC8159-copia.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2017/12/DSC8159-copia.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/2017-principe-ali.jpg"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/7651-principeali-7651.jpg",
@@ -170676,10 +170956,17 @@
             {
               "url": "batalla_de_flores/fotos/2017-a-noah-wunder.jpg",
               "origen": "Santi Fernández (batalladeflores.net)",
-              "por": "fichero",
-              "evidencia": "2017-7p-a noah wunder-grupo alegoria (1).jpg",
-              "asignacion": "así la nombró Santi Fernández (batalladeflores.net) al cederla: «2017-7p-a noah wunder-grupo alegoria (1).jpg»",
-              "asignada_por": "fuente"
+              "por": "pagina",
+              "evidencia": "https://www.batalladeflores.net/noah-wunder/",
+              "asignacion": "estaba publicada en «noah-wunder», la entrada que batalladeflores.net dedica a esta carroza",
+              "asignada_por": "fuente",
+              "tambien": [
+                {
+                  "url": "batalla_de_flores/fotos/archivo/7658-noahwunder-7658.jpg",
+                  "origen": "batalladeflores.net (biblioteca de medios)"
+                }
+              ],
+              "pagina": "https://www.batalladeflores.net/noah-wunder/"
             },
             {
               "url": "batalla_de_flores/fotos/archivo/7661-noahwunder-7661.jpg",
@@ -170719,7 +171006,8 @@
               "asignacion": "estaba publicada en «noah-wunder», la entrada que batalladeflores.net dedica a esta carroza",
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/noah-wunder/",
-              "original": "https://www.batalladeflores.net/wp-content/uploads/2017/12/DSC8330-copia.jpg"
+              "original": "https://www.batalladeflores.net/wp-content/uploads/2017/12/DSC8330-copia.jpg",
+              "duplicada_de": "batalla_de_flores/fotos/2017-a-noah-wunder.jpg"
             }
           ],
           "image_credit": "Santi Fernández (batalladeflores.net)",
@@ -199157,7 +199445,7 @@
     "Asociacion de Carrocistas y festejos de Laredo": "festejos-laredo",
     "Grupo Atalaya": "atalaya"
   },
-  "version": "3.2.5",
+  "version": "3.3.1",
   "about": {
     "url": "https://batalladedatos.es/",
     "compiled_by": "Víctor Elvira",
@@ -199175,7 +199463,7 @@
     ],
     "note": "Base de datos derivada y estructurada, no una réplica del contenido editorial de las fuentes. Cada entrada lleva su `source_type` y sus `source_urls`. Si reutilizas esto, cita a las fuentes originales."
   },
-  "built_at": "2026-09-01 23:55",
+  "built_at": "2026-09-02 10:21",
   "map_features": [
     {
       "id": "route_origin_1908",

@@ -685,8 +685,8 @@ function renderFloatGrid(rows) {
       <div class="tile${active ? " is-active" : ""}"${grupo
         ? ` style="background:hsl(${tonoDe.get(grupo)} 40% 90%)" title="${esc(`Carroza de ${grupo}`)}"` : ""}>
         <button class="tile-foto" type="button" title="Ver la foto en grande"
-                ${photoAttrs(entry, entry.image_urls[0])}>
-          <img src="${esc(thumbUrl(entry.image_urls[0]))}" alt="${esc(entry.name)}" loading="lazy">
+                ${photoAttrs(entry, fotosVisibles(entry)[0])}>
+          <img src="${esc(thumbUrl(fotosVisibles(entry)[0]))}" alt="${esc(entry.name)}" loading="lazy">
           ${winnerBadge(entry)}
         </button>
         <span class="tile-cabecera">
@@ -1789,7 +1789,7 @@ function cuentasDeFuentes() {
 
 /* Una fila de combinación: las fichas de color de cada origen, los nombres de
  * las páginas, la barra y el número. Se despliega con las carrozas concretas. */
-function filaCombinacion(fila, tope, signo, abierta) {
+function filaCombinacion(fila, total, signo, abierta) {
   const mismaWeb = fila.origenes.length === 1;
   const chips = fila.origenes.map(o =>
     `<i class="fuente-chip f-${o}" title="${esc(ORIGEN_LABEL[o])}"></i>`).join("");
@@ -1804,8 +1804,8 @@ function filaCombinacion(fila, tope, signo, abierta) {
         <span class="fuente-etiq">${chips}<span>${sola
           ? `${nombres} <em>consigo misma</em>` : nombres}</span></span>
         <span class="fuente-track"><i class="fuente-bar${mismaWeb ? " misma-web" : ""}"
-          style="width:${(100 * fila.n / tope).toFixed(2)}%"></i></span>
-        <span class="fuente-num">${num(fila.n)}</span>
+          style="width:${(100 * fila.n / total).toFixed(2)}%"></i></span>
+        <span class="fuente-num">${num(fila.n)} <small>${pct(fila.n, total)}</small></span>
       </button>
       ${mismaWeb ? '<span class="fuente-aviso">la misma web consigo misma: esto no corrobora nada</span>' : ""}
       ${abierta ? `<div class="fuente-casos">
@@ -1827,6 +1827,61 @@ function repintarConFuentes() {
   else renderStatsTab();
 }
 
+/* Una fila de barra: etiqueta, barra proporcional AL TOTAL y cifra con su
+ * porcentaje. La longitud es la parte, siempre. Escalarla al valor mayor
+ * —como estuvo un rato— hacía que el 73 % de batalladeflores.net ocupara el
+ * carril entero y se leyera como si fuera todo. */
+function filaBarra({ etiqueta, n, total, clase, pie }) {
+  return `
+    <div class="fuente-combo">
+      <div class="fuente-fila estatica">
+        <span class="fuente-etiq"><i class="fuente-chip ${clase}"></i><span>${etiqueta}</span></span>
+        <span class="fuente-track"><i class="fuente-bar f-bg-${clase.replace("f-", "")}"
+          style="width:${(100 * n / (total || 1)).toFixed(2)}%"></i></span>
+        <span class="fuente-num">${num(n)} <small>${pct(n, total)}</small></span>
+      </div>
+      ${pie ? `<p class="fuente-pie">${pie}</p>` : ""}
+    </div>`;
+}
+
+/* La procedencia de las FOTOS es otra pregunta que la de los datos y se cuenta
+ * por imagen, no por carroza: una misma carroza puede mezclar una foto cedida
+ * y tres del archivo. */
+function fotosPorOrigen() {
+  const cuenta = new Map();
+  state.editions.forEach(e => (e.floats || []).forEach(f =>
+    (f.image_refs || []).forEach(r => {
+      const o = r.origen || "sin registrar";
+      cuenta.set(o, (cuenta.get(o) || 0) + 1);
+    })));
+  return [...cuenta.entries()].sort((a, b) => b[1] - a[1])
+    .map(([nombre, n]) => ({ nombre, n,
+      clase: /batalladeflores/i.test(nombre) ? "f-NET" : "f-PER" }));
+}
+
+/* Las fechas se reparten al revés que el resto: aquí manda la hemeroteca. Se
+ * clasifica por lo que dice la propia fuente, no por un campo aparte, porque
+ * `parade_date_source` es texto libre escrito a mano. */
+function fechasPorOrigen() {
+  const cuenta = new Map();
+  state.editions.forEach(e => {
+    if (!e.parade_date) return;
+    const t = `${e.parade_date_source || ""} ${e.parade_date_url || ""}`.toLowerCase();
+    const clase =
+      /boc |boletín|boletin/.test(t) ? ["Boletines oficiales", "f-LIB"]
+      : /prensahistorica|hemeroteca|bne|abc\.es|recorte|diario|el mundo|la voz|gaceta|alerta/.test(t)
+        ? ["Hemerotecas y prensa", "f-HEM"]
+      : /laredo\.es/.test(t) ? ["Ayuntamiento de Laredo", "f-AYT"]
+      : /batalladeflores\.net/.test(t) ? ["batalladeflores.net", "f-NET"]
+      : /cartel/.test(t) ? ["Carteles anunciadores", "f-PER"]
+      : ["Libro y otras", "f-LIB"];
+    const fila = cuenta.get(clase[0]) || { nombre: clase[0], clase: clase[1], n: 0 };
+    fila.n += 1;
+    cuenta.set(clase[0], fila);
+  });
+  return [...cuenta.values()].sort((a, b) => b.n - a.n);
+}
+
 function bloqueFuentes() {
   const d = cuentasDeFuentes();
   const vista = state.fuentesVista || "todas";
@@ -1839,48 +1894,117 @@ function bloqueFuentes() {
 
   let cuerpo = "";
   if (vista === "todas") {
-    const tope = d.origenes[0].n;
-    cuerpo = `<div class="fuentes-rows">${d.origenes.map(o => `
-      <div class="fuente-combo">
-        <div class="fuente-fila estatica">
-          <span class="fuente-etiq"><i class="fuente-chip f-${o.clave}"></i><span>${esc(o.nombre)}</span></span>
-          <span class="fuente-track"><i class="fuente-bar f-bg-${o.clave}"
-            style="width:${(100 * o.n / tope).toFixed(2)}%"></i></span>
-          <span class="fuente-num">${num(o.n)} <small>${pct(o.n, d.total)}</small></span>
-        </div>
-        <p class="fuente-pie">${esc(o.nota)} Aparece en ${num(o.carrozas)} carrozas
-          (${pct(o.carrozas, state.floats.length)} de las ${num(state.floats.length)}).</p>
-      </div>`).join("")}</div>
+    // Las cinco son partes de UN todo, así que primero se ven repartiéndoselo:
+    // la barra apilada dice de un vistazo lo que las filas dicen con número.
+    cuerpo = `
+      <div class="fuentes-leyenda">${d.origenes.map(o =>
+        `<span><i class="fuente-chip f-${o.clave}"></i>${esc(o.nombre)}</span>`).join("")}</div>
+      <div class="fuentes-apilada">${d.origenes.map(o =>
+        `<i class="f-bg-${o.clave}" style="flex:${o.n} 1 0"
+           title="${esc(o.nombre)}: ${num(o.n)} afirmaciones, ${pct(o.n, d.total)}"></i>`).join("")}</div>
+      <div class="fuentes-rows">${d.origenes.map(o => filaBarra({
+        etiqueta: esc(o.nombre), n: o.n, total: d.total, clase: `f-${o.clave}`,
+        pie: `${esc(o.nota)} Aparece en ${num(o.carrozas)}
+              ${o.carrozas === 1 ? "carroza" : "carrozas"}
+              (${pct(o.carrozas, state.floats.length)} de las ${num(state.floats.length)}).`,
+      })).join("")}</div>
       <p class="chart-note">Y aparte, <b>${num(d.nuestras)}</b> afirmaciones que no son de nadie:
       reescrituras nuestras del nombre de un grupo. Van contadas fuera a propósito, porque una
       decisión editorial no es una fuente.</p>`;
   } else if (vista === "contra") {
-    const tope = d.contra[0]?.n || 1;
+    const total = nContra || 1;
     cuerpo = `<p class="chart-note">${num(nContra)} veces dos fuentes dicen cosas distintas del
       mismo dato. No se elige a escondidas: se muestran las dos versiones con quién sostiene cada
       una. Pincha una fila para ver en qué carrozas pasa.</p>
       <div class="fuentes-rows">${d.contra
-        .map(f => filaCombinacion(f, tope, "✕", state.fuenteAbierta === f.kinds.join("|"))).join("")}</div>`;
+        .map(f => filaCombinacion(f, total, "✕", state.fuenteAbierta === f.kinds.join("|"))).join("")}</div>`;
   } else {
-    const tope = d.coinci[0]?.n || 1;
+    const total = (propias + reales) || 1;
     cuerpo = `<p class="chart-note">Dos fuentes diciendo lo mismo del mismo dato. Pero ojo con la
       primera fila: <b>${num(propias)}</b> de esas coincidencias son dos páginas de la misma web,
       que no se corroboran entre sí. Corroboración de verdad, con orígenes distintos, hay
       <b>${num(reales)}</b>.</p>
       <div class="fuentes-rows">${d.coinci
-        .map(f => filaCombinacion(f, tope, "+", state.fuenteAbierta === f.kinds.join("|"))).join("")}</div>`;
+        .map(f => filaCombinacion(f, total, "+", state.fuenteAbierta === f.kinds.join("|"))).join("")}</div>`;
   }
+
+  // ── cuántas carrozas se sostienen en un solo sitio ────────────────────────
+  const apoyos = [0, 0, 0, 0];
+  state.editions.forEach(e => (e.floats || []).forEach(f => {
+    const ors = new Set();
+    Object.values(f.claims || {}).forEach(c => (c.fuentes || []).forEach(s => {
+      const o = ORIGEN_DE_KIND[s.kind];
+      if (o) ors.add(o);
+    }));
+    apoyos[Math.min(3, ors.size)] += 1;
+  }));
+  const nFloats = state.floats.length;
+  const solos = apoyos[1];
+  const corroboradas = apoyos[2] + apoyos[3];
+
+  const fotos = fotosPorOrigen();
+  const nFotos = fotos.reduce((t, x) => t + x.n, 0);
+  const fechas = fechasPorOrigen();
+  const nFechas = fechas.reduce((t, x) => t + x.n, 0);
+  const hem = state.dataset.summary?.hemeroteca;
 
   return `
     <h3 class="section parte-tenemos">Lo que tenemos</h3>
-    <p class="chart-note">Antes de lo que falta, de qué está hecho lo que hay. Cada dato del
-    archivo lleva registrado quién lo afirma: sumadas son <b>${num(d.total)}</b> afirmaciones con
-    una fuente detrás, repartidas entre ${d.origenes.length} orígenes.</p>
+    <p class="chart-note">Antes de lo que falta, de qué está hecho lo que hay.</p>
+
+    <div class="kpis kpis-fuentes">
+      <div class="kpi"><span>${num(d.total)}</span><small>afirmaciones con una fuente detrás</small></div>
+      <div class="kpi"><span>${pct(d.origenes[0].n, d.total)}</span><small>vienen de una sola web</small></div>
+      <div class="kpi"><span>${num(hem?.con_copia_local ?? 0)}</span><small>fuentes de prensa con copia nuestra</small></div>
+    </div>
+
+    <h4 class="fuente-h4">De dónde salen las afirmaciones</h4>
     <div class="chart-tabs">
       ${tab("todas", "Todas")}${tab("contra", `Se contradicen (${num(nContra)})`)}
       ${tab("coinci", `Coinciden (${num(reales)})`)}
     </div>
-    ${cuerpo}`;
+    ${cuerpo}
+
+    <h4 class="fuente-h4">En cuántos sitios se apoya cada carroza</h4>
+    <div class="hallazgo">
+      <b>Tres de cada cuatro carrozas se apoyan en un solo origen.</b>
+      <p>${num(solos)} de las ${num(nFloats)} tienen un único sitio detrás. Si esa fuente
+      desapareciera, no habría con qué comprobarlas. Por eso todo lo que se cita se descarga y
+      se guarda aquí.</p>
+    </div>
+    <div class="fuentes-rows">
+      ${[["Un solo origen", apoyos[1], "f-NET"], ["Dos orígenes", apoyos[2], "f-HEM"],
+         ["Tres orígenes", apoyos[3], "f-AYT"]]
+        .filter(([, n]) => n)
+        .map(([etiqueta, n, clase]) => filaBarra({ etiqueta, n, total: nFloats, clase })).join("")}
+    </div>
+    <p class="chart-note">Corroborar es que dos sitios independientes digan lo mismo. Lo tienen
+    <b>${num(corroboradas)}</b> carrozas, el ${pct(corroboradas, nFloats)}.</p>
+
+    <h4 class="fuente-h4">Las fotos van por su cuenta</h4>
+    <p class="chart-note">De una foto hay que responder dos cosas distintas: de quién es y por qué
+    sabemos que retrata a esa carroza. Esto es lo primero, contado foto a foto y no por carroza.</p>
+    <div class="fuentes-rows">
+      ${fotos.map(x => filaBarra({ etiqueta: esc(x.nombre), n: x.n, total: nFotos, clase: x.clase })).join("")}
+    </div>
+
+    <h4 class="fuente-h4">Las fechas son la excepción</h4>
+    <p class="chart-note">Es el único apartado donde manda la hemeroteca: en el resto del archivo
+    pesa mucho más la web de la fiesta.</p>
+    <div class="fuentes-rows">
+      ${fechas.map(x => filaBarra({ etiqueta: esc(x.nombre), n: x.n, total: nFechas, clase: x.clase })).join("")}
+    </div>
+
+    ${hem?.por_archivo?.length ? `
+      <h4 class="fuente-h4">Lo que se cita, está guardado</h4>
+      <p class="chart-note">Una URL no es un archivo: las hemerotecas cambian de dirección y
+      cierran. De las <b>${num(hem.total)}</b> fuentes de prensa que sostienen alguna afirmación,
+      <b>${num(hem.con_copia_local)}</b> tienen copia nuestra, y la construcción falla si esa
+      fracción deja de ser completa.</p>
+      <div class="fuentes-rows">
+        ${hem.por_archivo.map(a => filaBarra({
+          etiqueta: esc(a.nombre), n: a.n, total: hem.total, clase: "f-HEM" })).join("")}
+      </div>` : ""}`;
 }
 
 /* ── indice: recorridos ─────────────────────────────────────────────────── */
@@ -2786,38 +2910,20 @@ function creditText(entry, url) {
   return "Procedencia sin registrar";
 }
 
-/* De quién es la foto y por qué decimos que es de esta carroza son DOS
- * preguntas, y mezclarlas engaña. "Foto cedida por Santi Fernández" se puede
- * leer como que Santi certifica que sale Aiko, cuando en 287 casos la carroza
- * la deducimos nosotros del nombre del fichero y él no ha dicho nada.
- *
- * Así que van en dos líneas: arriba de quién es, debajo quién la asigna. Y
- * cuando la asignación es nuestra se marca, porque es lo que puede fallar. */
-function photoAssign(entry, url) {
-  const ref = (entry.image_refs || []).find(item => item.url === url);
-  if (!ref) return "";
-  // En una foto cedida el credito ya dice quien la entrega y la identifica:
-  // repetirlo en una coletilla era ruido. La explicacion entera sigue en el
-  // bloque de procedencia de la ficha.
-  if (ref.por === "fuente") return "";
-  const propia = ref.asignada_por !== "fuente";
-  // Solo hay dos razones para decir que una foto es de una carroza, y cada una
-  // trae su prueba: o la web la publica en la ficha de esa carroza -y damos el
-  // enlace-, o lo dice el nombre del fichero -y lo enseñamos entero-.
-  const corto = ref.por === "pagina" ? "lo dice su página"
-    : ref.por === "fuente" ? "lo dice quien la cede"
-    : "lo dice el nombre del fichero";
-  const largo = ref.por === "pagina"
-    ? `batalladeflores.net publica esta foto en la página que dedica a esta carroza: ${ref.evidencia || ""}`
-    : ref.por === "fuente"
-    ? (ref.asignacion || "Quien cede la foto dice de qué carroza es.")
-    : `El fichero se llama «${ref.evidencia || ""}», que trae el año y el nombre de la carroza.`
-      + (propia ? " La asociación la deducimos nosotros de ese nombre." : "");
-  return `<span class="asigna${propia ? " asigna-deducida" : ""}" title="${esc(largo)}">${esc(corto)}</span>`;
+/* Las fotos que se enseñan: todas menos las marcadas como la misma imagen que
+ * otra. El dato no se toca —siguen contando para la atribución y para el libro
+ * mayor—, solo se deja de pintar la copia. */
+function fotosVisibles(entry) {
+  const repetida = new Set((entry.image_refs || [])
+    .filter(r => r.duplicada_de).map(r => r.url));
+  return (entry.image_urls || []).filter(u => !repetida.has(u));
 }
 
 function photoCredit(entry, url) {
-  return `<span class="credito">${esc(creditText(entry, url))}</span>${photoAssign(entry, url)}`;
+  // Solo el crédito. La coletilla de «lo dice el nombre del fichero» se quitó
+  // por lo mismo que la del visor: al pie de una foto sobra, y en la ficha ya
+  // está contada entera y con su matiz.
+  return `<span class="credito">${esc(creditText(entry, url))}</span>`;
 }
 
 /* ── visor de fotos ────────────────────────────────────────────────────────
@@ -2852,10 +2958,19 @@ function photoAttrs(entry, url) {
   const m = photoMeta(entry);
   m.credito = creditText(entry, url);
   const ref = (entry.image_refs || []).find(item => item.url === url);
-  m.asigna = !ref || ref.por === "fuente" ? ""
-    : ref.asignada_por === "fuente"
-    ? `Es esta carroza según la fuente: ${ref.asignacion}`
-    : `Que sea esta carroza lo deducimos nosotros: ${ref.asignacion}`;
+  // El visor NO explica por qué creemos que la foto es de esta carroza.
+  //
+  // Decía «Que sea esta carroza lo deducimos nosotros: el fichero se subió
+  // como 2003metamorfosis041…» encima de una carroza identificada de sobra por
+  // otras vías, y eso se lee como una duda sobre la identidad de la carroza,
+  // que no la hay: la duda es sobre la RUTA por la que llegó esa imagen.
+  // Contarlo al pie de cada foto no informa, alarma. La explicación entera,
+  // ref a ref, sigue en el bloque de procedencia de la ficha, que además se
+  // abre solo cuando hay alguna asignación deducida.
+  //
+  // (El cartel de una edición sí conserva su `data-asigna`: allí lo que se
+  // explica es de qué edición es el cartel, que es la pregunta del cartel.)
+  m.asigna = "";
   m.asignaProp = ref?.asignada_por || "";
   return `data-photo="${esc(url)}" data-nombre="${esc(m.nombre)}" data-grupo="${esc(m.grupo)}"
     data-anio="${esc(m.anio)}" data-puesto="${esc(m.puesto)}" data-credito="${esc(m.credito)}"
@@ -3331,8 +3446,10 @@ function renderGallerySinIdentificar(edition) {
 
 function renderGallery(entries) {
   const TOPE = 60;
+  // `fotosVisibles` y no `image_urls`: si la misma imagen llegó por dos vías,
+  // la galería de una edición la enseñaba dos veces igual que la ficha.
   const todas = entries.flatMap(entry =>
-    (entry.image_urls || []).map(url => ({ url, entry })));
+    fotosVisibles(entry).map(url => ({ url, entry })));
   const images = todas.slice(0, TOPE);
   if (!images.length) return "";
   return `
@@ -3354,7 +3471,10 @@ function renderGallery(entries) {
             <img src="${esc(thumbUrl(url))}" alt="${esc(entry.name)}" loading="lazy">
           </button>
           <figcaption><span class="shot-name">${esc(entry.name)}</span><small>${entry.year}${entry.group_canonical ? ` · ${esc(entry.group_canonical)}` : ""}</small>
-            ${photoCredit(entry)}</figcaption>
+            ${/* Se pedía el crédito SIN decir de qué foto, y como se resuelve
+                  por imagen y no por carroza, salía «Procedencia sin registrar»
+                  en toda la galería de la edición. */""}
+            ${photoCredit(entry, url)}</figcaption>
         </figure>`).join("")}
     </div>`;
 }
@@ -3794,8 +3914,8 @@ function renderEditionDetail(edition) {
           ${shown.map(entry => `
             <tr>
               ${withPhotos ? `<td class="c-photo">${(entry.image_urls || []).length
-                ? `<button class="thumb" type="button" ${photoAttrs(entry, entry.image_urls[0])}
-                     data-tip="${esc(entry.name)}"><img src="${esc(thumbUrl(entry.image_urls[0]))}"
+                ? `<button class="thumb" type="button" ${photoAttrs(entry, fotosVisibles(entry)[0])}
+                     data-tip="${esc(entry.name)}"><img src="${esc(thumbUrl(fotosVisibles(entry)[0]))}"
                      alt="${esc(entry.name)}" loading="lazy"></button>`
                 : ""}</td>` : ""}
               <td class="pos" data-sort="${esc(positionSortKey(entry))}">${entry.position === 1
@@ -4092,7 +4212,7 @@ function floatProvenance(entry) {
           .map(c => `<li class="prov-cita"><small>${c}</small></li>`).join("")}
         ${pressCitations(entry).length ? `<li><b>En la prensa de la época:</b>
           ${citationList(pressCitations(entry))}</li>` : ""}
-        ${refs.length ? refs.map(r => `
+        ${refs.length ? refs.filter(r => !r.duplicada_de).map(r => `
           <li><b>La foto es de:</b> ${esc(r.origen)}.
             <br><small><b>Que sea de esta carroza</b>, ${r.por === "pagina"
               ? `lo dice su página: la publica en la ficha que dedica a esta carroza`
@@ -4104,6 +4224,9 @@ function floatProvenance(entry) {
             ${r.pagina ? `<br><small><a href="${esc(r.pagina)}" target="_blank" rel="noopener">ver la página de origen ↗</a></small>` : ""}
             ${r.original ? `<br><small>Se sirve desde aquí una copia, para no cargarle el tráfico a
               su servidor. <a href="${esc(r.original)}" target="_blank" rel="noopener">ver el original ↗</a></small>` : ""}
+            ${(r.tambien || []).length ? `<br><small>Esta misma fotografía nos llegó también por
+              ${joinEs((r.tambien || []).map(t => esc(t.origen || "otra vía")))}. Se enseña una vez,
+              la copia de más resolución, pero la otra no se pierde: la trajo otra vía y así consta.</small>` : ""}
           </li>`).join("")
         : entry.image_urls?.length
           ? "<li><b>La foto:</b> del archivo de batalladeflores.net.</li>"
@@ -4162,10 +4285,15 @@ function renderFloatDetail(entry) {
       ${fieldSources(entry, "prize_costumes_rank")}${fieldSources(entry, "prize_art_rank")}
       ${fieldSources(entry, "points")}</p>` : ""}
 
-    ${(entry.image_urls || []).length ? `
-      <h3 class="section">Imágenes (${entry.image_urls.length})</h3>
+    ${(() => {
+      // Una misma fotografía puede haber llegado por dos vías y estar dos veces
+      // en `image_urls`. Se enseña una: la marcada como repetida no se pinta,
+      // pero sigue en los datos y su procedencia se cuenta más abajo.
+      const vistas = fotosVisibles(entry);
+      return vistas.length ? `
+      <h3 class="section">Imágenes (${vistas.length})</h3>
       <div class="gallery gallery-big">
-        ${entry.image_urls.map(url => `
+        ${vistas.map(url => `
           <figure class="shot">
             <button type="button" class="shot-btn" ${photoAttrs(entry, url)}
                title="${esc(entry.name)} (${entry.year})">
@@ -4174,7 +4302,8 @@ function renderFloatDetail(entry) {
             <figcaption>${photoCredit(entry, url)}</figcaption>
           </figure>`).join("")}
       </div>`
-      : '<p class="empty">El archivo no conserva imágenes de esta carroza.</p>'}
+      : '<p class="empty">El archivo no conserva imágenes de esta carroza.</p>';
+    })()}
 
     ${floatProvenance(entry)}
 
@@ -4734,9 +4863,17 @@ function shrinkPhoto(file) {
 function reportContext() {
   const selection = state.selection;
   const heading = document.querySelector("#detail h2")?.textContent?.trim() || "";
-  if (!selection) return { label: "La página en general", id: "" };
+  if (!selection) return { label: "La página en general", id: "", anio: "" };
   const kinds = { year: "Edición", group: "Grupo", route: "Recorrido", float: "Carroza", about: "Página" };
-  return { label: `${kinds[selection.kind] || ""} ${heading}`.trim(), id: `${selection.kind}:${selection.id}` };
+  // El año, cuando el contexto lo fija solo. Una edición lo es; una carroza lo
+  // lleva dentro. Un grupo y un recorrido abarcan décadas, así que ahí hay que
+  // preguntarlo: sin eso, «ese año se amplió el recorrido» no se puede aplicar.
+  const anio = selection.kind === "year" ? String(selection.id)
+    : selection.kind === "float"
+      ? String(state.floats.find(f => f.id === selection.id)?.year || "")
+      : "";
+  return { label: `${kinds[selection.kind] || ""} ${heading}`.trim(),
+           id: `${selection.kind}:${selection.id}`, anio };
 }
 
 function openReport(override) {
@@ -4744,6 +4881,16 @@ function openReport(override) {
   document.getElementById("report-ctx").textContent = `Sobre: ${context.label}`;
   document.getElementById("report-ficha").value = context.id;
   document.getElementById("report-url").value = location.href;
+  // Si el contexto ya fija el año, se rellena y se deja ver: quien avisa puede
+  // corregirlo si habla de otro. Si no lo fija, se pide, porque es la
+  // diferencia entre una aportación aplicable y una anécdota sin fecha.
+  const campoAnio = document.getElementById("report-anio");
+  const sabido = context.anio || "";
+  campoAnio.value = sabido;
+  campoAnio.required = !sabido;
+  document.getElementById("report-anio-opt").textContent = sabido
+    ? "(lo he puesto yo; cámbialo si hablas de otro)"
+    : "(hace falta: esto vale para varios años)";
   document.getElementById("report-msg").textContent = "";
   document.getElementById("report-back").hidden = false;
   document.querySelector("#report-form [name=nombre]").focus();

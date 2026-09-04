@@ -4768,13 +4768,23 @@ async function shareUrl(url, title, text, button) {
   }
 }
 
-function shareCurrent() {
+/* Comparte LO QUE SE ESTÁ MIRANDO, y `location.href` ya lo dice: con una ficha
+ * abierta lleva su año o su carroza, y sin nada seleccionado es la pestaña en
+ * la que estás.
+ *
+ * Los dos botones de la página llaman aquí. Antes no: el de la cabecera mandaba
+ * `location.origin + location.pathname`, o sea la portada pelada, mirases lo que
+ * mirases. Los dos ponen «Compartir», así que con la edición de 2026 abierta se
+ * pulsaba el de arriba —que es el que se ve— y el enlace llegaba sin el año.
+ * Compartir algo y que el otro abra otra cosa es de los fallos que no se ven
+ * desde dentro: quien comparte no vuelve a pulsar su propio enlace. */
+function shareCurrent(button) {
   const heading = document.querySelector("#detail h2")?.textContent?.trim();
   return shareUrl(
     location.href,
     `Batalla de Flores de Laredo${heading ? ` · ${heading}` : ""}`,
     "Archivo de la Batalla de Flores de Laredo",
-    document.getElementById("share"),
+    button || document.getElementById("share"),
   );
 }
 
@@ -5182,12 +5192,7 @@ function bindEvents() {
   els.faq.addEventListener("click", () => select("about", "-"));
   document.getElementById("faq-foot")?.addEventListener("click", () => select("about", "-"));
   // Compartir la web entera: sin hash, para que el enlace no lleve a una ficha.
-  els.shareSite.addEventListener("click", () => shareUrl(
-    location.origin + location.pathname,
-    "Batalla de Flores de Laredo",
-    "Archivo interactivo de la Batalla de Flores de Laredo, desde 1908",
-    els.shareSite,
-  ));
+  els.shareSite.addEventListener("click", () => shareCurrent(els.shareSite));
 
   els.detailClose.addEventListener("click", () => closeDetail());
   document.addEventListener("keydown", event => {
@@ -5246,7 +5251,10 @@ function bindEvents() {
         event.target.closest("#share-pending"));
       return;
     }
-    if (event.target.closest("#share")) { shareCurrent(); return; }
+    if (event.target.closest("#share")) {
+      shareCurrent(event.target.closest("#share"));
+      return;
+    }
     if (event.target.closest("#report-open")) { openReport(); return; }
 
     const jump = event.target.closest("[data-mode-jump]");

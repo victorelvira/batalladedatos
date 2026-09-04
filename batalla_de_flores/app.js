@@ -4934,6 +4934,11 @@ function setupReport() {
     }
 
     const data = new URLSearchParams(new FormData(form));
+    // Una casilla sin marcar no viaja en el formulario, así que llegaría vacía
+    // y no se distinguiría de «no me lo preguntaron». Aquí se manda siempre un
+    // sí o un no explícito: para poder demostrar el consentimiento hay que
+    // haberlo guardado, y un hueco no demuestra nada.
+    data.set("citar", form.citar?.checked ? "sí" : "no");
     data.set("proyecto", "batalla_de_flores");
     data.set("version", state.dataset?.version || "");
     if (reportPhoto) data.set("foto", reportPhoto);

@@ -2141,3 +2141,13 @@ body.lb-abierto { overflow: hidden; }
 }
 .hallazgo b { display: block; font-size: 15px; margin-bottom: 6px; }
 .hallazgo p { margin: 0; font-size: 13.5px; color: var(--muted); }
+
+/* La casilla de consentimiento para citar. En fila, con la casilla alineada a
+ * la primera línea del texto y no centrada: el texto son tres renglones y una
+ * casilla flotando en mitad de un párrafo no se lee como algo que marcar. */
+.report-check {
+  display: flex; gap: 9px; align-items: flex-start;
+  font-size: 13.5px; line-height: 1.45;
+}
+.report-check input { margin-top: 3px; flex: none; }
+.report-check .opt { display: block; margin-top: 2px; }

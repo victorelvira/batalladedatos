@@ -148,6 +148,7 @@ function coverageTier(edition) {
 const SOURCE_LABEL = {
   archive_palmares: "Palmarés del archivo",
   archive_float_page: "Ficha de carroza",
+  acta_jurado: "Acta del jurado",
   official_result: "Resultado oficial",
   official_result_summary: "Resumen oficial",
   manual_seed: "Semilla inicial, sin página registrada",
@@ -165,6 +166,7 @@ const SOURCE_LABEL = {
 const SOURCE_SHORT = {
   archive_palmares: "PAL",
   archive_float_page: "FICHA",
+  acta_jurado: "ACTA",
   official_result: "OFI",
   official_result_summary: "RES",
   manual_seed: "MAN",
@@ -1715,7 +1717,7 @@ function renderStatsTab() {
  */
 const ORIGEN_DE_KIND = {
   archive_palmares: "NET", archive_float_page: "NET", manual_seed: "NET",
-  official_result: "AYT", official_result_summary: "AYT",
+  acta_jurado: "AYT", official_result: "AYT", official_result_summary: "AYT",
   press_history: "HEM", press_clipping: "HEM", press_photo: "HEM",
   book: "LIB", photo_archive: "PER", photo_cedida: "PER",
 };
@@ -1726,7 +1728,7 @@ const ORIGEN_LABEL = {
 const ORIGEN_NOTA = {
   NET: "El archivo de la fiesta: sus páginas de palmarés, sus fichas de carroza y la semilla del proyecto, que salió de ahí.",
   HEM: "Prensa de la época leída en la Hemeroteca de la BNE, la Biblioteca Virtual de Prensa Histórica y el Archivo ABC.",
-  AYT: "Notas y resultados oficiales publicados por el Ayuntamiento en laredo.es.",
+  AYT: "El acta del jurado que decide el palmarés, y las notas y resultados oficiales que publica el Ayuntamiento en laredo.es.",
   PER: "Fotos cedidas por particulares, con lo que afirman sobre la carroza que retratan.",
   LIB: "Oruña Fuentes, «Batalla de Flores de Laredo» (2008).",
 };

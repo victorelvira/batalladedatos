@@ -20,7 +20,7 @@
     "grupos": 201,
     "ediciones_con_palmares": 113,
     "carrozas_con_foto": 594,
-    "fotos": 787,
+    "fotos": 788,
     "afirmaciones": 4033,
     "afirmaciones_corroboradas": 641,
     "ediciones_con_fecha": 106,
@@ -81,7 +81,7 @@
       "notes": [],
       "floats": [
         {
-          "id": "1908-la-argentina-x-na",
+          "id": "1908-la-argentina-x-1",
           "label": "gonzalo-1908-argentina",
           "name": "La Argentina",
           "slug": "la-argentina",
@@ -172,7 +172,8 @@
             }
           },
           "image_urls": [
-            "batalla_de_flores/fotos/archivo/1846-argentina-1846.jpg"
+            "batalla_de_flores/fotos/archivo/1846-argentina-1846.jpg",
+            "batalla_de_flores/fotos/archivo/519-argentina-519.jpg"
           ],
           "image_refs": [
             {
@@ -184,6 +185,16 @@
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/la-argentina/",
               "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1908LaArgentina.jpg"
+            },
+            {
+              "url": "batalla_de_flores/fotos/archivo/519-argentina-519.jpg",
+              "origen": "batalladeflores.net (biblioteca de medios)",
+              "por": "fichero",
+              "evidencia": "1908laargentina",
+              "asignacion": "el fichero se subió como «1908laargentina», que lleva el año y el nombre de esta carroza",
+              "asignada_por": "deducción",
+              "pagina": null,
+              "original": "https://www.batalladeflores.net/wp-content/uploads/1908/08/1908LaArgentina.jpg"
             }
           ],
           "image_credit": null,
@@ -195,7 +206,7 @@
       ],
       "results": [
         {
-          "id": "1908-la-argentina-x-na",
+          "id": "1908-la-argentina-x-1",
           "label": "gonzalo-1908-argentina",
           "name": "La Argentina",
           "slug": "la-argentina",
@@ -286,7 +297,8 @@
             }
           },
           "image_urls": [
-            "batalla_de_flores/fotos/archivo/1846-argentina-1846.jpg"
+            "batalla_de_flores/fotos/archivo/1846-argentina-1846.jpg",
+            "batalla_de_flores/fotos/archivo/519-argentina-519.jpg"
           ],
           "image_refs": [
             {
@@ -298,6 +310,16 @@
               "asignada_por": "fuente",
               "pagina": "https://www.batalladeflores.net/la-argentina/",
               "original": "https://www.batalladeflores.net/wp-content/uploads/2013/08/1908LaArgentina.jpg"
+            },
+            {
+              "url": "batalla_de_flores/fotos/archivo/519-argentina-519.jpg",
+              "origen": "batalladeflores.net (biblioteca de medios)",
+              "por": "fichero",
+              "evidencia": "1908laargentina",
+              "asignacion": "el fichero se subió como «1908laargentina», que lleva el año y el nombre de esta carroza",
+              "asignada_por": "deducción",
+              "pagina": null,
+              "original": "https://www.batalladeflores.net/wp-content/uploads/1908/08/1908LaArgentina.jpg"
             }
           ],
           "image_credit": null
@@ -20703,7 +20725,7 @@
           ]
         },
         {
-          "id": "1927-cuevano-pasiego-x-na",
+          "id": "1927-cuevano-pasiego-x-2",
           "label": "anonimo-1927-cuevano",
           "name": "Cuévano pasiego",
           "slug": "cuevano-pasiego",
@@ -21866,7 +21888,7 @@
           "image_credit": null
         },
         {
-          "id": "1927-cuevano-pasiego-x-na",
+          "id": "1927-cuevano-pasiego-x-2",
           "label": "anonimo-1927-cuevano",
           "name": "Cuévano pasiego",
           "slug": "cuevano-pasiego",
@@ -27197,7 +27219,7 @@
           ]
         },
         {
-          "id": "1931-nave-del-siglo-xv-x-na",
+          "id": "1931-nave-del-siglo-xv-x-3",
           "label": "benito-1931-nave",
           "name": "Nave del Siglo XV",
           "slug": "nave-del-siglo-xv",
@@ -28354,7 +28376,7 @@
           "image_credit": null
         },
         {
-          "id": "1931-nave-del-siglo-xv-x-na",
+          "id": "1931-nave-del-siglo-xv-x-3",
           "label": "benito-1931-nave",
           "name": "Nave del Siglo XV",
           "slug": "nave-del-siglo-xv",
@@ -29512,7 +29534,7 @@
           ]
         },
         {
-          "id": "1932-rotonda-griega-x-na",
+          "id": "1932-rotonda-griega-x-2",
           "label": "anonimo-1932-rotonda",
           "name": "Rotonda Griega",
           "slug": "rotonda-griega",
@@ -30965,7 +30987,7 @@
           "image_credit": null
         },
         {
-          "id": "1932-rotonda-griega-x-na",
+          "id": "1932-rotonda-griega-x-2",
           "label": "anonimo-1932-rotonda",
           "name": "Rotonda Griega",
           "slug": "rotonda-griega",
@@ -173943,7 +173965,7 @@
           "avisos_derivados": []
         },
         {
-          "id": "2018-medusa-x-na",
+          "id": "2018-medusa-a-2",
           "label": "come-2018-medusa",
           "name": "Medusa",
           "slug": "medusa",
@@ -175386,7 +175408,7 @@
           "image_credit": "Santi Fernández (batalladeflores.net)"
         },
         {
-          "id": "2018-medusa-x-na",
+          "id": "2018-medusa-a-2",
           "label": "come-2018-medusa",
           "name": "Medusa",
           "slug": "medusa",
@@ -191294,7 +191316,7 @@
           "points": 98,
           "group_raw": "MI VIDA LOCA",
           "group_canonical": "Mi Vida Loca",
-          "source_type": "official_result+press_clipping+photo_archive+press_history+press_history",
+          "source_type": "official_result+acta_jurado+press_clipping+photo_archive+press_history+press_history",
           "source_urls": [
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/",
@@ -191324,6 +191346,12 @@
           ],
           "needs_review": [],
           "source_refs": [
+            {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA A — QUIMERA · Posición 1 · Puntos 98 · Clasificación vestidos — QUIMERA · Posición 1 · Puntos 15 · Clasificación arte — QUIMERA: 1",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+            },
             {
               "kind": "press_clipping",
               "cita": "EFE, teletipo de la noche del desfile, publicado por Infobae (28-08-2026)",
@@ -191356,7 +191384,7 @@
               "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -191365,6 +191393,10 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "press_clipping",
                   "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
                 },
@@ -191381,28 +191413,7 @@
                   "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
                 }
               ],
-              "independientes": 4
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_clipping",
-                  "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
-                },
-                {
-                  "kind": "press_history",
-                  "url": null
-                },
-                {
-                  "kind": "press_history",
-                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
-                }
-              ],
-              "independientes": 3
+              "independientes": 5
             },
             "category": {
               "fuentes": [
@@ -191411,51 +191422,12 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-quimera.jpg"
-                }
-              ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
-            },
-            "prize_art_rank": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_clipping",
-                  "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
-                },
-                {
-                  "kind": "press_history",
-                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
-                }
-              ],
-              "independientes": 3
-            },
-            "prize_costumes_rank": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_clipping",
-                  "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
-                },
-                {
-                  "kind": "press_history",
-                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
                 }
               ],
               "independientes": 3
@@ -191479,6 +191451,70 @@
                 }
               ],
               "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_clipping",
+                  "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
+                }
+              ],
+              "independientes": 3
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                }
+              ],
+              "independientes": 1
+            },
+            "prize_art_rank": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_clipping",
+                  "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
+                },
+                {
+                  "kind": "press_history",
+                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
+                }
+              ],
+              "independientes": 3
+            },
+            "prize_costumes_rank": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_clipping",
+                  "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
+                },
+                {
+                  "kind": "press_history",
+                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
+                }
+              ],
+              "independientes": 3
             }
           },
           "image_urls": [
@@ -191511,7 +191547,7 @@
           "points": 40,
           "group_raw": "AGRUPA-2",
           "group_canonical": "Agrupa-dos",
-          "source_type": "official_result+press_clipping+photo_archive+press_history+press_history",
+          "source_type": "official_result+acta_jurado+press_clipping+photo_archive+press_history+press_history",
           "source_urls": [
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/",
@@ -191541,6 +191577,12 @@
           ],
           "needs_review": [],
           "source_refs": [
+            {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA B — WALT · Posición 1 · Puntos 40 · Clasificación arte B — WALT: 1",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-b-y-arte.jpg"
+            },
             {
               "kind": "press_clipping",
               "cita": "EFE, teletipo de la noche del desfile, publicado por Infobae (28-08-2026)",
@@ -191573,7 +191615,7 @@
               "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -191582,6 +191624,10 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "press_clipping",
                   "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
                 },
@@ -191598,28 +191644,7 @@
                   "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
                 }
               ],
-              "independientes": 4
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_clipping",
-                  "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
-                },
-                {
-                  "kind": "press_history",
-                  "url": null
-                },
-                {
-                  "kind": "press_history",
-                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
-                }
-              ],
-              "independientes": 3
+              "independientes": 5
             },
             "category": {
               "fuentes": [
@@ -191628,29 +191653,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-walt.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
-            },
-            "prize_art_rank": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -191668,6 +191679,45 @@
                   "url": null,
                   "regla": "«AGRUPA-2» → «Agrupa-dos»: el plegado usa otro nombre para el mismo grupo",
                   "motivo": "el plegado usa otro nombre para el mismo grupo"
+                }
+              ],
+              "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_clipping",
+                  "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
+                }
+              ],
+              "independientes": 3
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                }
+              ],
+              "independientes": 1
+            },
+            "prize_art_rank": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
                 }
               ],
               "independientes": 1
@@ -191703,7 +191753,7 @@
           "points": 78,
           "group_raw": "AGRUPA-2",
           "group_canonical": "Agrupa-dos",
-          "source_type": "official_result+press_clipping+photo_archive+press_history+press_history",
+          "source_type": "official_result+acta_jurado+press_clipping+photo_archive+press_history+press_history",
           "source_urls": [
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/",
@@ -191733,6 +191783,12 @@
           ],
           "needs_review": [],
           "source_refs": [
+            {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA A — EUTOPÍA · Posición 2 · Puntos 78 · Clasificación vestidos — EUTOPÍA · Posición 4 · Puntos 5",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+            },
             {
               "kind": "press_clipping",
               "cita": "EFE, teletipo de la noche del desfile, publicado por Infobae (28-08-2026)",
@@ -191765,7 +191821,7 @@
               "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -191774,25 +191830,8 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
-                  "kind": "press_clipping",
-                  "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
-                },
-                {
-                  "kind": "press_history",
+                  "kind": "acta_jurado",
                   "url": null
-                },
-                {
-                  "kind": "press_history",
-                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
-                }
-              ],
-              "independientes": 3
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
                   "kind": "press_clipping",
@@ -191807,7 +191846,7 @@
                   "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
                 }
               ],
-              "independientes": 3
+              "independientes": 4
             },
             "category": {
               "fuentes": [
@@ -191816,29 +191855,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-eutopia.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
-            },
-            "prize_costumes_rank": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -191856,6 +191881,45 @@
                   "url": null,
                   "regla": "«AGRUPA-2» → «Agrupa-dos»: el plegado usa otro nombre para el mismo grupo",
                   "motivo": "el plegado usa otro nombre para el mismo grupo"
+                }
+              ],
+              "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_clipping",
+                  "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
+                }
+              ],
+              "independientes": 3
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                }
+              ],
+              "independientes": 1
+            },
+            "prize_costumes_rank": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
                 }
               ],
               "independientes": 1
@@ -191891,7 +191955,7 @@
           "points": 22,
           "group_raw": "ASOCIACIÓN CARROCISTA EL CANTU",
           "group_canonical": "El Cantu",
-          "source_type": "official_result+photo_archive+press_history",
+          "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
@@ -191911,6 +191975,12 @@
           "needs_review": [],
           "source_refs": [
             {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA B — TITÁN · Posición 2 · Puntos 22",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-b-y-arte.jpg"
+            },
+            {
               "kind": "photo_archive",
               "cita": "Fotos de Víctor Elvira, hechas en el desfile",
               "ficheros": [
@@ -191927,7 +191997,7 @@
               "url": null
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -191936,24 +192006,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
-                  "kind": "press_history",
+                  "kind": "acta_jurado",
                   "url": null
-                }
-              ],
-              "independientes": 2
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
                   "kind": "press_history",
                   "url": null
                 }
               ],
-              "independientes": 2
+              "independientes": 3
             },
             "category": {
               "fuentes": [
@@ -191962,20 +192023,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-titan.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -191993,6 +192049,28 @@
                   "url": null,
                   "regla": "«ASOCIACIÓN CARROCISTA EL CANTU» → «El Cantu»: el plegado usa otro nombre para el mismo grupo",
                   "motivo": "el plegado usa otro nombre para el mismo grupo"
+                }
+              ],
+              "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                }
+              ],
+              "independientes": 2
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
                 }
               ],
               "independientes": 1
@@ -192028,7 +192106,7 @@
           "points": 78,
           "group_raw": "ASOCIACIÓN COME GOLAYU QUE LO HA HECHU GÜELA",
           "group_canonical": "Come Golayu",
-          "source_type": "official_result+photo_archive+press_history+press_history",
+          "source_type": "official_result+acta_jurado+photo_archive+press_history+press_history",
           "source_urls": [
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
@@ -192052,6 +192130,12 @@
           ],
           "needs_review": [],
           "source_refs": [
+            {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA A — HAGAN JUEGO · Posición 3 · Puntos 78",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+            },
             {
               "kind": "photo_archive",
               "cita": "Fotos de Víctor Elvira, hechas en el desfile",
@@ -192077,7 +192161,7 @@
               "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -192086,6 +192170,10 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-hagan-juego.jpg"
                 },
@@ -192098,24 +192186,7 @@
                   "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
                 }
               ],
-              "independientes": 3
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_history",
-                  "url": null
-                },
-                {
-                  "kind": "press_history",
-                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
-                }
-              ],
-              "independientes": 2
+              "independientes": 4
             },
             "category": {
               "fuentes": [
@@ -192124,20 +192195,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-hagan-juego.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -192155,6 +192221,32 @@
                   "url": null,
                   "regla": "«ASOCIACIÓN COME GOLAYU QUE LO HA HECHU GÜELA» → «Come Golayu»: el plegado usa otro nombre para el mismo grupo",
                   "motivo": "el plegado usa otro nombre para el mismo grupo"
+                }
+              ],
+              "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
+                }
+              ],
+              "independientes": 2
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
                 }
               ],
               "independientes": 1
@@ -192190,7 +192282,7 @@
           "points": 20,
           "group_raw": "ASOCIACIÓN CULTURAL CARROZAS ORUÑA",
           "group_canonical": "Carrozas Oruña",
-          "source_type": "official_result+photo_archive+press_history",
+          "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
@@ -192210,6 +192302,12 @@
           "needs_review": [],
           "source_refs": [
             {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA B — SOÑAR CON LAS ESTRELLAS · Posición 3 · Puntos 20",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-b-y-arte.jpg"
+            },
+            {
               "kind": "photo_archive",
               "cita": "Fotos de Víctor Elvira, hechas en el desfile",
               "ficheros": [
@@ -192226,7 +192324,7 @@
               "url": null
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -192235,6 +192333,10 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-sonar-con-las-estrellas.jpg"
                 },
@@ -192243,20 +192345,7 @@
                   "url": null
                 }
               ],
-              "independientes": 3
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_history",
-                  "url": null
-                }
-              ],
-              "independientes": 2
+              "independientes": 4
             },
             "category": {
               "fuentes": [
@@ -192265,20 +192354,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-sonar-con-las-estrellas.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -192296,6 +192380,28 @@
                   "url": null,
                   "regla": "«ASOCIACIÓN CULTURAL CARROZAS ORUÑA» → «Carrozas Oruña»: el plegado usa otro nombre para el mismo grupo",
                   "motivo": "el plegado usa otro nombre para el mismo grupo"
+                }
+              ],
+              "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                }
+              ],
+              "independientes": 2
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
                 }
               ],
               "independientes": 1
@@ -192331,7 +192437,7 @@
           "points": 20,
           "group_raw": "ASOCIACIÓN GRUPO ALEGORÍA",
           "group_canonical": "Grupo Alegoría",
-          "source_type": "official_result+photo_archive+press_history",
+          "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
@@ -192351,6 +192457,12 @@
           "needs_review": [],
           "source_refs": [
             {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA B — HUELLITAS · Posición 4 · Puntos 20",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-b-y-arte.jpg"
+            },
+            {
               "kind": "photo_archive",
               "cita": "Fotos de Víctor Elvira, hechas en el desfile",
               "ficheros": [
@@ -192367,7 +192479,7 @@
               "url": null
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -192376,6 +192488,10 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-huellitas.jpg"
                 },
@@ -192384,20 +192500,7 @@
                   "url": null
                 }
               ],
-              "independientes": 3
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_history",
-                  "url": null
-                }
-              ],
-              "independientes": 2
+              "independientes": 4
             },
             "category": {
               "fuentes": [
@@ -192406,20 +192509,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-huellitas.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -192437,6 +192535,28 @@
                   "url": null,
                   "regla": "«ASOCIACIÓN GRUPO ALEGORÍA» → «Grupo Alegoría»: el plegado usa otro nombre para el mismo grupo",
                   "motivo": "el plegado usa otro nombre para el mismo grupo"
+                }
+              ],
+              "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                }
+              ],
+              "independientes": 2
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
                 }
               ],
               "independientes": 1
@@ -192472,7 +192592,7 @@
           "points": 68,
           "group_raw": "ASOCIACIÓN COME GOLAYU QUE LO HA HECHU GÜELA",
           "group_canonical": "Come Golayu",
-          "source_type": "official_result+photo_archive+press_history+press_history",
+          "source_type": "official_result+acta_jurado+photo_archive+press_history+press_history",
           "source_urls": [
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
@@ -192496,6 +192616,12 @@
           ],
           "needs_review": [],
           "source_refs": [
+            {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA A — TODO O NADA · Posición 4 · Puntos 68",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+            },
             {
               "kind": "photo_archive",
               "cita": "Fotos de Víctor Elvira, hechas en el desfile",
@@ -192521,7 +192647,7 @@
               "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -192530,6 +192656,10 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-todo-o-nada.jpg"
                 },
@@ -192542,24 +192672,7 @@
                   "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
                 }
               ],
-              "independientes": 3
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_history",
-                  "url": null
-                },
-                {
-                  "kind": "press_history",
-                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
-                }
-              ],
-              "independientes": 2
+              "independientes": 4
             },
             "category": {
               "fuentes": [
@@ -192568,20 +192681,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-todo-o-nada.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -192599,6 +192707,32 @@
                   "url": null,
                   "regla": "«ASOCIACIÓN COME GOLAYU QUE LO HA HECHU GÜELA» → «Come Golayu»: el plegado usa otro nombre para el mismo grupo",
                   "motivo": "el plegado usa otro nombre para el mismo grupo"
+                }
+              ],
+              "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
+                }
+              ],
+              "independientes": 2
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
                 }
               ],
               "independientes": 1
@@ -192634,7 +192768,7 @@
           "points": 64,
           "group_raw": "ASOCIACIÓN CARROCISTA EL CANTU",
           "group_canonical": "El Cantu",
-          "source_type": "official_result+photo_archive+press_history+press_history",
+          "source_type": "official_result+acta_jurado+photo_archive+press_history+press_history",
           "source_urls": [
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
@@ -192658,6 +192792,12 @@
           ],
           "needs_review": [],
           "source_refs": [
+            {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA A — SOÑANDO ALTAMIRA · Posición 5 · Puntos 64 · Clasificación vestidos — SOÑANDO ALTAMIRA · Posición 2 · Puntos 11",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+            },
             {
               "kind": "photo_archive",
               "cita": "Fotos de Víctor Elvira, hechas en el desfile",
@@ -192684,7 +192824,7 @@
               "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -192693,21 +192833,8 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
-                  "kind": "press_history",
+                  "kind": "acta_jurado",
                   "url": null
-                },
-                {
-                  "kind": "press_history",
-                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
-                }
-              ],
-              "independientes": 2
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
                   "kind": "press_history",
@@ -192718,7 +192845,7 @@
                   "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
                 }
               ],
-              "independientes": 2
+              "independientes": 3
             },
             "category": {
               "fuentes": [
@@ -192727,33 +192854,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-sonando-altamira-1.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
-            },
-            "prize_costumes_rank": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_history",
-                  "url": null
-                }
-              ],
-              "independientes": 2
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -192774,6 +192883,45 @@
                 }
               ],
               "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
+                }
+              ],
+              "independientes": 2
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                }
+              ],
+              "independientes": 1
+            },
+            "prize_costumes_rank": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                }
+              ],
+              "independientes": 2
             }
           },
           "image_urls": [
@@ -192815,7 +192963,7 @@
           "points": 58,
           "group_raw": "GRUPO PEJINO",
           "group_canonical": "Grupo Pejino",
-          "source_type": "official_result+photo_archive+press_history",
+          "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
@@ -192840,6 +192988,12 @@
           "needs_review": [],
           "source_refs": [
             {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA A — ALISTAIR · Posición 6 · Puntos 58 · Clasificación vestidos — ALISTAIR · Posición 3 · Puntos 7",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+            },
+            {
               "kind": "photo_archive",
               "cita": "Fotos de Víctor Elvira, hechas en el desfile",
               "ficheros": [
@@ -192857,7 +193011,7 @@
               "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -192866,6 +193020,10 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-alistair-1.jpg"
                 },
@@ -192874,20 +193032,7 @@
                   "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
                 }
               ],
-              "independientes": 3
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_history",
-                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
-                }
-              ],
-              "independientes": 2
+              "independientes": 4
             },
             "category": {
               "fuentes": [
@@ -192896,33 +193041,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-alistair-1.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
-            },
-            "prize_costumes_rank": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_history",
-                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
-                }
-              ],
-              "independientes": 2
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -192943,6 +193070,41 @@
                 }
               ],
               "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
+                }
+              ],
+              "independientes": 2
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                }
+              ],
+              "independientes": 1
+            },
+            "prize_costumes_rank": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
+                }
+              ],
+              "independientes": 2
             },
             "prize_international_rank": {
               "fuentes": [
@@ -192993,7 +193155,7 @@
           "points": 38,
           "group_raw": "ASOCIACIÓN CULTURAL CARROZAS ORUÑA",
           "group_canonical": "Carrozas Oruña",
-          "source_type": "official_result+photo_archive+press_history",
+          "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
@@ -193013,6 +193175,12 @@
           "needs_review": [],
           "source_refs": [
             {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA A — JEREZ DE LA FRONTERA · Posición 7 · Puntos 38 · Clasificación vestidos — JEREZ DE LA FRONTERA · Posición 5 · Puntos 3",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+            },
+            {
               "kind": "photo_archive",
               "cita": "Fotos de Víctor Elvira, hechas en el desfile",
               "ficheros": [
@@ -193029,7 +193197,7 @@
               "url": null
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -193038,24 +193206,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
-                  "kind": "press_history",
+                  "kind": "acta_jurado",
                   "url": null
-                }
-              ],
-              "independientes": 2
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
                   "kind": "press_history",
                   "url": null
                 }
               ],
-              "independientes": 2
+              "independientes": 3
             },
             "category": {
               "fuentes": [
@@ -193064,29 +193223,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-jerez-de-la-frontera.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
-            },
-            "prize_costumes_rank": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -193104,6 +193249,37 @@
                   "url": null,
                   "regla": "«ASOCIACIÓN CULTURAL CARROZAS ORUÑA» → «Carrozas Oruña»: el plegado usa otro nombre para el mismo grupo",
                   "motivo": "el plegado usa otro nombre para el mismo grupo"
+                }
+              ],
+              "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                }
+              ],
+              "independientes": 2
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                }
+              ],
+              "independientes": 1
+            },
+            "prize_costumes_rank": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
                 }
               ],
               "independientes": 1
@@ -193139,7 +193315,7 @@
           "points": 28,
           "group_raw": "GRUPO PEJINO",
           "group_canonical": "Grupo Pejino",
-          "source_type": "official_result+photo_archive+press_history",
+          "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
@@ -193164,6 +193340,12 @@
           "needs_review": [],
           "source_refs": [
             {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA A — BEEP-BEEP · Posición 8 · Puntos 28",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+            },
+            {
               "kind": "photo_archive",
               "cita": "Fotos de Víctor Elvira, hechas en el desfile",
               "ficheros": [
@@ -193180,7 +193362,7 @@
               "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -193189,24 +193371,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
-                  "kind": "press_history",
-                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
-                }
-              ],
-              "independientes": 2
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+                  "kind": "acta_jurado",
+                  "url": null
                 },
                 {
                   "kind": "press_history",
                   "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
                 }
               ],
-              "independientes": 2
+              "independientes": 3
             },
             "category": {
               "fuentes": [
@@ -193215,20 +193388,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-beep-beep.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -193246,6 +193414,28 @@
                   "url": null,
                   "regla": "«GRUPO PEJINO» → «Grupo Pejino»: misma cosa escrita de otra manera (tildes, mayúsculas, abreviatura)",
                   "motivo": "misma cosa escrita de otra manera (tildes, mayúsculas, abreviatura)"
+                }
+              ],
+              "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
+                }
+              ],
+              "independientes": 2
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
                 }
               ],
               "independientes": 1
@@ -193281,7 +193471,7 @@
           "points": 26,
           "group_raw": "MI VIDA LOCA",
           "group_canonical": "Mi Vida Loca",
-          "source_type": "official_result+photo_archive+press_history",
+          "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
@@ -193301,6 +193491,12 @@
           "needs_review": [],
           "source_refs": [
             {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA A — DULCES SUEÑOS · Posición 9 · Puntos 26",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+            },
+            {
               "kind": "photo_archive",
               "cita": "Fotos de Víctor Elvira, hechas en el desfile",
               "ficheros": [
@@ -193317,7 +193513,7 @@
               "url": null
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -193326,6 +193522,10 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-dulces-suenos.jpg"
                 },
@@ -193334,20 +193534,7 @@
                   "url": null
                 }
               ],
-              "independientes": 3
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_history",
-                  "url": null
-                }
-              ],
-              "independientes": 2
+              "independientes": 4
             },
             "category": {
               "fuentes": [
@@ -193356,20 +193543,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-dulces-suenos.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -193387,6 +193569,28 @@
                   "url": null,
                   "regla": "«MI VIDA LOCA» → «Mi Vida Loca»: misma cosa escrita de otra manera (tildes, mayúsculas, abreviatura)",
                   "motivo": "misma cosa escrita de otra manera (tildes, mayúsculas, abreviatura)"
+                }
+              ],
+              "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                }
+              ],
+              "independientes": 2
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
                 }
               ],
               "independientes": 1
@@ -193422,7 +193626,7 @@
           "points": 14,
           "group_raw": "ASOCIACIÓN GRUPO ALEGORÍA",
           "group_canonical": "Grupo Alegoría",
-          "source_type": "official_result+photo_archive+press_history",
+          "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
@@ -193442,6 +193646,12 @@
           "needs_review": [],
           "source_refs": [
             {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA A — FLOTAREMOS · Posición 10 · Puntos 14 · Clasificación vestidos — FLOTAREMOS · Posición 6 · Puntos 1",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+            },
+            {
               "kind": "photo_archive",
               "cita": "Fotos de Víctor Elvira, hechas en el desfile",
               "ficheros": [
@@ -193458,7 +193668,7 @@
               "url": null
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -193467,6 +193677,10 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-flotaremos.jpg"
                 },
@@ -193475,20 +193689,7 @@
                   "url": null
                 }
               ],
-              "independientes": 3
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_history",
-                  "url": null
-                }
-              ],
-              "independientes": 2
+              "independientes": 4
             },
             "category": {
               "fuentes": [
@@ -193497,29 +193698,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-flotaremos.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
-            },
-            "prize_costumes_rank": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -193537,6 +193724,37 @@
                   "url": null,
                   "regla": "«ASOCIACIÓN GRUPO ALEGORÍA» → «Grupo Alegoría»: el plegado usa otro nombre para el mismo grupo",
                   "motivo": "el plegado usa otro nombre para el mismo grupo"
+                }
+              ],
+              "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                }
+              ],
+              "independientes": 2
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                }
+              ],
+              "independientes": 1
+            },
+            "prize_costumes_rank": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
                 }
               ],
               "independientes": 1
@@ -193574,7 +193792,7 @@
           "points": 98,
           "group_raw": "MI VIDA LOCA",
           "group_canonical": "Mi Vida Loca",
-          "source_type": "official_result+press_clipping+photo_archive+press_history+press_history",
+          "source_type": "official_result+acta_jurado+press_clipping+photo_archive+press_history+press_history",
           "source_urls": [
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/",
@@ -193604,6 +193822,12 @@
           ],
           "needs_review": [],
           "source_refs": [
+            {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA A — QUIMERA · Posición 1 · Puntos 98 · Clasificación vestidos — QUIMERA · Posición 1 · Puntos 15 · Clasificación arte — QUIMERA: 1",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+            },
             {
               "kind": "press_clipping",
               "cita": "EFE, teletipo de la noche del desfile, publicado por Infobae (28-08-2026)",
@@ -193636,7 +193860,7 @@
               "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -193645,6 +193869,10 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "press_clipping",
                   "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
                 },
@@ -193661,28 +193889,7 @@
                   "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
                 }
               ],
-              "independientes": 4
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_clipping",
-                  "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
-                },
-                {
-                  "kind": "press_history",
-                  "url": null
-                },
-                {
-                  "kind": "press_history",
-                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
-                }
-              ],
-              "independientes": 3
+              "independientes": 5
             },
             "category": {
               "fuentes": [
@@ -193691,51 +193898,12 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-quimera.jpg"
-                }
-              ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
-            },
-            "prize_art_rank": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_clipping",
-                  "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
-                },
-                {
-                  "kind": "press_history",
-                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
-                }
-              ],
-              "independientes": 3
-            },
-            "prize_costumes_rank": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_clipping",
-                  "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
-                },
-                {
-                  "kind": "press_history",
-                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
                 }
               ],
               "independientes": 3
@@ -193759,6 +193927,70 @@
                 }
               ],
               "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_clipping",
+                  "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
+                }
+              ],
+              "independientes": 3
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                }
+              ],
+              "independientes": 1
+            },
+            "prize_art_rank": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_clipping",
+                  "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
+                },
+                {
+                  "kind": "press_history",
+                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
+                }
+              ],
+              "independientes": 3
+            },
+            "prize_costumes_rank": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_clipping",
+                  "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
+                },
+                {
+                  "kind": "press_history",
+                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
+                }
+              ],
+              "independientes": 3
             }
           },
           "image_urls": [
@@ -193787,7 +194019,7 @@
           "points": 78,
           "group_raw": "AGRUPA-2",
           "group_canonical": "Agrupa-dos",
-          "source_type": "official_result+press_clipping+photo_archive+press_history+press_history",
+          "source_type": "official_result+acta_jurado+press_clipping+photo_archive+press_history+press_history",
           "source_urls": [
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/",
@@ -193817,6 +194049,12 @@
           ],
           "needs_review": [],
           "source_refs": [
+            {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA A — EUTOPÍA · Posición 2 · Puntos 78 · Clasificación vestidos — EUTOPÍA · Posición 4 · Puntos 5",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+            },
             {
               "kind": "press_clipping",
               "cita": "EFE, teletipo de la noche del desfile, publicado por Infobae (28-08-2026)",
@@ -193849,7 +194087,7 @@
               "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -193858,25 +194096,8 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
-                  "kind": "press_clipping",
-                  "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
-                },
-                {
-                  "kind": "press_history",
+                  "kind": "acta_jurado",
                   "url": null
-                },
-                {
-                  "kind": "press_history",
-                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
-                }
-              ],
-              "independientes": 3
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
                   "kind": "press_clipping",
@@ -193891,7 +194112,7 @@
                   "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
                 }
               ],
-              "independientes": 3
+              "independientes": 4
             },
             "category": {
               "fuentes": [
@@ -193900,29 +194121,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-eutopia.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
-            },
-            "prize_costumes_rank": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -193940,6 +194147,45 @@
                   "url": null,
                   "regla": "«AGRUPA-2» → «Agrupa-dos»: el plegado usa otro nombre para el mismo grupo",
                   "motivo": "el plegado usa otro nombre para el mismo grupo"
+                }
+              ],
+              "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_clipping",
+                  "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
+                }
+              ],
+              "independientes": 3
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                }
+              ],
+              "independientes": 1
+            },
+            "prize_costumes_rank": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
                 }
               ],
               "independientes": 1
@@ -193971,7 +194217,7 @@
           "points": 78,
           "group_raw": "ASOCIACIÓN COME GOLAYU QUE LO HA HECHU GÜELA",
           "group_canonical": "Come Golayu",
-          "source_type": "official_result+photo_archive+press_history+press_history",
+          "source_type": "official_result+acta_jurado+photo_archive+press_history+press_history",
           "source_urls": [
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
@@ -193995,6 +194241,12 @@
           ],
           "needs_review": [],
           "source_refs": [
+            {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA A — HAGAN JUEGO · Posición 3 · Puntos 78",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+            },
             {
               "kind": "photo_archive",
               "cita": "Fotos de Víctor Elvira, hechas en el desfile",
@@ -194020,7 +194272,7 @@
               "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -194029,6 +194281,10 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-hagan-juego.jpg"
                 },
@@ -194041,24 +194297,7 @@
                   "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
                 }
               ],
-              "independientes": 3
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_history",
-                  "url": null
-                },
-                {
-                  "kind": "press_history",
-                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
-                }
-              ],
-              "independientes": 2
+              "independientes": 4
             },
             "category": {
               "fuentes": [
@@ -194067,20 +194306,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-hagan-juego.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -194098,6 +194332,32 @@
                   "url": null,
                   "regla": "«ASOCIACIÓN COME GOLAYU QUE LO HA HECHU GÜELA» → «Come Golayu»: el plegado usa otro nombre para el mismo grupo",
                   "motivo": "el plegado usa otro nombre para el mismo grupo"
+                }
+              ],
+              "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
+                }
+              ],
+              "independientes": 2
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
                 }
               ],
               "independientes": 1
@@ -194129,7 +194389,7 @@
           "points": 68,
           "group_raw": "ASOCIACIÓN COME GOLAYU QUE LO HA HECHU GÜELA",
           "group_canonical": "Come Golayu",
-          "source_type": "official_result+photo_archive+press_history+press_history",
+          "source_type": "official_result+acta_jurado+photo_archive+press_history+press_history",
           "source_urls": [
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
@@ -194153,6 +194413,12 @@
           ],
           "needs_review": [],
           "source_refs": [
+            {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA A — TODO O NADA · Posición 4 · Puntos 68",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+            },
             {
               "kind": "photo_archive",
               "cita": "Fotos de Víctor Elvira, hechas en el desfile",
@@ -194178,7 +194444,7 @@
               "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -194187,6 +194453,10 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-todo-o-nada.jpg"
                 },
@@ -194199,24 +194469,7 @@
                   "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
                 }
               ],
-              "independientes": 3
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_history",
-                  "url": null
-                },
-                {
-                  "kind": "press_history",
-                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
-                }
-              ],
-              "independientes": 2
+              "independientes": 4
             },
             "category": {
               "fuentes": [
@@ -194225,20 +194478,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-todo-o-nada.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -194256,6 +194504,32 @@
                   "url": null,
                   "regla": "«ASOCIACIÓN COME GOLAYU QUE LO HA HECHU GÜELA» → «Come Golayu»: el plegado usa otro nombre para el mismo grupo",
                   "motivo": "el plegado usa otro nombre para el mismo grupo"
+                }
+              ],
+              "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
+                }
+              ],
+              "independientes": 2
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
                 }
               ],
               "independientes": 1
@@ -194287,7 +194561,7 @@
           "points": 64,
           "group_raw": "ASOCIACIÓN CARROCISTA EL CANTU",
           "group_canonical": "El Cantu",
-          "source_type": "official_result+photo_archive+press_history+press_history",
+          "source_type": "official_result+acta_jurado+photo_archive+press_history+press_history",
           "source_urls": [
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
@@ -194311,6 +194585,12 @@
           ],
           "needs_review": [],
           "source_refs": [
+            {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA A — SOÑANDO ALTAMIRA · Posición 5 · Puntos 64 · Clasificación vestidos — SOÑANDO ALTAMIRA · Posición 2 · Puntos 11",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+            },
             {
               "kind": "photo_archive",
               "cita": "Fotos de Víctor Elvira, hechas en el desfile",
@@ -194337,7 +194617,7 @@
               "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -194346,21 +194626,8 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
-                  "kind": "press_history",
+                  "kind": "acta_jurado",
                   "url": null
-                },
-                {
-                  "kind": "press_history",
-                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
-                }
-              ],
-              "independientes": 2
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
                   "kind": "press_history",
@@ -194371,7 +194638,7 @@
                   "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
                 }
               ],
-              "independientes": 2
+              "independientes": 3
             },
             "category": {
               "fuentes": [
@@ -194380,33 +194647,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-sonando-altamira-1.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
-            },
-            "prize_costumes_rank": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_history",
-                  "url": null
-                }
-              ],
-              "independientes": 2
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -194427,6 +194676,45 @@
                 }
               ],
               "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
+                }
+              ],
+              "independientes": 2
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                }
+              ],
+              "independientes": 1
+            },
+            "prize_costumes_rank": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                }
+              ],
+              "independientes": 2
             }
           },
           "image_urls": [
@@ -194464,7 +194752,7 @@
           "points": 58,
           "group_raw": "GRUPO PEJINO",
           "group_canonical": "Grupo Pejino",
-          "source_type": "official_result+photo_archive+press_history",
+          "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
@@ -194489,6 +194777,12 @@
           "needs_review": [],
           "source_refs": [
             {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA A — ALISTAIR · Posición 6 · Puntos 58 · Clasificación vestidos — ALISTAIR · Posición 3 · Puntos 7",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+            },
+            {
               "kind": "photo_archive",
               "cita": "Fotos de Víctor Elvira, hechas en el desfile",
               "ficheros": [
@@ -194506,7 +194800,7 @@
               "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -194515,6 +194809,10 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-alistair-1.jpg"
                 },
@@ -194523,20 +194821,7 @@
                   "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
                 }
               ],
-              "independientes": 3
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_history",
-                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
-                }
-              ],
-              "independientes": 2
+              "independientes": 4
             },
             "category": {
               "fuentes": [
@@ -194545,33 +194830,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-alistair-1.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
-            },
-            "prize_costumes_rank": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_history",
-                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
-                }
-              ],
-              "independientes": 2
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -194592,6 +194859,41 @@
                 }
               ],
               "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
+                }
+              ],
+              "independientes": 2
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                }
+              ],
+              "independientes": 1
+            },
+            "prize_costumes_rank": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
+                }
+              ],
+              "independientes": 2
             },
             "prize_international_rank": {
               "fuentes": [
@@ -194638,7 +194940,7 @@
           "points": 38,
           "group_raw": "ASOCIACIÓN CULTURAL CARROZAS ORUÑA",
           "group_canonical": "Carrozas Oruña",
-          "source_type": "official_result+photo_archive+press_history",
+          "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
@@ -194658,6 +194960,12 @@
           "needs_review": [],
           "source_refs": [
             {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA A — JEREZ DE LA FRONTERA · Posición 7 · Puntos 38 · Clasificación vestidos — JEREZ DE LA FRONTERA · Posición 5 · Puntos 3",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+            },
+            {
               "kind": "photo_archive",
               "cita": "Fotos de Víctor Elvira, hechas en el desfile",
               "ficheros": [
@@ -194674,7 +194982,7 @@
               "url": null
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -194683,24 +194991,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
-                  "kind": "press_history",
+                  "kind": "acta_jurado",
                   "url": null
-                }
-              ],
-              "independientes": 2
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
                   "kind": "press_history",
                   "url": null
                 }
               ],
-              "independientes": 2
+              "independientes": 3
             },
             "category": {
               "fuentes": [
@@ -194709,29 +195008,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-jerez-de-la-frontera.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
-            },
-            "prize_costumes_rank": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -194749,6 +195034,37 @@
                   "url": null,
                   "regla": "«ASOCIACIÓN CULTURAL CARROZAS ORUÑA» → «Carrozas Oruña»: el plegado usa otro nombre para el mismo grupo",
                   "motivo": "el plegado usa otro nombre para el mismo grupo"
+                }
+              ],
+              "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                }
+              ],
+              "independientes": 2
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                }
+              ],
+              "independientes": 1
+            },
+            "prize_costumes_rank": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
                 }
               ],
               "independientes": 1
@@ -194780,7 +195096,7 @@
           "points": 28,
           "group_raw": "GRUPO PEJINO",
           "group_canonical": "Grupo Pejino",
-          "source_type": "official_result+photo_archive+press_history",
+          "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
@@ -194805,6 +195121,12 @@
           "needs_review": [],
           "source_refs": [
             {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA A — BEEP-BEEP · Posición 8 · Puntos 28",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+            },
+            {
               "kind": "photo_archive",
               "cita": "Fotos de Víctor Elvira, hechas en el desfile",
               "ficheros": [
@@ -194821,7 +195143,7 @@
               "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -194830,24 +195152,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
-                  "kind": "press_history",
-                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
-                }
-              ],
-              "independientes": 2
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+                  "kind": "acta_jurado",
+                  "url": null
                 },
                 {
                   "kind": "press_history",
                   "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
                 }
               ],
-              "independientes": 2
+              "independientes": 3
             },
             "category": {
               "fuentes": [
@@ -194856,20 +195169,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-beep-beep.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -194887,6 +195195,28 @@
                   "url": null,
                   "regla": "«GRUPO PEJINO» → «Grupo Pejino»: misma cosa escrita de otra manera (tildes, mayúsculas, abreviatura)",
                   "motivo": "misma cosa escrita de otra manera (tildes, mayúsculas, abreviatura)"
+                }
+              ],
+              "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
+                }
+              ],
+              "independientes": 2
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
                 }
               ],
               "independientes": 1
@@ -194918,7 +195248,7 @@
           "points": 26,
           "group_raw": "MI VIDA LOCA",
           "group_canonical": "Mi Vida Loca",
-          "source_type": "official_result+photo_archive+press_history",
+          "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
@@ -194938,6 +195268,12 @@
           "needs_review": [],
           "source_refs": [
             {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA A — DULCES SUEÑOS · Posición 9 · Puntos 26",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+            },
+            {
               "kind": "photo_archive",
               "cita": "Fotos de Víctor Elvira, hechas en el desfile",
               "ficheros": [
@@ -194954,7 +195290,7 @@
               "url": null
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -194963,6 +195299,10 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-dulces-suenos.jpg"
                 },
@@ -194971,20 +195311,7 @@
                   "url": null
                 }
               ],
-              "independientes": 3
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_history",
-                  "url": null
-                }
-              ],
-              "independientes": 2
+              "independientes": 4
             },
             "category": {
               "fuentes": [
@@ -194993,20 +195320,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-dulces-suenos.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -195024,6 +195346,28 @@
                   "url": null,
                   "regla": "«MI VIDA LOCA» → «Mi Vida Loca»: misma cosa escrita de otra manera (tildes, mayúsculas, abreviatura)",
                   "motivo": "misma cosa escrita de otra manera (tildes, mayúsculas, abreviatura)"
+                }
+              ],
+              "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                }
+              ],
+              "independientes": 2
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
                 }
               ],
               "independientes": 1
@@ -195055,7 +195399,7 @@
           "points": 14,
           "group_raw": "ASOCIACIÓN GRUPO ALEGORÍA",
           "group_canonical": "Grupo Alegoría",
-          "source_type": "official_result+photo_archive+press_history",
+          "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
@@ -195075,6 +195419,12 @@
           "needs_review": [],
           "source_refs": [
             {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA A — FLOTAREMOS · Posición 10 · Puntos 14 · Clasificación vestidos — FLOTAREMOS · Posición 6 · Puntos 1",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+            },
+            {
               "kind": "photo_archive",
               "cita": "Fotos de Víctor Elvira, hechas en el desfile",
               "ficheros": [
@@ -195091,7 +195441,7 @@
               "url": null
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -195100,6 +195450,10 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-flotaremos.jpg"
                 },
@@ -195108,20 +195462,7 @@
                   "url": null
                 }
               ],
-              "independientes": 3
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_history",
-                  "url": null
-                }
-              ],
-              "independientes": 2
+              "independientes": 4
             },
             "category": {
               "fuentes": [
@@ -195130,29 +195471,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-flotaremos.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
-            },
-            "prize_costumes_rank": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -195170,6 +195497,37 @@
                   "url": null,
                   "regla": "«ASOCIACIÓN GRUPO ALEGORÍA» → «Grupo Alegoría»: el plegado usa otro nombre para el mismo grupo",
                   "motivo": "el plegado usa otro nombre para el mismo grupo"
+                }
+              ],
+              "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                }
+              ],
+              "independientes": 2
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                }
+              ],
+              "independientes": 1
+            },
+            "prize_costumes_rank": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
                 }
               ],
               "independientes": 1
@@ -195201,7 +195559,7 @@
           "points": 40,
           "group_raw": "AGRUPA-2",
           "group_canonical": "Agrupa-dos",
-          "source_type": "official_result+press_clipping+photo_archive+press_history+press_history",
+          "source_type": "official_result+acta_jurado+press_clipping+photo_archive+press_history+press_history",
           "source_urls": [
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/",
@@ -195231,6 +195589,12 @@
           ],
           "needs_review": [],
           "source_refs": [
+            {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA B — WALT · Posición 1 · Puntos 40 · Clasificación arte B — WALT: 1",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-b-y-arte.jpg"
+            },
             {
               "kind": "press_clipping",
               "cita": "EFE, teletipo de la noche del desfile, publicado por Infobae (28-08-2026)",
@@ -195263,7 +195627,7 @@
               "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -195272,6 +195636,10 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "press_clipping",
                   "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
                 },
@@ -195288,28 +195656,7 @@
                   "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
                 }
               ],
-              "independientes": 4
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_clipping",
-                  "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
-                },
-                {
-                  "kind": "press_history",
-                  "url": null
-                },
-                {
-                  "kind": "press_history",
-                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
-                }
-              ],
-              "independientes": 3
+              "independientes": 5
             },
             "category": {
               "fuentes": [
@@ -195318,29 +195665,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-walt.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
-            },
-            "prize_art_rank": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -195358,6 +195691,45 @@
                   "url": null,
                   "regla": "«AGRUPA-2» → «Agrupa-dos»: el plegado usa otro nombre para el mismo grupo",
                   "motivo": "el plegado usa otro nombre para el mismo grupo"
+                }
+              ],
+              "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_clipping",
+                  "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html"
+                }
+              ],
+              "independientes": 3
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                }
+              ],
+              "independientes": 1
+            },
+            "prize_art_rank": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
                 }
               ],
               "independientes": 1
@@ -195389,7 +195761,7 @@
           "points": 22,
           "group_raw": "ASOCIACIÓN CARROCISTA EL CANTU",
           "group_canonical": "El Cantu",
-          "source_type": "official_result+photo_archive+press_history",
+          "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
@@ -195409,6 +195781,12 @@
           "needs_review": [],
           "source_refs": [
             {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA B — TITÁN · Posición 2 · Puntos 22",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-b-y-arte.jpg"
+            },
+            {
               "kind": "photo_archive",
               "cita": "Fotos de Víctor Elvira, hechas en el desfile",
               "ficheros": [
@@ -195425,7 +195803,7 @@
               "url": null
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -195434,24 +195812,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
-                  "kind": "press_history",
+                  "kind": "acta_jurado",
                   "url": null
-                }
-              ],
-              "independientes": 2
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
                   "kind": "press_history",
                   "url": null
                 }
               ],
-              "independientes": 2
+              "independientes": 3
             },
             "category": {
               "fuentes": [
@@ -195460,20 +195829,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-titan.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -195491,6 +195855,28 @@
                   "url": null,
                   "regla": "«ASOCIACIÓN CARROCISTA EL CANTU» → «El Cantu»: el plegado usa otro nombre para el mismo grupo",
                   "motivo": "el plegado usa otro nombre para el mismo grupo"
+                }
+              ],
+              "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                }
+              ],
+              "independientes": 2
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
                 }
               ],
               "independientes": 1
@@ -195522,7 +195908,7 @@
           "points": 20,
           "group_raw": "ASOCIACIÓN CULTURAL CARROZAS ORUÑA",
           "group_canonical": "Carrozas Oruña",
-          "source_type": "official_result+photo_archive+press_history",
+          "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
@@ -195542,6 +195928,12 @@
           "needs_review": [],
           "source_refs": [
             {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA B — SOÑAR CON LAS ESTRELLAS · Posición 3 · Puntos 20",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-b-y-arte.jpg"
+            },
+            {
               "kind": "photo_archive",
               "cita": "Fotos de Víctor Elvira, hechas en el desfile",
               "ficheros": [
@@ -195558,7 +195950,7 @@
               "url": null
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -195567,6 +195959,10 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-sonar-con-las-estrellas.jpg"
                 },
@@ -195575,20 +195971,7 @@
                   "url": null
                 }
               ],
-              "independientes": 3
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_history",
-                  "url": null
-                }
-              ],
-              "independientes": 2
+              "independientes": 4
             },
             "category": {
               "fuentes": [
@@ -195597,20 +195980,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-sonar-con-las-estrellas.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -195628,6 +196006,28 @@
                   "url": null,
                   "regla": "«ASOCIACIÓN CULTURAL CARROZAS ORUÑA» → «Carrozas Oruña»: el plegado usa otro nombre para el mismo grupo",
                   "motivo": "el plegado usa otro nombre para el mismo grupo"
+                }
+              ],
+              "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                }
+              ],
+              "independientes": 2
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
                 }
               ],
               "independientes": 1
@@ -195659,7 +196059,7 @@
           "points": 20,
           "group_raw": "ASOCIACIÓN GRUPO ALEGORÍA",
           "group_canonical": "Grupo Alegoría",
-          "source_type": "official_result+photo_archive+press_history",
+          "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
@@ -195679,6 +196079,12 @@
           "needs_review": [],
           "source_refs": [
             {
+              "kind": "acta_jurado",
+              "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
+              "texto": "CLASIFICACIÓN CATEGORÍA B — HUELLITAS · Posición 4 · Puntos 20",
+              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-b-y-arte.jpg"
+            },
+            {
               "kind": "photo_archive",
               "cita": "Fotos de Víctor Elvira, hechas en el desfile",
               "ficheros": [
@@ -195695,7 +196101,7 @@
               "url": null
             }
           ],
-          "nivel": 2,
+          "nivel": 3,
           "claims": {
             "name": {
               "fuentes": [
@@ -195704,6 +196110,10 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-huellitas.jpg"
                 },
@@ -195712,20 +196122,7 @@
                   "url": null
                 }
               ],
-              "independientes": 3
-            },
-            "position": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                },
-                {
-                  "kind": "press_history",
-                  "url": null
-                }
-              ],
-              "independientes": 2
+              "independientes": 4
             },
             "category": {
               "fuentes": [
@@ -195734,20 +196131,15 @@
                   "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
                 },
                 {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
                   "kind": "photo_archive",
                   "url": "batalla_de_flores/fotos/2026-huellitas.jpg"
                 }
               ],
-              "independientes": 2
-            },
-            "points": {
-              "fuentes": [
-                {
-                  "kind": "official_result",
-                  "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
-                }
-              ],
-              "independientes": 1
+              "independientes": 3
             },
             "group_raw": {
               "fuentes": [
@@ -195765,6 +196157,28 @@
                   "url": null,
                   "regla": "«ASOCIACIÓN GRUPO ALEGORÍA» → «Grupo Alegoría»: el plegado usa otro nombre para el mismo grupo",
                   "motivo": "el plegado usa otro nombre para el mismo grupo"
+                }
+              ],
+              "independientes": 1
+            },
+            "position": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
+                },
+                {
+                  "kind": "press_history",
+                  "url": null
+                }
+              ],
+              "independientes": 2
+            },
+            "points": {
+              "fuentes": [
+                {
+                  "kind": "acta_jurado",
+                  "url": null
                 }
               ],
               "independientes": 1
@@ -199898,7 +200312,7 @@
     "Asociacion de Carrocistas y festejos de Laredo": "festejos-laredo",
     "Grupo Atalaya": "atalaya"
   },
-  "version": "3.4.1",
+  "version": "3.4.2",
   "about": {
     "url": "https://batalladedatos.es/",
     "compiled_by": "Víctor Elvira",
@@ -199916,7 +200330,7 @@
     ],
     "note": "Base de datos derivada y estructurada, no una réplica del contenido editorial de las fuentes. Cada entrada lleva su `source_type` y sus `source_urls`. Si reutilizas esto, cita a las fuentes originales."
   },
-  "built_at": "2026-09-04 19:30",
+  "built_at": "2026-09-04 19:38",
   "map_features": [
     {
       "id": "route_origin_1908",

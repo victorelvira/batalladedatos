@@ -134760,6 +134760,7 @@
           "group_canonical": "Abelardo Landera",
           "source_type": "archive_palmares+press_clipping+photo_cedida",
           "source_urls": [
+            "batalla_de_flores/fotos/2009-sinfonia-del-cantabrico.jpg",
             "https://www.batalladeflores.net/batalla-de-flores-de-laredo-palmares-de-la-edicion-2009/",
             "https://www.batalladeflores.net/revista-de-prensa-batalla-de-flores-de-laredo-del-ano-2009/"
           ],
@@ -134775,6 +134776,10 @@
             {
               "kind": "press_clipping",
               "url": "https://www.batalladeflores.net/revista-de-prensa-batalla-de-flores-de-laredo-del-ano-2009/"
+            },
+            {
+              "kind": "photo_cedida",
+              "url": "batalla_de_flores/fotos/2009-sinfonia-del-cantabrico.jpg"
             }
           ],
           "float_url": "http://batalladeflores.net/sinfonia-del-cantabrico/",
@@ -137418,6 +137423,7 @@
           "group_canonical": "Abelardo Landera",
           "source_type": "archive_palmares+press_clipping+photo_cedida",
           "source_urls": [
+            "batalla_de_flores/fotos/2009-sinfonia-del-cantabrico.jpg",
             "https://www.batalladeflores.net/batalla-de-flores-de-laredo-palmares-de-la-edicion-2009/",
             "https://www.batalladeflores.net/revista-de-prensa-batalla-de-flores-de-laredo-del-ano-2009/"
           ],
@@ -137433,6 +137439,10 @@
             {
               "kind": "press_clipping",
               "url": "https://www.batalladeflores.net/revista-de-prensa-batalla-de-flores-de-laredo-del-ano-2009/"
+            },
+            {
+              "kind": "photo_cedida",
+              "url": "batalla_de_flores/fotos/2009-sinfonia-del-cantabrico.jpg"
             }
           ],
           "float_url": "http://batalladeflores.net/sinfonia-del-cantabrico/",
@@ -168279,6 +168289,7 @@
           "group_canonical": "Come Golayu",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-habitat.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -168294,6 +168305,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-habitat.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/habitat/",
@@ -168534,6 +168549,7 @@
           "group_canonical": "Spartans",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-pink-panther.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -168549,6 +168565,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-pink-panther.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/pink-panther/",
@@ -168738,6 +168758,7 @@
           "group_canonical": "Grupo Pejino",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-bonerock.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -168753,6 +168774,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-bonerock.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/bonerock/",
@@ -168947,6 +168972,7 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-payasada.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -168962,6 +168988,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-payasada.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/payasada/",
@@ -169350,6 +169380,7 @@
           "group_canonical": "El Cantu",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-con-un-poco-de-azucar.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -169365,6 +169396,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-con-un-poco-de-azucar.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/con-un-poco-de-azucar/",
@@ -169622,6 +169657,7 @@
           "group_canonical": "Grupo Alegoría",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-magic.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -169637,6 +169673,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-magic.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/magic/",
@@ -169817,6 +169857,7 @@
           "group_canonical": "El Cantu",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-tatanka.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -169832,6 +169873,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-tatanka.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/tatanka/",
@@ -170059,6 +170104,7 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-corsaria.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -170074,6 +170120,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-corsaria.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/corsaria/",
@@ -170259,6 +170309,7 @@
           "group_canonical": "Planeta Pizza",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-venecia.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -170274,6 +170325,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-venecia.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/venecia/",
@@ -170481,6 +170536,7 @@
           "group_canonical": "Come Golayu",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-pequena-nobleza.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -170496,6 +170552,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-pequena-nobleza.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/pequena-nobleza/",
@@ -170635,6 +170695,7 @@
           "group_canonical": "Grupo Pejino",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-principe-ali.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -170650,6 +170711,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-principe-ali.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/principe-ali/",
@@ -170835,6 +170900,7 @@
           "group_canonical": "Grupo Alegoría",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-a-noah-wunder.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -170850,6 +170916,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-a-noah-wunder.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/noah-wunder/",
@@ -171053,6 +171123,7 @@
           "group_canonical": "Come Golayu",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-habitat.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -171068,6 +171139,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-habitat.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/habitat/",
@@ -171296,6 +171371,7 @@
           "group_canonical": "Grupo Pejino",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-bonerock.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -171311,6 +171387,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-bonerock.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/bonerock/",
@@ -171684,6 +171764,7 @@
           "group_canonical": "El Cantu",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-tatanka.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -171699,6 +171780,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-tatanka.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/tatanka/",
@@ -171922,6 +172007,7 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-corsaria.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -171937,6 +172023,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-corsaria.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/corsaria/",
@@ -172110,6 +172200,7 @@
           "group_canonical": "Grupo Pejino",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-principe-ali.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -172125,6 +172216,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-principe-ali.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/principe-ali/",
@@ -172298,6 +172393,7 @@
           "group_canonical": "Grupo Alegoría",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-a-noah-wunder.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -172313,6 +172409,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-a-noah-wunder.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/noah-wunder/",
@@ -172502,6 +172602,7 @@
           "group_canonical": "Spartans",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-pink-panther.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -172517,6 +172618,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-pink-panther.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/pink-panther/",
@@ -172694,6 +172799,7 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-payasada.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -172709,6 +172815,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-payasada.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/payasada/",
@@ -172882,6 +172992,7 @@
           "group_canonical": "El Cantu",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-con-un-poco-de-azucar.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -172897,6 +173008,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-con-un-poco-de-azucar.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/con-un-poco-de-azucar/",
@@ -173142,6 +173257,7 @@
           "group_canonical": "Grupo Alegoría",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-magic.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -173157,6 +173273,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-magic.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/magic/",
@@ -173325,6 +173445,7 @@
           "group_canonical": "Planeta Pizza",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-venecia.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -173340,6 +173461,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-venecia.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/venecia/",
@@ -173535,6 +173660,7 @@
           "group_canonical": "Come Golayu",
           "source_type": "archive_palmares+official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2017-pequena-nobleza.jpg",
             "https://www.batalladeflores.net/palmares-batalla-de-flores-2017/",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
           ],
@@ -173550,6 +173676,10 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3021"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2017-pequena-nobleza.jpg"
             }
           ],
           "float_url": "http://www.batalladeflores.net/pequena-nobleza/",
@@ -173777,7 +173907,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-evolucion.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-evolucion.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -173878,7 +174013,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-maya.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-maya.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -173977,12 +174117,17 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2018-medusa.jpg",
             "https://www.elfaradio.com/2019/08/28/laredo-capital-mundial-de-la-flor/"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.elfaradio.com/2019/08/28/laredo-capital-mundial-de-la-flor/"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-medusa.jpg"
             }
           ],
           "float_url": null,
@@ -174091,7 +174236,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-pesadilla.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-pesadilla.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -174194,7 +174344,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-kiliam.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-kiliam.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -174297,7 +174452,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-nemo.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-nemo.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -174398,7 +174558,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-fabula.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-fabula.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -174499,7 +174664,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-stell-s.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-stell-s.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -174602,7 +174772,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-el-velo-robado.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-el-velo-robado.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -174705,7 +174880,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-pajaros-cabreados.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-pajaros-cabreados.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -174808,7 +174988,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-hasta-siempre-laredo.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-hasta-siempre-laredo.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -174911,7 +175096,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-noel-magique.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-noel-magique.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -175014,7 +175204,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-caprichosas.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-caprichosas.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -175117,7 +175312,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-la-danza-del-dragon.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-la-danza-del-dragon.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -175220,7 +175420,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-el-nino-lobo.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-el-nino-lobo.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -175325,7 +175530,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-evolucion.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-evolucion.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -175420,12 +175630,17 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2018-medusa.jpg",
             "https://www.elfaradio.com/2019/08/28/laredo-capital-mundial-de-la-flor/"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.elfaradio.com/2019/08/28/laredo-capital-mundial-de-la-flor/"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-medusa.jpg"
             }
           ],
           "float_url": null,
@@ -175530,7 +175745,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-kiliam.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-kiliam.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -175629,7 +175849,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-fabula.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-fabula.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -175726,7 +175951,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-el-velo-robado.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-el-velo-robado.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -175825,7 +176055,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-hasta-siempre-laredo.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-hasta-siempre-laredo.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -175924,7 +176159,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-caprichosas.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-caprichosas.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -176023,7 +176263,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-el-nino-lobo.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-el-nino-lobo.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -176122,7 +176367,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-maya.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-maya.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -176219,7 +176469,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-pesadilla.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-pesadilla.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -176318,7 +176573,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-nemo.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-nemo.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -176415,7 +176675,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-stell-s.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-stell-s.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -176514,7 +176779,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-pajaros-cabreados.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-pajaros-cabreados.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -176613,7 +176883,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-noel-magique.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-noel-magique.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -176712,7 +176987,12 @@
           "source_urls": [
             "batalla_de_flores/fotos/2018-la-danza-del-dragon.jpg"
           ],
-          "source_links": [],
+          "source_links": [
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2018-la-danza-del-dragon.jpg"
+            }
+          ],
           "float_url": null,
           "prize_art_rank": null,
           "prize_costumes_rank": null,
@@ -176872,12 +177152,17 @@
           "group_canonical": "Grupo Pejino",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2019-lucky-rolly-y-patch.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2019-lucky-rolly-y-patch.jpg"
             }
           ],
           "float_url": null,
@@ -176999,12 +177284,17 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2019-memento-mori.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2019-memento-mori.jpg"
             }
           ],
           "float_url": null,
@@ -177142,12 +177432,17 @@
           "group_canonical": "Spartans",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2019-aracne.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2019-aracne.jpg"
             }
           ],
           "float_url": null,
@@ -177277,12 +177572,17 @@
           "group_canonical": "Spartans",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2019-popeye.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2019-popeye.jpg"
             }
           ],
           "float_url": null,
@@ -177412,12 +177712,17 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2019-se-oye-una-cancion.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2019-se-oye-una-cancion.jpg"
             }
           ],
           "float_url": null,
@@ -177537,12 +177842,17 @@
           "group_canonical": "Grupo Pejino",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2019-the-show-must-go-on.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2019-the-show-must-go-on.jpg"
             }
           ],
           "float_url": null,
@@ -177673,12 +177983,17 @@
           "group_canonical": "Grupo Atalaya",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2019-hippies.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2019-hippies.jpg"
             }
           ],
           "float_url": null,
@@ -177811,12 +178126,17 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2019-victorian-style.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2019-victorian-style.jpg"
             }
           ],
           "float_url": null,
@@ -177945,12 +178265,17 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2019-marionetas.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2019-marionetas.jpg"
             }
           ],
           "float_url": null,
@@ -178076,12 +178401,17 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2019-memento-mori.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2019-memento-mori.jpg"
             }
           ],
           "float_url": null,
@@ -178215,12 +178545,17 @@
           "group_canonical": "Spartans",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2019-aracne.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2019-aracne.jpg"
             }
           ],
           "float_url": null,
@@ -178346,12 +178681,17 @@
           "group_canonical": "Grupo Pejino",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2019-the-show-must-go-on.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2019-the-show-must-go-on.jpg"
             }
           ],
           "float_url": null,
@@ -178478,12 +178818,17 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2019-victorian-style.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2019-victorian-style.jpg"
             }
           ],
           "float_url": null,
@@ -178608,12 +178953,17 @@
           "group_canonical": "Grupo Pejino",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2019-lucky-rolly-y-patch.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2019-lucky-rolly-y-patch.jpg"
             }
           ],
           "float_url": null,
@@ -178731,12 +179081,17 @@
           "group_canonical": "Spartans",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2019-popeye.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2019-popeye.jpg"
             }
           ],
           "float_url": null,
@@ -178862,12 +179217,17 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2019-se-oye-una-cancion.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2019-se-oye-una-cancion.jpg"
             }
           ],
           "float_url": null,
@@ -178983,12 +179343,17 @@
           "group_canonical": "Grupo Atalaya",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2019-hippies.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2019-hippies.jpg"
             }
           ],
           "float_url": null,
@@ -179117,12 +179482,17 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2019-marionetas.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=3705"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2019-marionetas.jpg"
             }
           ],
           "float_url": null,
@@ -179357,12 +179727,17 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2022-gravity.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2022-gravity.jpg"
             }
           ],
           "float_url": null,
@@ -179495,12 +179870,17 @@
           "group_canonical": "Grupo Pejino",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2022-yabbadabbadoo.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2022-yabbadabbadoo.jpg"
             }
           ],
           "float_url": null,
@@ -179830,12 +180210,17 @@
           "group_canonical": "Grupo Alegoría",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2022-irezumi.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2022-irezumi.jpg"
             }
           ],
           "float_url": null,
@@ -179971,12 +180356,17 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2022-venecia.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2022-venecia.jpg"
             }
           ],
           "float_url": null,
@@ -180213,12 +180603,17 @@
           "group_canonical": "Spartans",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2022-jigsaw.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2022-jigsaw.jpg"
             }
           ],
           "float_url": null,
@@ -180348,12 +180743,17 @@
           "group_canonical": "El Cantu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2022-arrecife.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2022-arrecife.jpg"
             }
           ],
           "float_url": null,
@@ -180488,12 +180888,17 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2022-escuela-de-magia.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2022-escuela-de-magia.jpg"
             }
           ],
           "float_url": null,
@@ -180617,12 +181022,17 @@
           "group_canonical": "Spartans",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2022-el-show-de-garfield.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2022-el-show-de-garfield.jpg"
             }
           ],
           "float_url": null,
@@ -180742,12 +181152,17 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2022-gravity.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2022-gravity.jpg"
             }
           ],
           "float_url": null,
@@ -180976,12 +181391,17 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2022-venecia.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2022-venecia.jpg"
             }
           ],
           "float_url": null,
@@ -181121,12 +181541,17 @@
           "group_canonical": "Spartans",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2022-jigsaw.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2022-jigsaw.jpg"
             }
           ],
           "float_url": null,
@@ -181252,12 +181677,17 @@
           "group_canonical": "El Cantu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2022-arrecife.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2022-arrecife.jpg"
             }
           ],
           "float_url": null,
@@ -181388,12 +181818,17 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2022-escuela-de-magia.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2022-escuela-de-magia.jpg"
             }
           ],
           "float_url": null,
@@ -181513,12 +181948,17 @@
           "group_canonical": "Spartans",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2022-el-show-de-garfield.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2022-el-show-de-garfield.jpg"
             }
           ],
           "float_url": null,
@@ -181632,12 +182072,17 @@
           "group_canonical": "Grupo Pejino",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2022-yabbadabbadoo.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2022-yabbadabbadoo.jpg"
             }
           ],
           "float_url": null,
@@ -181855,12 +182300,17 @@
           "group_canonical": "Grupo Alegoría",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2022-irezumi.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4141"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2022-irezumi.jpg"
             }
           ],
           "float_url": null,
@@ -182229,12 +182679,17 @@
           "group_canonical": "Mi Vida Loca",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2023-stone.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2023-stone.jpg"
             }
           ],
           "float_url": null,
@@ -182360,12 +182815,17 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2023-cerbero.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2023-cerbero.jpg"
             }
           ],
           "float_url": null,
@@ -182491,12 +182951,17 @@
           "group_canonical": "Mi Vida Loca",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2023-huida.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2023-huida.jpg"
             }
           ],
           "float_url": null,
@@ -182613,12 +183078,17 @@
           "group_canonical": "Grupo Alegoría",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2023-chuchelandia.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2023-chuchelandia.jpg"
             }
           ],
           "float_url": null,
@@ -182830,12 +183300,17 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2023-avante-toda.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2023-avante-toda.jpg"
             }
           ],
           "float_url": null,
@@ -182948,12 +183423,17 @@
           "group_canonical": "Spartans",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2023-carismatico.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2023-carismatico.jpg"
             }
           ],
           "float_url": null,
@@ -183070,12 +183550,17 @@
           "group_canonical": "Grupo Alegoría",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2023-ohana.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2023-ohana.jpg"
             }
           ],
           "float_url": null,
@@ -183192,12 +183677,17 @@
           "group_canonical": "El Cantu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2023-rapa-nui.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2023-rapa-nui.jpg"
             }
           ],
           "float_url": null,
@@ -183310,12 +183800,17 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2023-primavera.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2023-primavera.jpg"
             }
           ],
           "float_url": null,
@@ -183441,12 +183936,17 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2023-pinocho.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2023-pinocho.jpg"
             }
           ],
           "float_url": null,
@@ -183565,12 +184065,17 @@
           "group_canonical": "Mi Vida Loca",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2023-stone.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2023-stone.jpg"
             }
           ],
           "float_url": null,
@@ -183692,12 +184197,17 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2023-cerbero.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2023-cerbero.jpg"
             }
           ],
           "float_url": null,
@@ -183910,12 +184420,17 @@
           "group_canonical": "Spartans",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2023-carismatico.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2023-carismatico.jpg"
             }
           ],
           "float_url": null,
@@ -184028,12 +184543,17 @@
           "group_canonical": "El Cantu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2023-rapa-nui.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2023-rapa-nui.jpg"
             }
           ],
           "float_url": null,
@@ -184142,12 +184662,17 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2023-primavera.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2023-primavera.jpg"
             }
           ],
           "float_url": null,
@@ -184269,12 +184794,17 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2023-pinocho.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2023-pinocho.jpg"
             }
           ],
           "float_url": null,
@@ -184478,12 +185008,17 @@
           "group_canonical": "Mi Vida Loca",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2023-huida.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2023-huida.jpg"
             }
           ],
           "float_url": null,
@@ -184596,12 +185131,17 @@
           "group_canonical": "Grupo Alegoría",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2023-chuchelandia.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2023-chuchelandia.jpg"
             }
           ],
           "float_url": null,
@@ -184714,12 +185254,17 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2023-avante-toda.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2023-avante-toda.jpg"
             }
           ],
           "float_url": null,
@@ -184828,12 +185373,17 @@
           "group_canonical": "Grupo Alegoría",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2023-ohana.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4268"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2023-ohana.jpg"
             }
           ],
           "float_url": null,
@@ -184993,12 +185543,17 @@
           "group_canonical": "Spartans",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-tweety.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-tweety.jpg"
             }
           ],
           "float_url": null,
@@ -185131,12 +185686,17 @@
           "group_canonical": "Mi Vida Loca",
           "source_type": "official_result+photo_archive+manual_seed",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-una-y-mil-veces.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-una-y-mil-veces.jpg"
             }
           ],
           "float_url": null,
@@ -185297,12 +185857,17 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+photo_archive+manual_seed",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-jaque-mate.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-jaque-mate.jpg"
             }
           ],
           "float_url": null,
@@ -185454,12 +186019,17 @@
           "group_canonical": "Grupo Pejino",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-maese-gato.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-maese-gato.jpg"
             }
           ],
           "float_url": null,
@@ -185671,12 +186241,17 @@
           "group_canonical": "Grupo Pejino",
           "source_type": "official_result+photo_archive+manual_seed",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-tempus-fugit.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-tempus-fugit.jpg"
             }
           ],
           "float_url": null,
@@ -185828,12 +186403,17 @@
           "group_canonical": "Grupo Alegoría",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-a-traves-del-espejo.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-a-traves-del-espejo.jpg"
             }
           ],
           "float_url": null,
@@ -185946,12 +186526,17 @@
           "group_canonical": "Spartans",
           "source_type": "official_result+photo_archive+manual_seed",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-aguas-vivas.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-aguas-vivas.jpg"
             }
           ],
           "float_url": null,
@@ -186107,12 +186692,17 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "official_result+photo_archive+manual_seed",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-murasaki.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-murasaki.jpg"
             }
           ],
           "float_url": null,
@@ -186247,12 +186837,17 @@
           "group_canonical": "Mi Vida Loca",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-hakuna-matata.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-hakuna-matata.jpg"
             }
           ],
           "float_url": null,
@@ -186369,12 +186964,17 @@
           "group_canonical": "El Cantu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-harriet.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-harriet.jpg"
             }
           ],
           "float_url": null,
@@ -186491,12 +187091,17 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-insert-coin.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-insert-coin.jpg"
             }
           ],
           "float_url": null,
@@ -186613,12 +187218,17 @@
           "group_canonical": "Grupo Alegoría",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-el-mundo-en-tus-manos.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-el-mundo-en-tus-manos.jpg"
             }
           ],
           "float_url": null,
@@ -186737,12 +187347,17 @@
           "group_canonical": "Mi Vida Loca",
           "source_type": "official_result+photo_archive+manual_seed",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-una-y-mil-veces.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-una-y-mil-veces.jpg"
             }
           ],
           "float_url": null,
@@ -186899,12 +187514,17 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+photo_archive+manual_seed",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-jaque-mate.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-jaque-mate.jpg"
             }
           ],
           "float_url": null,
@@ -187052,12 +187672,17 @@
           "group_canonical": "Grupo Pejino",
           "source_type": "official_result+photo_archive+manual_seed",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-tempus-fugit.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-tempus-fugit.jpg"
             }
           ],
           "float_url": null,
@@ -187205,12 +187830,17 @@
           "group_canonical": "Spartans",
           "source_type": "official_result+photo_archive+manual_seed",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-aguas-vivas.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-aguas-vivas.jpg"
             }
           ],
           "float_url": null,
@@ -187362,12 +187992,17 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "official_result+photo_archive+manual_seed",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-murasaki.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-murasaki.jpg"
             }
           ],
           "float_url": null,
@@ -187498,12 +188133,17 @@
           "group_canonical": "Mi Vida Loca",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-hakuna-matata.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-hakuna-matata.jpg"
             }
           ],
           "float_url": null,
@@ -187616,12 +188256,17 @@
           "group_canonical": "El Cantu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-harriet.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-harriet.jpg"
             }
           ],
           "float_url": null,
@@ -187734,12 +188379,17 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-insert-coin.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-insert-coin.jpg"
             }
           ],
           "float_url": null,
@@ -187852,12 +188502,17 @@
           "group_canonical": "Grupo Alegoría",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-el-mundo-en-tus-manos.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-el-mundo-en-tus-manos.jpg"
             }
           ],
           "float_url": null,
@@ -187970,12 +188625,17 @@
           "group_canonical": "Spartans",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-tweety.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-tweety.jpg"
             }
           ],
           "float_url": null,
@@ -188104,12 +188764,17 @@
           "group_canonical": "Grupo Pejino",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-maese-gato.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-maese-gato.jpg"
             }
           ],
           "float_url": null,
@@ -188313,12 +188978,17 @@
           "group_canonical": "Grupo Alegoría",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2024-a-traves-del-espejo.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4386"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2024-a-traves-del-espejo.jpg"
             }
           ],
           "float_url": null,
@@ -188474,12 +189144,17 @@
           "group_canonical": "Grupo Pejino",
           "source_type": "official_result+photo_archive+manual_seed",
           "source_urls": [
+            "batalla_de_flores/fotos/2025-aiko.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2025-aiko.jpg"
             }
           ],
           "float_url": null,
@@ -188631,12 +189306,17 @@
           "group_canonical": "Grupo Pejino",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2025-russel.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2025-russel.jpg"
             }
           ],
           "float_url": null,
@@ -188753,12 +189433,17 @@
           "group_canonical": "Grupo Alegoría",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2025-nos-vamos-de-cumpleanos.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2025-nos-vamos-de-cumpleanos.jpg"
             }
           ],
           "float_url": null,
@@ -188880,12 +189565,17 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+photo_archive+manual_seed",
           "source_urls": [
+            "batalla_de_flores/fotos/2025-rebellio.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2025-rebellio.jpg"
             }
           ],
           "float_url": null,
@@ -189040,12 +189730,17 @@
           "group_canonical": "Mi Vida Loca",
           "source_type": "official_result+photo_archive+manual_seed",
           "source_urls": [
+            "batalla_de_flores/fotos/2025-anillos-de-poder.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2025-anillos-de-poder.jpg"
             }
           ],
           "float_url": null,
@@ -189197,12 +189892,17 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2025-rincon-de-jardin.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2025-rincon-de-jardin.jpg"
             }
           ],
           "float_url": null,
@@ -189315,12 +190015,17 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2025-damnatorum.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2025-damnatorum.jpg"
             }
           ],
           "float_url": null,
@@ -189530,12 +190235,17 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2025-clown.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2025-clown.jpg"
             }
           ],
           "float_url": null,
@@ -189652,12 +190362,17 @@
           "group_canonical": "Mi Vida Loca",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2025-hasta-el-infinito-y-mas-alla.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2025-hasta-el-infinito-y-mas-alla.jpg"
             }
           ],
           "float_url": null,
@@ -189770,12 +190485,17 @@
           "group_canonical": "Grupo Alegoría",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2025-el-rey-dragon.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2025-el-rey-dragon.jpg"
             }
           ],
           "float_url": null,
@@ -189890,12 +190610,17 @@
           "group_canonical": "Grupo Pejino",
           "source_type": "official_result+photo_archive+manual_seed",
           "source_urls": [
+            "batalla_de_flores/fotos/2025-aiko.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2025-aiko.jpg"
             }
           ],
           "float_url": null,
@@ -190043,12 +190768,17 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+photo_archive+manual_seed",
           "source_urls": [
+            "batalla_de_flores/fotos/2025-rebellio.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2025-rebellio.jpg"
             }
           ],
           "float_url": null,
@@ -190199,12 +190929,17 @@
           "group_canonical": "Mi Vida Loca",
           "source_type": "official_result+photo_archive+manual_seed",
           "source_urls": [
+            "batalla_de_flores/fotos/2025-anillos-de-poder.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2025-anillos-de-poder.jpg"
             }
           ],
           "float_url": null,
@@ -190352,12 +191087,17 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2025-damnatorum.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2025-damnatorum.jpg"
             }
           ],
           "float_url": null,
@@ -190559,12 +191299,17 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2025-clown.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2025-clown.jpg"
             }
           ],
           "float_url": null,
@@ -190677,12 +191422,17 @@
           "group_canonical": "Mi Vida Loca",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2025-hasta-el-infinito-y-mas-alla.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2025-hasta-el-infinito-y-mas-alla.jpg"
             }
           ],
           "float_url": null,
@@ -190791,12 +191541,17 @@
           "group_canonical": "Grupo Alegoría",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2025-el-rey-dragon.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2025-el-rey-dragon.jpg"
             }
           ],
           "float_url": null,
@@ -190905,12 +191660,17 @@
           "group_canonical": "Grupo Pejino",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2025-russel.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2025-russel.jpg"
             }
           ],
           "float_url": null,
@@ -191023,12 +191783,17 @@
           "group_canonical": "Grupo Alegoría",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2025-nos-vamos-de-cumpleanos.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2025-nos-vamos-de-cumpleanos.jpg"
             }
           ],
           "float_url": null,
@@ -191146,12 +191911,17 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "official_result+photo_archive",
           "source_urls": [
+            "batalla_de_flores/fotos/2025-rincon-de-jardin.jpg",
             "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4468"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2025-rincon-de-jardin.jpg"
             }
           ],
           "float_url": null,
@@ -191300,7 +192070,7 @@
         "https://www.laredo.es/09/noticia_ampliada.php?id_Noticia=4490"
       ],
       "notes": [
-        "Los dos primeros premios de la categoría A tienen nombre propio en el acta del jurado: la «Onza de Oro» para la ganadora, Quimera, y el «Sombrero de Plata» para la segunda, Eutopía. Fuente: Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación», escaneo data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg.",
+        "Los dos primeros premios de la categoría A tienen nombre propio en el acta del jurado: la «Onza de Oro» para la ganadora, Quimera, y el «Sombrero de Plata» para la segunda, Eutopía. Fuente: Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación», escaneo batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg.",
         "Palmarés de la 115.ª edición — Categoría A: 1.ª «Quimera» (Mi Vida Loca), que hizo pleno con el Mejor Vestuario, el Premio al Arte y la onza de oro; 2.ª «Eutopía» (Agrupa-2, que volvía tras ocho años sin participar); 3.ª «Hagan juego» y 4.ª «Todo o nada» (Come Golayu); 5.ª «Soñando Altamira» (El Cantu). Categoría B: 1.ª «Walt» (Agrupa-2). Premio Internacional: «Alistair» (Grupo Pejino). Premios: 18.123 € y onza de oro al primero de A; 10.423 € a la ganadora de B; 650 € al mejor vestuario. Desfile de tres vueltas a la Alameda Miramar desde las 17:30, con homenaje al Carrocista Mayor Javier «Poty» Castillo y al Veterano Antonio Pascual. Según la crónica de El Diario Montañés (28-08-2026). Fuente: EFE, teletipo de la noche del desfile, publicado por Infobae (28-08-2026), recorte prensa-efe-infobae-2026-palmares.html (copia en data/sources/) transcrito a mano.",
         "La 115.ª edición se celebró el viernes 28 de agosto de 2026 con 14 carrozas (10 en categoría A y 4 en categoría B) de 7 agrupaciones. La Noche Mágica es el jueves 27 de agosto de 2026, a partir de las 20:00."
       ],
@@ -191318,6 +192088,8 @@
           "group_canonical": "Mi Vida Loca",
           "source_type": "official_result+acta_jurado+press_clipping+photo_archive+press_history+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-quimera.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
@@ -191328,8 +192100,16 @@
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
             },
             {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
+            },
+            {
               "kind": "press_clipping",
               "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-quimera.jpg"
             },
             {
               "kind": "press_history",
@@ -191350,7 +192130,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA A — QUIMERA · Posición 1 · Puntos 98 · Clasificación vestidos — QUIMERA · Posición 1 · Puntos 15 · Clasificación arte — QUIMERA: 1",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
             },
             {
               "kind": "press_clipping",
@@ -191394,7 +192175,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_clipping",
@@ -191423,7 +192204,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -191456,7 +192237,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_clipping",
@@ -191477,7 +192258,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -191486,7 +192267,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_clipping",
@@ -191503,7 +192284,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_clipping",
@@ -191549,6 +192330,8 @@
           "group_canonical": "Agrupa-dos",
           "source_type": "official_result+acta_jurado+press_clipping+photo_archive+press_history+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-walt.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg",
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
@@ -191559,8 +192342,16 @@
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
             },
             {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
+            },
+            {
               "kind": "press_clipping",
               "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-walt.jpg"
             },
             {
               "kind": "press_history",
@@ -191581,7 +192372,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA B — WALT · Posición 1 · Puntos 40 · Clasificación arte B — WALT: 1",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-b-y-arte.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
             },
             {
               "kind": "press_clipping",
@@ -191625,7 +192417,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "press_clipping",
@@ -191654,7 +192446,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -191687,7 +192479,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "press_clipping",
@@ -191708,7 +192500,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 }
               ],
               "independientes": 1
@@ -191717,7 +192509,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 }
               ],
               "independientes": 1
@@ -191755,6 +192547,8 @@
           "group_canonical": "Agrupa-dos",
           "source_type": "official_result+acta_jurado+press_clipping+photo_archive+press_history+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-eutopia.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
@@ -191765,8 +192559,16 @@
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
             },
             {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
+            },
+            {
               "kind": "press_clipping",
               "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-eutopia.jpg"
             },
             {
               "kind": "press_history",
@@ -191787,7 +192589,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA A — EUTOPÍA · Posición 2 · Puntos 78 · Clasificación vestidos — EUTOPÍA · Posición 4 · Puntos 5",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
             },
             {
               "kind": "press_clipping",
@@ -191831,7 +192634,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_clipping",
@@ -191856,7 +192659,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -191889,7 +192692,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_clipping",
@@ -191910,7 +192713,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -191919,7 +192722,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -191957,12 +192760,22 @@
           "group_canonical": "El Cantu",
           "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-titan.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+            },
+            {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-titan.jpg"
             }
           ],
           "float_url": null,
@@ -191978,7 +192791,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA B — TITÁN · Posición 2 · Puntos 22",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-b-y-arte.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
             },
             {
               "kind": "photo_archive",
@@ -192007,7 +192821,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -192024,7 +192838,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -192057,7 +192871,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -192070,7 +192884,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 }
               ],
               "independientes": 1
@@ -192108,6 +192922,8 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+acta_jurado+photo_archive+press_history+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-hagan-juego.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
@@ -192115,6 +192931,14 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+            },
+            {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-hagan-juego.jpg"
             },
             {
               "kind": "press_history",
@@ -192134,7 +192958,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA A — HAGAN JUEGO · Posición 3 · Puntos 78",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
             },
             {
               "kind": "photo_archive",
@@ -192171,7 +192996,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -192196,7 +193021,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -192229,7 +193054,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -192246,7 +193071,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -192284,12 +193109,22 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-sonar-con-las-estrellas.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+            },
+            {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-sonar-con-las-estrellas.jpg"
             }
           ],
           "float_url": null,
@@ -192305,7 +193140,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA B — SOÑAR CON LAS ESTRELLAS · Posición 3 · Puntos 20",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-b-y-arte.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
             },
             {
               "kind": "photo_archive",
@@ -192334,7 +193170,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -192355,7 +193191,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -192388,7 +193224,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -192401,7 +193237,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 }
               ],
               "independientes": 1
@@ -192439,12 +193275,22 @@
           "group_canonical": "Grupo Alegoría",
           "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-huellitas.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+            },
+            {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-huellitas.jpg"
             }
           ],
           "float_url": null,
@@ -192460,7 +193306,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA B — HUELLITAS · Posición 4 · Puntos 20",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-b-y-arte.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
             },
             {
               "kind": "photo_archive",
@@ -192489,7 +193336,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -192510,7 +193357,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -192543,7 +193390,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -192556,7 +193403,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 }
               ],
               "independientes": 1
@@ -192594,6 +193441,8 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+acta_jurado+photo_archive+press_history+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-todo-o-nada.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
@@ -192601,6 +193450,14 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+            },
+            {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-todo-o-nada.jpg"
             },
             {
               "kind": "press_history",
@@ -192620,7 +193477,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA A — TODO O NADA · Posición 4 · Puntos 68",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
             },
             {
               "kind": "photo_archive",
@@ -192657,7 +193515,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -192682,7 +193540,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -192715,7 +193573,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -192732,7 +193590,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -192770,6 +193628,8 @@
           "group_canonical": "El Cantu",
           "source_type": "official_result+acta_jurado+photo_archive+press_history+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-sonando-altamira-1.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
@@ -192777,6 +193637,14 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+            },
+            {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-sonando-altamira-1.jpg"
             },
             {
               "kind": "press_history",
@@ -192796,7 +193664,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA A — SOÑANDO ALTAMIRA · Posición 5 · Puntos 64 · Clasificación vestidos — SOÑANDO ALTAMIRA · Posición 2 · Puntos 11",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
             },
             {
               "kind": "photo_archive",
@@ -192834,7 +193703,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -192855,7 +193724,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -192888,7 +193757,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -192905,7 +193774,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -192914,7 +193783,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -192965,6 +193834,8 @@
           "group_canonical": "Grupo Pejino",
           "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-alistair-1.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
@@ -192972,6 +193843,14 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+            },
+            {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-alistair-1.jpg"
             },
             {
               "kind": "press_history",
@@ -192991,7 +193870,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA A — ALISTAIR · Posición 6 · Puntos 58 · Clasificación vestidos — ALISTAIR · Posición 3 · Puntos 7",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
             },
             {
               "kind": "photo_archive",
@@ -193021,7 +193901,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -193042,7 +193922,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -193075,7 +193955,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -193088,7 +193968,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -193097,7 +193977,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -193157,12 +194037,22 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-jerez-de-la-frontera.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+            },
+            {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-jerez-de-la-frontera.jpg"
             }
           ],
           "float_url": null,
@@ -193178,7 +194068,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA A — JEREZ DE LA FRONTERA · Posición 7 · Puntos 38 · Clasificación vestidos — JEREZ DE LA FRONTERA · Posición 5 · Puntos 3",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
             },
             {
               "kind": "photo_archive",
@@ -193207,7 +194098,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -193224,7 +194115,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -193257,7 +194148,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -193270,7 +194161,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -193279,7 +194170,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -193317,6 +194208,8 @@
           "group_canonical": "Grupo Pejino",
           "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-beep-beep.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
@@ -193324,6 +194217,14 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+            },
+            {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-beep-beep.jpg"
             },
             {
               "kind": "press_history",
@@ -193343,7 +194244,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA A — BEEP-BEEP · Posición 8 · Puntos 28",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
             },
             {
               "kind": "photo_archive",
@@ -193372,7 +194274,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -193389,7 +194291,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -193422,7 +194324,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -193435,7 +194337,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -193473,12 +194375,22 @@
           "group_canonical": "Mi Vida Loca",
           "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-dulces-suenos.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+            },
+            {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-dulces-suenos.jpg"
             }
           ],
           "float_url": null,
@@ -193494,7 +194406,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA A — DULCES SUEÑOS · Posición 9 · Puntos 26",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
             },
             {
               "kind": "photo_archive",
@@ -193523,7 +194436,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -193544,7 +194457,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -193577,7 +194490,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -193590,7 +194503,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -193628,12 +194541,22 @@
           "group_canonical": "Grupo Alegoría",
           "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-flotaremos.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+            },
+            {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-flotaremos.jpg"
             }
           ],
           "float_url": null,
@@ -193649,7 +194572,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA A — FLOTAREMOS · Posición 10 · Puntos 14 · Clasificación vestidos — FLOTAREMOS · Posición 6 · Puntos 1",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
             },
             {
               "kind": "photo_archive",
@@ -193678,7 +194602,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -193699,7 +194623,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -193732,7 +194656,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -193745,7 +194669,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -193754,7 +194678,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -193794,6 +194718,8 @@
           "group_canonical": "Mi Vida Loca",
           "source_type": "official_result+acta_jurado+press_clipping+photo_archive+press_history+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-quimera.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
@@ -193804,8 +194730,16 @@
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
             },
             {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
+            },
+            {
               "kind": "press_clipping",
               "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-quimera.jpg"
             },
             {
               "kind": "press_history",
@@ -193826,7 +194760,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA A — QUIMERA · Posición 1 · Puntos 98 · Clasificación vestidos — QUIMERA · Posición 1 · Puntos 15 · Clasificación arte — QUIMERA: 1",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
             },
             {
               "kind": "press_clipping",
@@ -193870,7 +194805,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_clipping",
@@ -193899,7 +194834,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -193932,7 +194867,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_clipping",
@@ -193953,7 +194888,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -193962,7 +194897,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_clipping",
@@ -193979,7 +194914,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_clipping",
@@ -194021,6 +194956,8 @@
           "group_canonical": "Agrupa-dos",
           "source_type": "official_result+acta_jurado+press_clipping+photo_archive+press_history+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-eutopia.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
@@ -194031,8 +194968,16 @@
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
             },
             {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
+            },
+            {
               "kind": "press_clipping",
               "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-eutopia.jpg"
             },
             {
               "kind": "press_history",
@@ -194053,7 +194998,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA A — EUTOPÍA · Posición 2 · Puntos 78 · Clasificación vestidos — EUTOPÍA · Posición 4 · Puntos 5",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
             },
             {
               "kind": "press_clipping",
@@ -194097,7 +195043,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_clipping",
@@ -194122,7 +195068,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -194155,7 +195101,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_clipping",
@@ -194176,7 +195122,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -194185,7 +195131,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -194219,6 +195165,8 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+acta_jurado+photo_archive+press_history+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-hagan-juego.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
@@ -194226,6 +195174,14 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+            },
+            {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-hagan-juego.jpg"
             },
             {
               "kind": "press_history",
@@ -194245,7 +195201,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA A — HAGAN JUEGO · Posición 3 · Puntos 78",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
             },
             {
               "kind": "photo_archive",
@@ -194282,7 +195239,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -194307,7 +195264,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -194340,7 +195297,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -194357,7 +195314,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -194391,6 +195348,8 @@
           "group_canonical": "Come Golayu",
           "source_type": "official_result+acta_jurado+photo_archive+press_history+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-todo-o-nada.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
@@ -194398,6 +195357,14 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+            },
+            {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-todo-o-nada.jpg"
             },
             {
               "kind": "press_history",
@@ -194417,7 +195384,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA A — TODO O NADA · Posición 4 · Puntos 68",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
             },
             {
               "kind": "photo_archive",
@@ -194454,7 +195422,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -194479,7 +195447,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -194512,7 +195480,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -194529,7 +195497,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -194563,6 +195531,8 @@
           "group_canonical": "El Cantu",
           "source_type": "official_result+acta_jurado+photo_archive+press_history+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-sonando-altamira-1.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
@@ -194570,6 +195540,14 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+            },
+            {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-sonando-altamira-1.jpg"
             },
             {
               "kind": "press_history",
@@ -194589,7 +195567,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA A — SOÑANDO ALTAMIRA · Posición 5 · Puntos 64 · Clasificación vestidos — SOÑANDO ALTAMIRA · Posición 2 · Puntos 11",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
             },
             {
               "kind": "photo_archive",
@@ -194627,7 +195606,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -194648,7 +195627,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -194681,7 +195660,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -194698,7 +195677,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -194707,7 +195686,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -194754,6 +195733,8 @@
           "group_canonical": "Grupo Pejino",
           "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-alistair-1.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
@@ -194761,6 +195742,14 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+            },
+            {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-alistair-1.jpg"
             },
             {
               "kind": "press_history",
@@ -194780,7 +195769,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA A — ALISTAIR · Posición 6 · Puntos 58 · Clasificación vestidos — ALISTAIR · Posición 3 · Puntos 7",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
             },
             {
               "kind": "photo_archive",
@@ -194810,7 +195800,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -194831,7 +195821,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -194864,7 +195854,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -194877,7 +195867,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -194886,7 +195876,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -194942,12 +195932,22 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-jerez-de-la-frontera.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+            },
+            {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-jerez-de-la-frontera.jpg"
             }
           ],
           "float_url": null,
@@ -194963,7 +195963,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA A — JEREZ DE LA FRONTERA · Posición 7 · Puntos 38 · Clasificación vestidos — JEREZ DE LA FRONTERA · Posición 5 · Puntos 3",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
             },
             {
               "kind": "photo_archive",
@@ -194992,7 +195993,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -195009,7 +196010,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -195042,7 +196043,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -195055,7 +196056,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -195064,7 +196065,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -195098,6 +196099,8 @@
           "group_canonical": "Grupo Pejino",
           "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-beep-beep.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
@@ -195105,6 +196108,14 @@
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+            },
+            {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-beep-beep.jpg"
             },
             {
               "kind": "press_history",
@@ -195124,7 +196135,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA A — BEEP-BEEP · Posición 8 · Puntos 28",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
             },
             {
               "kind": "photo_archive",
@@ -195153,7 +196165,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -195170,7 +196182,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -195203,7 +196215,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -195216,7 +196228,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -195250,12 +196262,22 @@
           "group_canonical": "Mi Vida Loca",
           "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-dulces-suenos.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+            },
+            {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-dulces-suenos.jpg"
             }
           ],
           "float_url": null,
@@ -195271,7 +196293,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA A — DULCES SUEÑOS · Posición 9 · Puntos 26",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
             },
             {
               "kind": "photo_archive",
@@ -195300,7 +196323,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -195321,7 +196344,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -195354,7 +196377,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -195367,7 +196390,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -195401,12 +196424,22 @@
           "group_canonical": "Grupo Alegoría",
           "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-flotaremos.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+            },
+            {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-flotaremos.jpg"
             }
           ],
           "float_url": null,
@@ -195422,7 +196455,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA A — FLOTAREMOS · Posición 10 · Puntos 14 · Clasificación vestidos — FLOTAREMOS · Posición 6 · Puntos 1",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-a-y-vestidos.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
             },
             {
               "kind": "photo_archive",
@@ -195451,7 +196485,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -195472,7 +196506,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -195505,7 +196539,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -195518,7 +196552,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -195527,7 +196561,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-a.jpg"
                 }
               ],
               "independientes": 1
@@ -195561,6 +196595,8 @@
           "group_canonical": "Agrupa-dos",
           "source_type": "official_result+acta_jurado+press_clipping+photo_archive+press_history+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-walt.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg",
             "https://www.eldiariomontanes.es/region/laredo/quimera-conquista-batalla-flores-20260828220127-nt.html",
             "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
@@ -195571,8 +196607,16 @@
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
             },
             {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
+            },
+            {
               "kind": "press_clipping",
               "url": "https://www.infobae.com/espana/agencias/2026/08/28/una-carroza-con-motivos-circenses-y-fantasticos-gana-la-batalla-de-flores-de-laredo/"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-walt.jpg"
             },
             {
               "kind": "press_history",
@@ -195593,7 +196637,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA B — WALT · Posición 1 · Puntos 40 · Clasificación arte B — WALT: 1",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-b-y-arte.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
             },
             {
               "kind": "press_clipping",
@@ -195637,7 +196682,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "press_clipping",
@@ -195666,7 +196711,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -195699,7 +196744,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "press_clipping",
@@ -195720,7 +196765,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 }
               ],
               "independientes": 1
@@ -195729,7 +196774,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 }
               ],
               "independientes": 1
@@ -195763,12 +196808,22 @@
           "group_canonical": "El Cantu",
           "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-titan.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+            },
+            {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-titan.jpg"
             }
           ],
           "float_url": null,
@@ -195784,7 +196839,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA B — TITÁN · Posición 2 · Puntos 22",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-b-y-arte.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
             },
             {
               "kind": "photo_archive",
@@ -195813,7 +196869,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -195830,7 +196886,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -195863,7 +196919,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -195876,7 +196932,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 }
               ],
               "independientes": 1
@@ -195910,12 +196966,22 @@
           "group_canonical": "Carrozas Oruña",
           "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-sonar-con-las-estrellas.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+            },
+            {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-sonar-con-las-estrellas.jpg"
             }
           ],
           "float_url": null,
@@ -195931,7 +196997,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA B — SOÑAR CON LAS ESTRELLAS · Posición 3 · Puntos 20",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-b-y-arte.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
             },
             {
               "kind": "photo_archive",
@@ -195960,7 +197027,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -195981,7 +197048,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -196014,7 +197081,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -196027,7 +197094,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 }
               ],
               "independientes": 1
@@ -196061,12 +197128,22 @@
           "group_canonical": "Grupo Alegoría",
           "source_type": "official_result+acta_jurado+photo_archive+press_history",
           "source_urls": [
+            "batalla_de_flores/fotos/2026-huellitas.jpg",
+            "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg",
             "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
           ],
           "source_links": [
             {
               "kind": "official_result",
               "url": "https://www.laredo.es/09/archivos/programa-batalla-de-flores-20261787567890.pdf"
+            },
+            {
+              "kind": "acta_jurado",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
+            },
+            {
+              "kind": "photo_archive",
+              "url": "batalla_de_flores/fotos/2026-huellitas.jpg"
             }
           ],
           "float_url": null,
@@ -196082,7 +197159,8 @@
               "kind": "acta_jurado",
               "cita": "Acta del jurado de la 115.ª Batalla de Flores (2026), hoja «Clasificación»",
               "texto": "CLASIFICACIÓN CATEGORÍA B — HUELLITAS · Posición 4 · Puntos 20",
-              "archivo_local": "data/sources/acta-2026/acta-2026-clasificacion-b-y-arte.jpg"
+              "archivo_local": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg",
+              "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
             },
             {
               "kind": "photo_archive",
@@ -196111,7 +197189,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -196132,7 +197210,7 @@
                 },
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "photo_archive",
@@ -196165,7 +197243,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 },
                 {
                   "kind": "press_history",
@@ -196178,7 +197256,7 @@
               "fuentes": [
                 {
                   "kind": "acta_jurado",
-                  "url": null
+                  "url": "batalla_de_flores/fuentes/acta-2026-clasificacion-b.jpg"
                 }
               ],
               "independientes": 1
@@ -200312,7 +201390,7 @@
     "Asociacion de Carrocistas y festejos de Laredo": "festejos-laredo",
     "Grupo Atalaya": "atalaya"
   },
-  "version": "3.4.2",
+  "version": "3.4.3",
   "about": {
     "url": "https://batalladedatos.es/",
     "compiled_by": "Víctor Elvira",
@@ -200330,7 +201408,7 @@
     ],
     "note": "Base de datos derivada y estructurada, no una réplica del contenido editorial de las fuentes. Cada entrada lleva su `source_type` y sus `source_urls`. Si reutilizas esto, cita a las fuentes originales."
   },
-  "built_at": "2026-09-04 19:38",
+  "built_at": "2026-09-04 19:45",
   "map_features": [
     {
       "id": "route_origin_1908",

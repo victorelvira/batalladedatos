@@ -2151,3 +2151,14 @@ body.lb-abierto { overflow: hidden; }
 }
 .report-check input { margin-top: 3px; flex: none; }
 .report-check .opt { display: block; margin-top: 2px; }
+
+/* El aviso de código viejo. Arriba del todo y sin tapar nada: es informativo,
+ * no un modal. En rojo suave porque avisa de algo que no es un error del
+ * lector sino de su caché, y se quita solo al recargar. */
+.aviso-viejo {
+  position: sticky; top: 0; z-index: 60;
+  background: var(--alerta-bg); color: var(--ink);
+  border-bottom: 1px solid var(--alerta-borde);
+  padding: 7px 14px; font-size: 13px; text-align: center;
+}
+.aviso-viejo button { font-size: 13px; }

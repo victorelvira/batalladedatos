@@ -400,6 +400,32 @@ function renderStats() {
     state.dataset.built_at || state.dataset.updated_at || "s/f")}</span>`;
 }
 
+/* ¿Está corriendo el código que acompaña a estos datos?
+ *
+ * El JSON se pide sin sello y se revalida siempre; el `index.html` se cachea.
+ * Quien tenga el HTML viejo sigue pidiendo el `app.js` del sello anterior —y
+ * usando su copia guardada— mientras la barra le enseña la versión nueva que
+ * viene del JSON. Todo parece al día y no lo está. Pasó con el botón de
+ * compartir: arreglado y publicado, y seguía llevando a la portada porque el
+ * navegador ejecutaba el fichero de antes.
+ *
+ * No se recarga sola: una página que se recarga sin avisar te quita de donde
+ * estabas. Se dice, y quien quiera pulsa. */
+function avisarSiElCodigoEsViejo() {
+  const esperado = state.dataset?.app_seal;
+  if (!esperado) return;
+  const src = document.querySelector('script[src*="app.js"]')?.getAttribute("src") || "";
+  const mio = src.match(/[?&]v=([a-f0-9]+)/)?.[1];
+  if (!mio || mio === esperado) return;
+
+  const aviso = document.createElement("div");
+  aviso.className = "aviso-viejo";
+  aviso.innerHTML = `Estás viendo una versión antigua de la página guardada por tu
+    navegador. <button type="button" class="link">Recargar</button>`;
+  aviso.querySelector("button").addEventListener("click", () => location.reload(true));
+  document.body.prepend(aviso);
+}
+
 function renderFilterOptions() {
   const decades = [...new Set(state.editions.map(edition => Math.floor(edition.year / 10) * 10))].sort();
   els.decade.innerHTML = ['<option value="all">Todas las décadas</option>']
@@ -5509,6 +5535,7 @@ fetch("batalla_de_flores/data/batalla_de_flores.json", { cache: "no-cache" })
       .catch(() => { /* sin texto, pero la web entera no se cae por esto */ });
 
     renderStats();
+    avisarSiElCodigoEsViejo();
     renderFilterOptions();
     bindEvents();
     setupTooltip();

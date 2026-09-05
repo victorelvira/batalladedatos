@@ -1,7 +1,7 @@
 {
   "project": "batalla_de_flores",
   "title": "Batalla de Flores de Laredo",
-  "updated_at": "2026-09-04",
+  "updated_at": "2026-09-05",
   "summary": {
     "edition_count": 119,
     "published_editions": 113,
@@ -201390,7 +201390,8 @@
     "Asociacion de Carrocistas y festejos de Laredo": "festejos-laredo",
     "Grupo Atalaya": "atalaya"
   },
-  "version": "3.4.3",
+  "version": "3.4.4",
+  "app_seal": "3ec03d83",
   "about": {
     "url": "https://batalladedatos.es/",
     "compiled_by": "Víctor Elvira",
@@ -201408,7 +201409,7 @@
     ],
     "note": "Base de datos derivada y estructurada, no una réplica del contenido editorial de las fuentes. Cada entrada lleva su `source_type` y sus `source_urls`. Si reutilizas esto, cita a las fuentes originales."
   },
-  "built_at": "2026-09-04 19:45",
+  "built_at": "2026-09-05 09:50",
   "map_features": [
     {
       "id": "route_origin_1908",

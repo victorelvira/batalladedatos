@@ -4806,10 +4806,34 @@ async function shareUrl(url, title, text, button) {
  * pulsaba el de arriba —que es el que se ve— y el enlace llegaba sin el año.
  * Compartir algo y que el otro abra otra cosa es de los fallos que no se ven
  * desde dentro: quien comparte no vuelve a pulsar su propio enlace. */
+/* La URL de lo que se está viendo, calculada del ESTADO y no leída de la barra
+ * de direcciones.
+ *
+ * Leerla de `location.href` parecía lo natural y falla en el sitio menos
+ * evidente: en pantalla ancha, al entrar sin hash, la web abre sola la última
+ * edición con carrozas —la ficha se ve al lado de la rejilla— y lo hace con
+ * `updateHash: false` a propósito, para que esa apertura automática no reescriba
+ * la URL. Así que se ve 2026 y la barra sigue en la raíz. El botón compartía la
+ * raíz teniendo 2026 delante.
+ *
+ * En el móvil no pasaba, porque ahí no hay apertura automática y la ficha solo
+ * se abre pulsando, que sí escribe el hash. De ahí que el mismo botón, la misma
+ * versión, funcionara en el teléfono y no en el ordenador.
+ *
+ * El estado sabe siempre qué hay abierto. La barra de direcciones, no. */
+function urlDeLoQueSeVe() {
+  const hash = hashDe(state.mode, state.selection, null);
+  // `hashDe` devuelve la ruta pelada cuando no hay nada seleccionado en
+  // Ediciones: ahí ya es la URL entera y no se le antepone nada.
+  return hash.startsWith("#")
+    ? location.origin + location.pathname + location.search + hash
+    : location.origin + hash;
+}
+
 function shareCurrent(button) {
   const heading = document.querySelector("#detail h2")?.textContent?.trim();
   return shareUrl(
-    location.href,
+    urlDeLoQueSeVe(),
     `Batalla de Flores de Laredo${heading ? ` · ${heading}` : ""}`,
     "Archivo de la Batalla de Flores de Laredo",
     button || document.getElementById("share"),

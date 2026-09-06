@@ -3981,14 +3981,24 @@ function pastillaGanador(edition) {
   // una en silencio sería justo lo que este archivo no hace, y no enseñar nada
   // deja el hueco sin explicar: se enseñan las dos y se dice que está en
   // disputa. El detalle entero ya está en «Por confirmar».
-  const boton = g => `<button class="disc disc-ganador t-group" type="button"
+  // Con el primer puesto en disputa, UNA pastilla que lo dice, no dos con los
+  // nombres. Se intentaron las dos y no cabían: la cabecera se partía en dos
+  // filas y pasaba de 77 px a 165, y recortándolas quedaba «Hijos de Ortiz…» y
+  // «Ortiz y Quinta…», que no informan de nada. Los nombres están enteros en el
+  // título flotante y en «Por confirmar», a un clic. Pasa en 15 ediciones.
+  if (grupos.length > 1) {
+    return `<span class="ganadores"><button class="disc disc-ganador dudoso ir-pendiente"
+      type="button"
+      title="${esc(`El primer puesto de ${edition.year} no está resuelto. Lo disputan `
+        + joinEs(grupos) + ". Pulsa para ver por qué.")}">
+      ${ICON_TROPHY}<span><small>¿ganador?</small>sin resolver, ${num(grupos.length)} candidatos</span>
+      </button></span>`;
+  }
+  const g = grupos[0];
+  return `<span class="ganadores"><button class="disc disc-ganador t-group" type="button"
     data-group="${esc(slugifyGroup(g))}"
     title="Ver todas las carrozas de ${esc(g)}">
-    ${ICON_TROPHY}<span><small>${grupos.length > 1 ? "¿ganador?" : "ganador"}</small>${esc(g)}</span></button>`;
-  return grupos.map(boton).join("")
-    + (grupos.length > 1
-      ? `<p class="chart-note ganador-disputa">El primer puesto de este año está en
-         disputa entre ${num(grupos.length)} carrozas: ver «Por confirmar».</p>` : "");
+    ${ICON_TROPHY}<span><small>ganador</small>${esc(g)}</span></button></span>`;
 }
 
 function bloquePremios(edition) {

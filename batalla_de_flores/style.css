@@ -575,10 +575,21 @@ body.hay-ficha .detail-close:hover { border-color: var(--rose); color: var(--ros
  * cifras con el ganador debajo. `stretch` iguala las alturas sin cuentas de
  * píxeles: las dos columnas de texto se reparten el alto que marque la más
  * alta, y el cartel ocupa ese alto entero. */
-.edition-head { align-items: stretch; gap: 12px; padding-right: 54px; }
+/* `nowrap` es lo que hace que las columnas encojan en vez de partirse.
+   `.detail-head` trae `flex-wrap: wrap` heredado, y con eso el navegador
+   prefiere saltar de fila antes que estrechar nada: la cabecera de 1911 se iba
+   a dos filas y 165 px por un nombre de grupo largo. En móvil sí se permite,
+   que ahí apilar es lo correcto. */
+.edition-head { align-items: stretch; gap: 12px; padding-right: 54px; flex-wrap: nowrap; }
+@media (max-width: 620px) { .edition-head { flex-wrap: wrap; } }
+/* `min-width: 0` es lo que le permite encoger. Sin él, una pastilla de ganador
+   con nombre largo hacía que la columna pidiera más ancho del que hay, y la
+   cabecera se partía en dos filas: 77 px pasaban a 165. Ahora la columna cede y
+   el nombre se recorta con puntos suspensivos, que es la pérdida barata. */
 .bloque-cifras {
   display: flex; flex-direction: column; justify-content: space-between;
   align-items: flex-start; gap: 6px;
+  flex: 1 1 auto; min-width: 0;
 }
 
 /* Anterior y siguiente edición. Los `<span>` vacíos de los extremos —1908 no
@@ -597,18 +608,18 @@ body.hay-ficha .detail-close:hover { border-color: var(--rose); color: var(--ros
  * es el dato que más se busca de una edición y hasta ahora había que ir a
  * buscarlo dentro de la tabla del palmarés. */
 .discs {
-  display: flex; flex-wrap: wrap; gap: 6px;
+  display: flex; flex-wrap: wrap; gap: 5px;
   align-items: flex-start; align-self: flex-start;
 }
 /* Va en su propia línea, debajo de los discos y fuera de la fila de la
  * cabecera: dentro de ella no puede saltar de renglón y salía apretada como un
  * cuarto círculo. */
 .disc.disc-ganador {
-  display: inline-flex; width: auto; height: auto; min-height: 30px;
+  display: inline-flex; width: auto; height: auto; min-height: 25px;
   flex-direction: row; align-items: center; justify-content: flex-start; gap: 8px;
-  border-radius: 999px; padding: 4px 16px 4px 12px; border: 0; cursor: pointer;
+  border-radius: 999px; padding: 2px 14px 2px 10px; border: 0; cursor: pointer;
   margin: 0; background: #f3ece3;
-  font: inherit; font-size: 14px; text-align: left; color: var(--ink);
+  font: inherit; font-size: 12.5px; text-align: left; color: var(--ink);
 }
 .disc.disc-ganador small {
   font-size: 9px; color: var(--muted);
@@ -622,10 +633,10 @@ body.hay-ficha .detail-close:hover { border-color: var(--rose); color: var(--ros
 .disc-wide { width: auto; padding: 0 16px; border-radius: 999px; white-space: nowrap; }
 .disc {
   display: flex; flex-direction: column; align-items: center; justify-content: center;
-  width: 52px; height: 52px; flex: none; border-radius: 50%;
-  background: #f3ece3; color: var(--muted); font-size: 9px; line-height: 1.1;
+  width: 43px; height: 43px; flex: none; border-radius: 50%;
+  background: #f3ece3; color: var(--muted); font-size: 8.5px; line-height: 1.1;
 }
-.disc b { color: var(--ink); font-size: 17px; font-variant-numeric: tabular-nums; }
+.disc b { color: var(--ink); font-size: 15px; font-variant-numeric: tabular-nums; }
 
 /* Miniatura como columna del palmarés. */
 table.palmares col.c-photo, table.palmares th.c-photo, table.palmares td.c-photo {
@@ -932,15 +943,21 @@ table.palmares td.c-photo .thumb img {
    tres de veintiséis, así que cuando aparece es porque hay algo que contar. */
 /* El cartel, junto al año. Pequeño a propósito: lo primero que se lee es el
    año, y el cartel lo acompaña como acompaña la portada a un libro. */
+/* El cartel ocupa el alto entero de la cabecera pero NO lo decide: es la
+   imagen la que se adapta al hueco, no al revés. Por eso va posicionada, que la
+   saca del cálculo de altura de la fila; con ella dentro, una edición de cartel
+   apaisado estiraba la cabecera a 129 px mientras las demás medían 77. El ancho
+   del botón sí es fijo, para que la columna reserve su sitio. */
 .cartel-mini {
   flex: none; padding: 0; border: 0; background: none; cursor: pointer;
   line-height: 0; margin-right: 2px; align-self: stretch;
+  position: relative; width: 52px;
 }
-/* Alto completo de la cabecera, y el ancho lo pone la proporción del cartel.
-   `contain` y no `cover`: recortar un cartel es cortarle el texto, que es
-   justo lo que lo hace fuente —lleva impresa la fecha y el número de edición—. */
+/* `contain` y no `cover`: recortar un cartel es cortarle el texto, que es justo
+   lo que lo hace fuente —lleva impresa la fecha y el número de edición—. */
 .cartel-mini img {
-  display: block; height: 100%; width: auto; max-width: 62px; object-fit: contain;
+  position: absolute; inset: 0; display: block; width: 100%; height: 100%;
+  object-fit: contain; object-position: center;
   border-radius: 4px; border: 1px solid var(--line); background: #f1e9df;
 }
 .cartel-mini:hover img { border-color: var(--rose); }
@@ -1240,9 +1257,12 @@ table.palmares tr:hover td { background: #fffaf5; }
 .col-src .src { justify-content: flex-start; }
 /* Las flechas pegadas a un dato suelto en la ficha. */
 /* Letra de categoría junto al puesto, solo en la vista "Todas". */
+/* La categoría y el puesto son un solo dato —«A 1.º»— y se leían como dos:
+   la letra iba en cuerpo 9,5, levantada un píxel y con un espacio detrás. Ahora
+   comparte tamaño con el número y se le pega, que es como se dice en voz alta. */
 .pos-cat {
-  display: inline-block; margin-right: 3px; padding: 0 3px; border-radius: 3px;
-  font-size: 9.5px; font-weight: 700; vertical-align: 1px;
+  display: inline-block; margin-right: 2px; padding: 0 4px; border-radius: 3px;
+  font-size: inherit; font-weight: 700; vertical-align: baseline;
 }
 .pos-cat.cat-a { background: #eaf2f7; color: var(--cat-a); }
 .pos-cat.cat-b { background: #fbeaf7; color: var(--cat-b); }
@@ -2244,19 +2264,30 @@ body.lb-abierto { overflow: hidden; }
 details.sec { margin: 0; }
 details.sec > summary {
   cursor: pointer; list-style: none;
-  display: flex; align-items: baseline; gap: 7px;
-  margin-left: -1.6em; padding-left: 1.6em;
+  display: flex; align-items: center; gap: 9px;
 }
 details.sec > summary::-webkit-details-marker { display: none; }
-/* El triángulo va DELANTE del título, no al final de la línea: delante se lee
- * como un control antes de leer el texto, y detrás parecía un adorno. Es la
- * convención de cualquier desplegable y ahorra tener que descubrirlo. */
+/* El triángulo va DELANTE del título: delante se lee como un control antes de
+ * leer el texto, y detrás parecía un adorno al final de la línea.
+ *
+ * Dibujado con bordes y no con el carácter «▾»: el glifo sale de tamaño y peso
+ * distintos en cada sistema, se veía pequeño y desvaído, y arrastraba el ancho
+ * de su propia caja, que era lo que dejaba el hueco a su derecha. Así mide
+ * exactamente lo que se le diga. */
 details.sec > summary::before {
-  content: "▾"; font-size: 12px; color: var(--muted); line-height: 1;
-  width: 0.9em; flex: none;
+  content: ""; flex: none;
+  width: 0; height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 7px solid var(--muted);
+  transform: translateY(1px);
 }
-details.sec[open] > summary::before { content: "▴"; }
-details.sec > summary:hover::before { color: var(--ink); }
+details.sec[open] > summary::before {
+  border-top: 0; border-bottom: 7px solid var(--muted);
+  transform: translateY(-1px);
+}
+details.sec > summary:hover::before { border-top-color: var(--ink); }
+details.sec[open] > summary:hover::before { border-bottom-color: var(--ink); }
 details.sec > summary:focus-visible { outline: 2px solid var(--t-year); outline-offset: 2px; }
 .sec-cuerpo { padding-top: 2px; }
 
@@ -2279,6 +2310,16 @@ details.sec > summary:focus-visible { outline: 2px solid var(--t-year); outline-
 }
 
 /* Cuando el primer puesto está en disputa se enseñan las dos pastillas y se
- * dice. Elegir una en silencio sería lo contrario de lo que hace el archivo. */
-.disc.disc-ganador + .disc.disc-ganador { margin-left: 6px; }
-.ganador-disputa { margin: 4px 0 0; }
+ * dice con el «¿ganador?». Elegir una en silencio sería lo contrario de lo que
+ * hace el archivo. En fila y no apiladas: apiladas estiraban la cabecera. */
+.ganadores { display: flex; gap: 6px; max-width: 100%; min-width: 0; }
+/* Con dos candidatos, los nombres largos —«Hijos de Ortiz y Quintana»— hacían
+   saltar la segunda pastilla de línea y la cabecera pasaba de 77 px a 196. Se
+   les pone tope y puntos suspensivos: el nombre entero está en el título
+   flotante y a un clic de distancia, en la ficha del grupo. */
+.ganadores .disc.disc-ganador { max-width: 100%; flex: 0 1 auto; min-width: 0; }
+.disc.disc-ganador.dudoso { color: var(--muted); }
+.disc.disc-ganador.dudoso .kpi-icon { fill: var(--muted); }
+.disc.disc-ganador > span {
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0;
+}

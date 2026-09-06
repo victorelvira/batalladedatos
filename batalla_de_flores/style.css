@@ -571,7 +571,7 @@ body.hay-ficha .detail-close:hover { border-color: var(--rose); color: var(--ros
 /* Las dos cifras de la edición, en disco, a la derecha del título. */
 /* Año grande, centrado con los discos, y todo agrupado a la izquierda: pegados
    al borde derecho se confundían con el botón rojo de cerrar. */
-.edition-head { align-items: center; gap: 12px; padding-right: 54px; }
+.edition-head { align-items: flex-start; gap: 12px; padding-right: 54px; }
 
 /* Anterior y siguiente edición. Los `<span>` vacíos de los extremos —1908 no
    tiene anterior, 2026 no tiene siguiente— mantienen el `space-between`, para
@@ -584,7 +584,31 @@ body.hay-ficha .detail-close:hover { border-color: var(--rose); color: var(--ros
 }
 .nav-edicion:hover { border-color: var(--rose); color: var(--rose); }
 
-.discs { display: inline-flex; gap: 6px; flex-wrap: wrap; }
+/* Los discos suben a la altura del año en vez de colgar por debajo, y el
+ * ganador va en su propia línea, en una pastilla del mismo color pero alargada:
+ * es el dato que más se busca de una edición y hasta ahora había que ir a
+ * buscarlo dentro de la tabla del palmarés. */
+.discs {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  align-items: flex-start; align-self: flex-start;
+}
+/* Va en su propia línea, debajo de los discos y fuera de la fila de la
+ * cabecera: dentro de ella no puede saltar de renglón y salía apretada como un
+ * cuarto círculo. */
+.disc.disc-ganador {
+  display: inline-flex; width: auto; height: auto; min-height: 32px;
+  flex-direction: row; align-items: center; justify-content: flex-start; gap: 8px;
+  border-radius: 999px; padding: 4px 16px 4px 12px; border: 0; cursor: pointer;
+  margin: 8px 0 0; background: #f3ece3;
+  font: inherit; font-size: 14px; text-align: left; color: var(--ink);
+}
+.disc.disc-ganador small {
+  font-size: 9px; color: var(--muted);
+  text-transform: uppercase; letter-spacing: .07em; margin-right: 6px;
+}
+.disc.disc-ganador .kpi-icon { width: 15px; height: 15px; flex: none; fill: var(--gold); }
+.disc.disc-ganador:hover { background: #ece2d5; }
+.disc.disc-ganador:focus-visible { outline: 2px solid var(--t-year); outline-offset: 2px; }
 /* «114ª edición» en pastilla achatada, a la misma altura que los discos.
    Con el rótulo completo se partía en cuatro líneas. */
 .disc-wide { width: auto; padding: 0 16px; border-radius: 999px; white-space: nowrap; }
@@ -2202,15 +2226,19 @@ body.lb-abierto { overflow: hidden; }
 details.sec { margin: 0; }
 details.sec > summary {
   cursor: pointer; list-style: none;
-  display: flex; align-items: baseline; gap: 8px;
+  display: flex; align-items: baseline; gap: 7px;
+  margin-left: -1.6em; padding-left: 1.6em;
 }
 details.sec > summary::-webkit-details-marker { display: none; }
-details.sec > summary::after {
-  content: "▾"; margin-left: auto; font-size: 13px; color: var(--muted);
-  line-height: 1;
+/* El triángulo va DELANTE del título, no al final de la línea: delante se lee
+ * como un control antes de leer el texto, y detrás parecía un adorno. Es la
+ * convención de cualquier desplegable y ahorra tener que descubrirlo. */
+details.sec > summary::before {
+  content: "▾"; font-size: 12px; color: var(--muted); line-height: 1;
+  width: 0.9em; flex: none;
 }
-details.sec[open] > summary::after { content: "▴"; }
-details.sec > summary:hover::after { color: var(--ink); }
+details.sec[open] > summary::before { content: "▴"; }
+details.sec > summary:hover::before { color: var(--ink); }
 details.sec > summary:focus-visible { outline: 2px solid var(--t-year); outline-offset: 2px; }
 .sec-cuerpo { padding-top: 2px; }
 
@@ -2231,3 +2259,8 @@ details.sec > summary:focus-visible { outline: 2px solid var(--t-year); outline-
   .premio-fila { flex-direction: column; gap: 1px; }
   .premio-et { width: auto; font-size: 12.5px; }
 }
+
+/* Cuando el primer puesto está en disputa se enseñan las dos pastillas y se
+ * dice. Elegir una en silencio sería lo contrario de lo que hace el archivo. */
+.disc.disc-ganador + .disc.disc-ganador { margin-left: 6px; }
+.ganador-disputa { margin: 4px 0 0; }

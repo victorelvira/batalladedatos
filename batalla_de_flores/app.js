@@ -3963,6 +3963,34 @@ function desdeCuando(campo) {
   return state.desdeCuando[campo];
 }
 
+/* La pastilla del grupo ganador, debajo de los discos.
+ *
+ * Ganar es la competición principal: el 1.º de la categoría A desde que existen
+ * las categorías, y el 1.º de la lista única antes. No vale con «position === 1»
+ * a secas, que en un año con A y B daría dos ganadores. */
+function pastillaGanador(edition) {
+  const fl = edition.floats || [];
+  const primeras = fl.filter(f => f.position === 1);
+  const deLaPrincipal = primeras.filter(f => f.category === "A").length
+    ? primeras.filter(f => f.category === "A")
+    : primeras.filter(f => !f.category);
+  const grupos = [...new Set(deLaPrincipal.map(f => f.group_canonical).filter(Boolean))];
+  if (!grupos.length) return "";
+
+  // Cinco ediciones tienen DOS carrozas en el 1.º puesto sin resolver. Elegir
+  // una en silencio sería justo lo que este archivo no hace, y no enseñar nada
+  // deja el hueco sin explicar: se enseñan las dos y se dice que está en
+  // disputa. El detalle entero ya está en «Por confirmar».
+  const boton = g => `<button class="disc disc-ganador t-group" type="button"
+    data-group="${esc(slugifyGroup(g))}"
+    title="Ver todas las carrozas de ${esc(g)}">
+    ${ICON_TROPHY}<span><small>${grupos.length > 1 ? "¿ganó?" : "ganó"}</small>${esc(g)}</span></button>`;
+  return grupos.map(boton).join("")
+    + (grupos.length > 1
+      ? `<p class="chart-note ganador-disputa">El primer puesto de este año está en
+         disputa entre ${num(grupos.length)} carrozas: ver «Por confirmar».</p>` : "");
+}
+
 function bloquePremios(edition) {
   const fl = edition.floats || [];
   const botonCarroza = f => `<button class="link t-float" type="button"
@@ -4002,7 +4030,7 @@ function bloquePremios(edition) {
     : `<p class="chart-note">Las categorías A y B no existen hasta ${CATEGORIES_FROM}:
        este año fue lista única.</p>`;
 
-  return `<h3 class="section">Premios y puntuaciones</h3>
+  return `<h3 class="section">Otros premios y puntuaciones</h3>
     <div class="premios-lista">${filas.join("")}</div>${nota}`;
 }
 
@@ -4105,6 +4133,7 @@ function renderEditionDetail(edition) {
         <span class="disc"><b>${num(groupCount)}</b>grupos</span>
       </span>
     </div>
+    ${pastillaGanador(edition)}
     ${navEdicion}
     <div class="chips">
       ${edition.status !== "published"

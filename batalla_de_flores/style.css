@@ -2179,3 +2179,31 @@ body.lb-abierto { overflow: hidden; }
 }
 .tira-estado b { font-weight: 700; }
 .tira-estado .ir-pendiente { margin-left: auto; white-space: nowrap; font-size: 13px; }
+
+/* Secciones plegables de la ficha.
+ * El resumen se ve EXACTAMENTE igual que el antiguo `h3.section`: es el mismo
+ * título de siempre, solo que ahora se puede cerrar. En el móvil casi todas
+ * arrancan plegadas —una ficha larga son diez pantallas de scroll— y en el
+ * escritorio casi todas abiertas, donde el sitio sobra. */
+details.sec { margin: 0; }
+details.sec > summary {
+  cursor: pointer; list-style: none;
+  display: flex; align-items: baseline; gap: 8px;
+}
+details.sec > summary::-webkit-details-marker { display: none; }
+details.sec > summary::after {
+  content: "▾"; margin-left: auto; font-size: 11px; color: var(--muted);
+  transition: transform .15s ease;
+}
+details.sec:not([open]) > summary::after { transform: rotate(-90deg); }
+details.sec > summary:hover::after { color: var(--ink); }
+details.sec > summary:focus-visible { outline: 2px solid var(--t-year); outline-offset: 2px; }
+.sec-cuerpo { padding-top: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  details.sec > summary::after { transition: none; }
+}
+
+/* El deslizador de tamaño salió del título al hacerse plegable la sección:
+ * dentro de un `summary`, arrastrarlo cerraba la galería. Va debajo, alineado
+ * a la derecha, que es donde estaba visualmente. */
+.sec-cuerpo > .zoom-fotos { display: flex; justify-content: flex-end; margin: 0 0 6px; }

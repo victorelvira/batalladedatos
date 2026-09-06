@@ -3489,14 +3489,13 @@ function renderGallery(entries) {
   const images = todas.slice(0, TOPE);
   if (!images.length) return "";
   return `
-    <h3 class="section">Imágenes (${todas.length})
-      <label class="zoom-fotos" title="Tamaño de las fotos">
-        <span aria-hidden="true">▪</span>
-        <input type="range" id="zoom-galeria" min="110" max="420" step="10"
-          value="${state.tamGaleria || 168}" aria-label="Tamaño de las fotos">
-        <span aria-hidden="true">■</span>
-      </label>
-    </h3>
+    <h3 class="section">Imágenes (${todas.length})</h3>
+    <label class="zoom-fotos" title="Tamaño de las fotos">
+      <span aria-hidden="true">▪</span>
+      <input type="range" id="zoom-galeria" min="110" max="420" step="10"
+        value="${state.tamGaleria || 168}" aria-label="Tamaño de las fotos">
+      <span aria-hidden="true">■</span>
+    </label>
     ${todas.length > TOPE ? `<p class="chart-note">Se muestran las primeras ${TOPE};
       el resto están en la ficha de cada carroza.</p>` : ""}
     <div class="gallery">
@@ -3633,7 +3632,8 @@ function photoThanks(entries) {
   if (!origenes.size) return "";
   const partes = [...origenes.entries()].sort((a, b) => b[1] - a[1]).map(([quien, n]) =>
     `<b>${esc(quien)}</b> (${n} foto${n === 1 ? "" : "s"})`);
-  return `<p class="gracias">📷 Las fotos de esta edición son de ${joinEs(partes)}.
+  return `<h3 class="section">Quién nos deja las fotos</h3>
+    <p class="gracias">Las fotos de esta edición son de ${joinEs(partes)}.
     Se publican con su permiso y cada una dice de dónde sale.</p>`;
 }
 
@@ -3708,7 +3708,25 @@ function filasPendientes(edition) {
   q.noPalmares.filter(e => e.year === year).forEach(e => filas.push({
     icono: "🕳️", texto: "No se ha localizado la clasificación de esta edición.",
   }));
-  return filas;
+
+  // Una cosa que ya se ha dicho no se dice otra vez, venga por donde venga.
+  //
+  // `derivar.py` sube los avisos de las carrozas TAMBIÉN a la nota del año
+  // —para que la edición sepa sola lo que no cuadra— así que el mismo texto
+  // llegaba dos veces: una por carroza (⛔) y otra por la edición (📉). En 2016
+  // las dos primeras filas eran idénticas a las dos últimas, palabra por
+  // palabra, y la cuenta decía seis cuando había cuatro.
+  //
+  // Se deduplica aquí y no allí a propósito: la nota del año se usa en más
+  // sitios y quitarla de origen dejaría a la pestaña Pendiente sin ella. Lo
+  // que sobra no es el dato, es contarlo dos veces en la misma lista.
+  const vistas = new Set();
+  return filas.filter(f => {
+    const clave = String(f.texto).replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+    if (!clave || vistas.has(clave)) return false;
+    vistas.add(clave);
+    return true;
+  });
 }
 
 function pendingForYear(edition) {
@@ -3875,6 +3893,31 @@ function ajustarFechaAlAno() {
   if (huecos > 0) fecha.style.letterSpacing = `${(resto / huecos).toFixed(3)}px`;
 }
 
+/* Convierte una sección en plegable, sin tocar quien la escribe.
+ *
+ * Cada sección de la ficha se emite hoy como `<h3 class="section">Título</h3>`
+ * seguida de su contenido, y las escriben ocho funciones distintas. En vez de
+ * ir a las ocho, esto recibe ese HTML, separa el título del cuerpo y devuelve
+ * un `<details>`. Una sola regla para todas: si mañana se añade una sección,
+ * hereda el comportamiento sin que nadie se acuerde.
+ *
+ * Y el estado por defecto no es el mismo en los dos sitios, porque el problema
+ * no es el mismo. En el escritorio hay sitio de sobra y plegar obliga a hacer
+ * clics para ver lo que ya cabía. En el móvil una ficha larga son diez
+ * pantallas de scroll, así que ahí se pliega todo menos lo que se viene a ver.
+ *
+ * `abierta` es la decisión para escritorio; en móvil solo siguen abiertas las
+ * marcadas como `siempre`. */
+function plegable(html, { abierta = true, siempre = false } = {}) {
+  const m = /^\s*<h3 class="section">([\s\S]*?)<\/h3>([\s\S]*)$/.exec(html || "");
+  if (!m) return html || "";
+  const abre = siempre || (abierta && !isNarrow());
+  return `<details class="sec"${abre ? " open" : ""}>
+    <summary class="section">${m[1]}</summary>
+    <div class="sec-cuerpo">${m[2]}</div>
+  </details>`;
+}
+
 function renderEditionDetail(edition) {
   const entries = edition.floats || [];
   // Por categoria y luego posicion: si no, A1 y B1 salian juntos y ordenados
@@ -3986,7 +4029,7 @@ function renderEditionDetail(edition) {
 
     ${tiraDeEstado(edition)}
 
-    ${ranked.length ? `
+    ${plegable(ranked.length ? `
       <h3 class="section">Palmarés</h3>
       ${cats.length > 1 ? `<div class="chart-tabs">
         <button class="view${shownCat === "todas" ? " is-on" : ""}" type="button"
@@ -4025,9 +4068,9 @@ function renderEditionDetail(edition) {
         </tbody>
       </table>
       ${codesLegend(shown)}` : (edition.status === "planned" ? "" :
-        '<h3 class="section">Palmarés</h3><p class="empty">No hay palmarés estructurado para este año.</p>')}
+        '<h3 class="section">Palmarés</h3><p class="empty">No hay palmarés estructurado para este año.</p>'), { siempre: true })}
 
-    ${unranked.length ? `
+    ${plegable(unranked.length ? `
       <h3 class="section">Otras carrozas documentadas (${unranked.length})</h3>
       <table class="palmares">
         <colgroup><col><col><col class="c-src"></colgroup>
@@ -4047,9 +4090,9 @@ function renderEditionDetail(edition) {
               <td data-sort="${esc(sourceShort(entry.source_type))}">${sourceCell(entry)}</td>
             </tr>`).join("")}
         </tbody>
-      </table>` : ""}
+      </table>` : "")}
 
-    ${edition.status === "planned" ? nocheMagicaBlock(edition) : ""}
+    ${plegable(edition.status === "planned" ? nocheMagicaBlock(edition) : "", { siempre: true })}
 
     ${(() => {
       // Los huecos conocidos no son una nota mas al final: son lo que hay que
@@ -4061,22 +4104,22 @@ function renderEditionDetail(edition) {
       // `notes_derivadas` describe lo que le falta al archivo y se rehace en
       // cada build a partir del estado final.
       const rest = edition.notes || [];
-      return rest.length ? `<h3 class="section">Notas</h3>
-          <ul class="plain">${rest.map(note => `<li>${esc(note)}</li>`).join("")}</ul>` : "";
+      return plegable(rest.length ? `<h3 class="section">Notas</h3>
+          <ul class="plain">${rest.map(note => `<li>${esc(note)}</li>`).join("")}</ul>` : "");
     })()}
 
-    ${edition.status === "planned" ? "" : nocheMagicaBlock(edition)}
+    ${plegable(edition.status === "planned" ? "" : nocheMagicaBlock(edition), { siempre: true })}
 
-    ${renderGallery(entries)}
-    ${renderGallerySinIdentificar(edition)}
+    ${plegable(renderGallery(entries), { siempre: true })}
+    ${plegable(renderGallerySinIdentificar(edition), { abierta: false })}
 
-    ${route?.geometry ? `
+    ${plegable(route?.geometry ? `
       <h3 class="section">Recorrido</h3>
-      ${renderRouteMap(route.id, { variant: "thumbstrip" })}` : ""}
+      ${renderRouteMap(route.id, { variant: "thumbstrip" })}` : "")}
 
-    ${photoThanks(entries)}
+    ${plegable(photoThanks(entries), { abierta: false })}
 
-    ${(edition.curiosidades || []).length ? `
+    ${plegable((edition.curiosidades || []).length ? `
       <h3 class="section">Curiosidades</h3>
       <ul class="curiosidades">
         ${edition.curiosidades.map(c => `<li>
@@ -4086,9 +4129,9 @@ function renderEditionDetail(edition) {
             ? `<a href="${esc(f.enlace)}" target="_blank" rel="noopener">${esc(f.nombre)} ↗</a>`
             : esc(f.nombre))) || "fuentes sin registrar"}.</small>
         </li>`).join("")}
-      </ul>` : ""}
+      </ul>` : "")}
 
-    ${pendingForYear(edition)}
+    ${plegable(pendingForYear(edition), { abierta: false })}
 
     ${provenanceBlock(entries, edition.source_urls || [], edition)}
   `;
@@ -5430,9 +5473,14 @@ function bindEvents() {
     }
 
     if (event.target.closest(".ir-pendiente")) {
-      const h = [...els.detail.querySelectorAll("h3.section")]
+      // Abrir ANTES de bajar: con las secciones plegables, saltar a una cerrada
+      // deja al lector delante de un título y nada más.
+      const sum = [...els.detail.querySelectorAll("details.sec > summary")]
         .find(x => x.textContent.trim().startsWith("Por confirmar"));
-      if (h) h.scrollIntoView({ behavior: "smooth", block: "start" });
+      if (sum) {
+        sum.parentElement.open = true;
+        sum.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
       return;
     }
 

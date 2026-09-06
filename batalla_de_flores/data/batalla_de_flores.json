@@ -201390,8 +201390,8 @@
     "Asociacion de Carrocistas y festejos de Laredo": "festejos-laredo",
     "Grupo Atalaya": "atalaya"
   },
-  "version": "3.4.11",
-  "app_seal": "51a54dea",
+  "version": "3.4.12",
+  "app_seal": "4e7e757d",
   "about": {
     "url": "https://batalladedatos.es/",
     "compiled_by": "Víctor Elvira",
@@ -201409,7 +201409,7 @@
     ],
     "note": "Base de datos derivada y estructurada, no una réplica del contenido editorial de las fuentes. Cada entrada lleva su `source_type` y sus `source_urls`. Si reutilizas esto, cita a las fuentes originales."
   },
-  "built_at": "2026-09-06 15:11",
+  "built_at": "2026-09-06 15:15",
   "map_features": [
     {
       "id": "route_origin_1908",

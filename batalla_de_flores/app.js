@@ -3487,7 +3487,15 @@ function renderGallery(entries) {
   const todas = entries.flatMap(entry =>
     fotosVisibles(entry).map(url => ({ url, entry })));
   const images = todas.slice(0, TOPE);
-  if (!images.length) return "";
+  if (!images.length) {
+    // La sección vacía es la más útil de la ficha en los años pobres: convierte
+    // un hueco silencioso en una petición. Antes no salía y el lector no podía
+    // saber si es que no hay fotos o si es que no se han puesto.
+    return `<h3 class="section">Imágenes</h3>
+      <p class="empty">De esta edición no se conserva ninguna foto de las carrozas.
+      Si tienes alguna, o sabes de quién puede tenerla, dínoslo con el botón
+      <b>¿Algo mal?</b> de arriba.</p>`;
+  }
   return `
     <h3 class="section">Imágenes (${todas.length})</h3>
     <label class="zoom-fotos" title="Tamaño de las fotos">
@@ -3731,7 +3739,12 @@ function filasPendientes(edition) {
 
 function pendingForYear(edition) {
   const filas = filasPendientes(edition);
-  if (!filas.length) return "";
+  if (!filas.length) {
+    return `<h3 class="section">Por confirmar</h3>
+      <p class="empty">No hay ningún dato de esta edición marcado como dudoso. Eso no
+      quiere decir que esté completa: si echas algo en falta o algo no te cuadra,
+      dínoslo con el botón <b>¿Algo mal?</b> de arriba.</p>`;
+  }
   return `
     <h3 class="section">Por confirmar <span class="open-count">${filas.length}</span></h3>
     <ul class="open-list open-list-edicion">${filas.map(f => `
@@ -4142,8 +4155,10 @@ function renderEditionDetail(edition) {
             </tr>`).join("")}
         </tbody>
       </table>
-      ${codesLegend(shown)}` : (edition.status === "planned" ? "" :
-        '<h3 class="section">Palmarés</h3><p class="empty">No hay palmarés estructurado para este año.</p>'), { siempre: true })}
+      ${codesLegend(shown)}` : `<h3 class="section">Palmarés</h3>
+        <p class="empty">${edition.status === "planned"
+          ? "Todavía no se ha celebrado: cuando haya clasificación, aquí estará."
+          : "No se ha localizado la clasificación de esta edición."}</p>`, { siempre: true })}
 
     ${plegable(unranked.length ? `
       <h3 class="section">Otras carrozas documentadas (${unranked.length})</h3>
@@ -4179,16 +4194,23 @@ function renderEditionDetail(edition) {
       // `notes_derivadas` describe lo que le falta al archivo y se rehace en
       // cada build a partir del estado final.
       const rest = edition.notes || [];
-      return plegable(rest.length ? `<h3 class="section">Notas</h3>
-          <ul class="plain">${rest.map(note => `<li>${esc(note)}</li>`).join("")}</ul>` : "");
+      return plegable(`<h3 class="section">Notas</h3>
+          ${rest.length
+            ? `<ul class="plain">${rest.map(note => `<li>${esc(note)}</li>`).join("")}</ul>`
+            : `<p class="empty">No se conserva ninguna crónica ni nota de esta edición.</p>`}`);
     })()}
 
     ${plegable(renderGallery(entries), { siempre: true })}
     ${plegable(renderGallerySinIdentificar(edition), { abierta: false })}
 
-    ${plegable(route?.geometry ? `
+    ${plegable(`
       <h3 class="section">Recorrido</h3>
-      ${renderRouteMap(route.id, { variant: "thumbstrip" })}` : "")}
+      ${route?.geometry
+        ? renderRouteMap(route.id, { variant: "thumbstrip" })
+        : route
+          ? `<p class="empty">Se sabe que discurrió por <b>${esc(route.label)}</b>, pero no se ha
+             podido reconstruir el trazado sobre el plano.</p>`
+          : `<p class="empty">No se ha localizado por dónde discurrió el desfile de este año.</p>`}`)}
 
     ${/* Detrás del recorrido, y una sola vez. La plantilla la escribía dos
          veces —una para las ediciones «previstas» y otra para el resto— y eso

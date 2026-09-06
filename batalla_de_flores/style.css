@@ -1025,11 +1025,25 @@ i.dot.ran { background: #bfb2a6; }
 .kpi small { display: block; margin-top: 2px; color: var(--muted); font-size: 11px; line-height: 1.2; }
 .kpi-icon { width: 14px; height: 14px; flex: none; fill: var(--gold); }
 
-h3.section {
-  margin: 14px 0 6px;
-  font-size: 11px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase;
-  color: var(--muted);
+/* El título de una sección.
+ *
+ * Era de 11 px, en gris y en mayúsculas: eso es una etiqueta de tabla, no un
+ * título, y con diez secciones en una ficha no se veía dónde empezaba cada
+ * una. Ahora es un título de verdad —tamaño de lectura, negrita, color de
+ * texto— con una línea fina encima que separa. Vale para los dos: el `h3` de
+ * las secciones fijas y el `summary` de las plegables, que tienen que verse
+ * idénticos o parecerían cosas distintas. */
+h3.section,
+details.sec > summary.section {
+  margin: 20px 0 8px;
+  padding-top: 13px;
+  border-top: 1px solid var(--line);
+  font-size: 16px; font-weight: 700; letter-spacing: -0.005em;
+  text-transform: none; color: var(--ink);
 }
+/* La primera de la ficha no lleva raya: no separa de nada. */
+.detail > h3.section:first-of-type,
+.detail > details.sec:first-of-type > summary.section { border-top: none; padding-top: 0; }
 
 /* ── mapa de recorridos ────────────────────────────────────────────────── */
 
@@ -2192,16 +2206,13 @@ details.sec > summary {
 }
 details.sec > summary::-webkit-details-marker { display: none; }
 details.sec > summary::after {
-  content: "▾"; margin-left: auto; font-size: 11px; color: var(--muted);
-  transition: transform .15s ease;
+  content: "▾"; margin-left: auto; font-size: 13px; color: var(--muted);
+  line-height: 1;
 }
-details.sec:not([open]) > summary::after { transform: rotate(-90deg); }
+details.sec[open] > summary::after { content: "▴"; }
 details.sec > summary:hover::after { color: var(--ink); }
 details.sec > summary:focus-visible { outline: 2px solid var(--t-year); outline-offset: 2px; }
 .sec-cuerpo { padding-top: 2px; }
-@media (prefers-reduced-motion: reduce) {
-  details.sec > summary::after { transition: none; }
-}
 
 /* El deslizador de tamaño salió del título al hacerse plegable la sección:
  * dentro de un `summary`, arrastrarlo cerraba la galería. Va debajo, alineado

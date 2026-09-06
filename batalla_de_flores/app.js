@@ -3753,8 +3753,8 @@ function provenanceBlock(entries, sources, edition) {
   }));
 
   return `
+    <h3 class="section">De dónde sale cada dato</h3>
     <div class="provenance">
-      <b>De dónde sale cada dato</b>
       <ul class="prov-list">
         ${edition?.parade_date_text ? (() => {
           // Cuántas fuentes lo sostienen, y CADA UNA con su enlace.
@@ -4133,7 +4133,7 @@ function renderEditionDetail(edition) {
 
     ${plegable(pendingForYear(edition), { abierta: false })}
 
-    ${provenanceBlock(entries, edition.source_urls || [], edition)}
+    ${plegable(provenanceBlock(entries, edition.source_urls || [], edition), { abierta: false })}
   `;
   els.detail.scrollTop = 0;
   ajustarFechaAlAno();

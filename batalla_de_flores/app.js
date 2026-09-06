@@ -3699,9 +3699,12 @@ function filasPendientes(edition) {
     icono: "↕️", texto: `<b>${esc(r.name)}</b> — ${esc(r.reason)}`, crudo: true,
   }));
   (edition.notes_derivadas || []).forEach(texto => filas.push({ icono: "📉", texto }));
-  q.incomplete.filter(e => e.year === year).forEach(e => filas.push({
-    icono: "📉", texto: e.notes.find(n => n.includes("faltan al menos")) || "",
-  }));
+  // Aquí venía otra vuelta sobre `q.incomplete` que buscaba «faltan al menos»
+  // dentro de `edition.notes` —las notas humanas— cuando esa frase la escribe
+  // derivar.py en `notes_derivadas`, que es justo lo que acaba de recorrerse.
+  // No encontraba nada nunca y empujaba una fila con el texto vacío: 27
+  // ediciones enseñaban un renglón en blanco y, desde hoy, la tira contaba una
+  // cosa sin cerrar de más. En 1993 decía dos y solo había una.
   q.noPalmares.filter(e => e.year === year).forEach(e => filas.push({
     icono: "🕳️", texto: "No se ha localizado la clasificación de esta edición.",
   }));

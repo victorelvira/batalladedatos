@@ -2162,3 +2162,20 @@ body.lb-abierto { overflow: hidden; }
   padding: 7px 14px; font-size: 13px; text-align: center;
 }
 .aviso-viejo button { font-size: 13px; }
+
+/* La tira de estado de una edición: una línea, entre los chips y el palmarés.
+ * No es una caja de alerta a propósito: si ocupara como una caja se comería la
+ * primera pantalla del móvil, que es donde tiene que verse el palmarés. */
+.tira-estado {
+  display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;
+  margin: 10px 0 0; padding: 6px 10px; border-radius: 4px;
+  font-size: 13px; line-height: 1.35;
+}
+.tira-estado.mal {
+  background: var(--alerta-bg); border: 1px solid var(--alerta-borde); color: var(--alerta);
+}
+.tira-estado.bien {
+  border: 1px dashed var(--line); color: var(--muted);
+}
+.tira-estado b { font-weight: 700; }
+.tira-estado .ir-pendiente { margin-left: auto; white-space: nowrap; font-size: 13px; }

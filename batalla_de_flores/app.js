@@ -1713,7 +1713,7 @@ function renderStatsTab() {
             .sort((a, b) => b.year - a.year || a.name.localeCompare(b.name)).map(entry => `
             <tr>
               <td class="pos"><button class="link t-year" type="button" data-year="${entry.year}">${entry.year}</button></td>
-              <td class="name"><button class="link t-float" type="button" data-float="${esc(entry.id)}">${esc(entry.name)}</button>${reviewMark(entry)}</td>
+              <td class="name"><button class="link t-float" type="button" data-float="${esc(entry.id)}">${esc(entry.name)}</button>${reviewMark(entry, { conFuentes: true })}</td>
               <td class="group">${entry.group_canonical
                 ? `<button class="link t-group" type="button" data-group="${esc(slugifyGroup(entry.group_canonical))}">${esc(entry.group_canonical)}</button>`
                 : "–"}</td>
@@ -2894,9 +2894,17 @@ function fraseDisputa(campos) {
   return `${joinEs(campos)} ${campos.length > 1 ? "tienen" : "tiene"} más de una versión`;
 }
 
-function reviewMark(entry) {
+/* El «?» de al lado del nombre.
+ *
+ * `conFuentes` lo pone la tabla que YA enseña los chips de fuente, donde cada
+ * dato en disputa lleva su propio «?» en su columna. Allí este marcaría lo
+ * mismo dos veces en la misma fila: en 1949, «Faro de Sirenas» salía con un
+ * interrogante bajo el nombre y otro en la columna del puesto, los dos
+ * diciendo que 5.º y 7.º no coinciden. Con `conFuentes`, aquí solo queda lo
+ * que NO cuelga de un campo y por tanto no tiene otro sitio donde salir. */
+function reviewMark(entry, { conFuentes = false } = {}) {
   const reasons = dudasDe(entry);
-  const campos = camposEnDisputa(entry);
+  const campos = conFuentes ? [] : camposEnDisputa(entry);
   if (!reasons.length && !campos.length) return "";
   const texto = reasons.length ? reasons.join(" · ") : `${fraseDisputa(campos)}.`;
   return `<button class="review-mark" type="button" data-float="${esc(entry.id)}" data-prov="1"
@@ -3629,7 +3637,49 @@ function photoThanks(entries) {
     Se publican con su permiso y cada una dice de dónde sale.</p>`;
 }
 
-function pendingForYear(year) {
+/* La tira de estado: UNA línea, debajo de la cabecera.
+ *
+ * Lo que no cuadra vivía enterrado detrás de las curiosidades, casi al final de
+ * la ficha, que es donde no lo lee nadie —y es justamente la petición de ayuda—.
+ * Subirlo entero tampoco valía: una caja de avisos abriendo la ficha se come la
+ * primera pantalla del móvil, y lo que la gente viene a ver es el palmarés.
+ *
+ * Así que arriba va solo el recuento, y el detalle se queda abajo.
+ *
+ * Y dice algo cuando NO hay nada, que es la mitad que faltaba: 53 de las 119
+ * ediciones no tienen ni un dato marcado como dudoso y en ningún sitio se
+ * contaba. Un archivo que solo habla cuando algo falla no deja saber si el
+ * silencio es bueno o es que nadie ha mirado. */
+function tiraDeEstado(edition) {
+  const n = pendingCount(edition);
+  if (!n) {
+    return `<p class="tira-estado bien">Nada sin cerrar: ningún dato de esta edición
+      está marcado como dudoso.</p>`;
+  }
+  return `<p class="tira-estado mal">
+    <b>${num(n)} ${n === 1 ? "cosa" : "cosas"} sin cerrar</b> en esta edición
+    <button class="link ir-pendiente" type="button">ver ↓</button></p>`;
+}
+
+/* Solo la cuenta, para la tira. Comparte origen con `pendingForYear` para que
+ * el número de arriba y la lista de abajo no puedan discrepar. */
+function pendingCount(edition) {
+  return filasPendientes(edition).length;
+}
+
+/* Las filas de «lo que falta» de una edición.
+ *
+ * Se saco de `pendingForYear` para que la tira de arriba y la lista de abajo
+ * cuenten de la MISMA fuente: dos cuentas paralelas acaban discrepando, y aqui
+ * discrepar seria decir «2 cosas sin cerrar» y ensenar tres.
+ *
+ * Recibe la edicion, no el ano: los huecos salian de `state.huecosDeEdicion`,
+ * un global que se rellenaba a mitad del renderizado, asi que quien preguntara
+ * ANTES de ese punto leia los huecos de la ficha anterior. La tira va en la
+ * cabecera, o sea antes. Ahora se leen de `edition.notes_derivadas`, que es de
+ * donde salian. */
+function filasPendientes(edition) {
+  const year = edition.year;
   const q = openQuestions();
   const filas = [];
   q.sinConfirmar.filter(e => e.year === year).forEach(e => filas.push({
@@ -3648,13 +3698,18 @@ function pendingForYear(year) {
   q.conflicting.filter(r => r.year === year).forEach(r => filas.push({
     icono: "↕️", texto: `<b>${esc(r.name)}</b> — ${esc(r.reason)}`, crudo: true,
   }));
-  (state.huecosDeEdicion || []).forEach(texto => filas.push({ icono: "📉", texto }));
+  (edition.notes_derivadas || []).forEach(texto => filas.push({ icono: "📉", texto }));
   q.incomplete.filter(e => e.year === year).forEach(e => filas.push({
     icono: "📉", texto: e.notes.find(n => n.includes("faltan al menos")) || "",
   }));
   q.noPalmares.filter(e => e.year === year).forEach(e => filas.push({
     icono: "🕳️", texto: "No se ha localizado la clasificación de esta edición.",
   }));
+  return filas;
+}
+
+function pendingForYear(edition) {
+  const filas = filasPendientes(edition);
   if (!filas.length) return "";
   return `
     <h3 class="section">Por confirmar <span class="open-count">${filas.length}</span></h3>
@@ -3748,9 +3803,13 @@ function provenanceBlock(entries, sources, edition) {
           en fuentes independientes entre sí
           (${joinEs([...new Set(cruzadas.flatMap(entry => [...families(entry)]))].sort())}),
           que coinciden en el dato.</li>` : ""}
-        ${dudosas.length ? `<li class="prov-warn"><b>Inconsistencias detectadas:</b> ${dudosas.length}
-          en esta edición. Están marcadas con <span class="review-mark">?</span> en la tabla.</li>` : ""}
-        ${huecos.length ? `<li class="prov-warn"><b>Lo que falta:</b> ${esc(huecos[0])}</li>` : ""}`}
+        ${/* Aquí iban «Inconsistencias detectadas: N» y «Lo que falta: …».
+              Fuera: los dos repetían, resumido y peor, lo que la sección «Por
+              confirmar» ya cuenta entero, y lo que la tira de arriba resume.
+              El mismo hecho se contaba tres veces en 12 ediciones. Este bloque
+              responde a «de dónde sale lo que hay», no a «qué falta»: son dos
+              preguntas distintas y mezclarlas era lo que hacía la ficha
+              ilegible. */ ""}`}
       </ul>
       ${/* Aquí NO va la leyenda de códigos. Este bloque escribe las fuentes con
             su nombre entero —«Resultado oficial», «Fotos cedidas por Santi
@@ -3922,6 +3981,8 @@ function renderEditionDetail(edition) {
       ${shareButton()}
     </div>
 
+    ${tiraDeEstado(edition)}
+
     ${ranked.length ? `
       <h3 class="section">Palmarés</h3>
       ${cats.length > 1 ? `<div class="chart-tabs">
@@ -3951,7 +4012,7 @@ function renderEditionDetail(edition) {
                 ? `<span class="pos-cat cat-${esc(entry.category.toLowerCase())}">${esc(entry.category)}</span>` : ""}${
                 entry.position != null ? `${entry.position}.º` : "–"}</td>
               <td class="name" data-sort="${esc(normalizeText(entry.name))}"><button class="link t-float"
-                type="button" data-float="${esc(entry.id)}">${esc(entry.name)}</button>${reviewMark(entry)}${prizeChips(entry)
+                type="button" data-float="${esc(entry.id)}">${esc(entry.name)}</button>${reviewMark(entry, { conFuentes: true })}${prizeChips(entry)
                 ? `<small class="prizes">${esc(prizeChips(entry))}</small>` : ""}</td>
               <td class="group" data-sort="${esc(normalizeText(entry.group_canonical))}">${entry.group_canonical
                 ? `<button class="link t-group" type="button" data-group="${esc(slugifyGroup(entry.group_canonical))}">${esc(entry.group_canonical)}</button>`
@@ -3976,7 +4037,7 @@ function renderEditionDetail(edition) {
           ${unranked.map(entry => `
             <tr>
               <td class="name" data-sort="${esc(normalizeText(entry.name))}"><button class="link t-float"
-                type="button" data-float="${esc(entry.id)}">${esc(entry.name)}</button>${reviewMark(entry)}</td>
+                type="button" data-float="${esc(entry.id)}">${esc(entry.name)}</button>${reviewMark(entry, { conFuentes: true })}</td>
               <td class="group" data-sort="${esc(normalizeText(entry.group_canonical))}">${entry.group_canonical
                 ? `<button class="link t-group" type="button" data-group="${esc(slugifyGroup(entry.group_canonical))}">${esc(entry.group_canonical)}</button>`
                 : "–"}</td>
@@ -3996,9 +4057,7 @@ function renderEditionDetail(edition) {
       // Dos listas separadas: `notes` cuenta cosas que pasaron y no se tocan;
       // `notes_derivadas` describe lo que le falta al archivo y se rehace en
       // cada build a partir del estado final.
-      const gaps = edition.notes_derivadas || [];
       const rest = edition.notes || [];
-      state.huecosDeEdicion = gaps;
       return rest.length ? `<h3 class="section">Notas</h3>
           <ul class="plain">${rest.map(note => `<li>${esc(note)}</li>`).join("")}</ul>` : "";
     })()}
@@ -4026,7 +4085,7 @@ function renderEditionDetail(edition) {
         </li>`).join("")}
       </ul>` : ""}
 
-    ${pendingForYear(edition.year)}
+    ${pendingForYear(edition)}
 
     ${provenanceBlock(entries, edition.source_urls || [], edition)}
   `;
@@ -4602,7 +4661,7 @@ function renderGroupDetail(group) {
               : ""}</td>` : ""}
             <td class="pos" data-sort="${entry.year}"><button class="link t-year" type="button" data-year="${entry.year}">${entry.year}</button></td>
             <td class="name" data-sort="${esc(normalizeText(entry.name))}"><button
-              class="link t-float" type="button" data-float="${esc(entry.id)}">${esc(entry.name)}</button>${reviewMark(entry)}</td>
+              class="link t-float" type="button" data-float="${esc(entry.id)}">${esc(entry.name)}</button>${reviewMark(entry, { conFuentes: true })}</td>
             <td class="pos" data-sort="${esc(positionSortKey(entry))}">${entry.category ? esc(entry.category) : ""}${entry.position != null ? `${entry.position}.º` : "–"}</td>
             <td data-sort="${esc(sourceShort(entry.source_type))}">${sourceCell(entry)}</td>
           </tr>`).join("")}
@@ -5364,6 +5423,13 @@ function bindEvents() {
       // la fila que se acaba de pulsar.
       const vuelta = els.indexBody.querySelector(`[data-combo="${CSS.escape(clave)}"]`);
       if (vuelta) vuelta.scrollIntoView({ block: "center" });
+      return;
+    }
+
+    if (event.target.closest(".ir-pendiente")) {
+      const h = [...els.detail.querySelectorAll("h3.section")]
+        .find(x => x.textContent.trim().startsWith("Por confirmar"));
+      if (h) h.scrollIntoView({ behavior: "smooth", block: "start" });
       return;
     }
 

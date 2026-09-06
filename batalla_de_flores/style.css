@@ -2218,3 +2218,16 @@ details.sec > summary:focus-visible { outline: 2px solid var(--t-year); outline-
  * dentro de un `summary`, arrastrarlo cerraba la galería. Va debajo, alineado
  * a la derecha, que es donde estaba visualmente. */
 .sec-cuerpo > .zoom-fotos { display: flex; justify-content: flex-end; margin: 0 0 6px; }
+
+/* Premios y puntuaciones. Cuatro filas de etiqueta y valor: se lee de un
+ * vistazo cuáles hay y cuáles no, que es justo lo que los chips diminutos
+ * dentro de la tabla del palmarés no dejaban ver. */
+.premios-lista { display: flex; flex-direction: column; gap: 6px; margin: 4px 0 2px; }
+.premio-fila { display: flex; gap: 10px; align-items: baseline; font-size: 14px; }
+.premio-et { flex: none; width: 8.6em; color: var(--muted); }
+.premio-no { color: var(--muted); font-style: italic; }
+.premio-fila small { color: var(--muted); }
+@media (max-width: 620px) {
+  .premio-fila { flex-direction: column; gap: 1px; }
+  .premio-et { width: auto; font-size: 12.5px; }
+}

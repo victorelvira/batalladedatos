@@ -3918,6 +3918,81 @@ function plegable(html, { abierta = true, siempre = false } = {}) {
   </details>`;
 }
 
+/* Premios y puntuaciones, en su propia sección.
+ *
+ * Salían como chips diminutos dentro de la fila del palmarés, así que quien
+ * mira 2024 no ve que hubo Premio Internacional salvo que se fije en una línea
+ * pequeña. Y cuando no hay ninguno no se dice nada, que es peor: el lector no
+ * sabe si es que no se concedió o si es que no lo tenemos.
+ *
+ * El texto del hueco NO es «solo desde el año X». Dentro del tramo hay
+ * agujeros: el premio al arte existe desde 2009 y solo consta en 9 de los 17
+ * años posibles. «Solo desde 2009» daría a entender que está completo desde
+ * entonces. Así que se dice desde cuándo se concede y que de ESTE año no
+ * consta, que son dos cosas distintas. */
+const PREMIOS = [
+  { campo: "prize_costumes_rank", etiqueta: "Vestidos", lista: true },
+  { campo: "prize_art_rank", etiqueta: "Arte", lista: false },
+  { campo: "prize_international_rank", etiqueta: "Internacional", lista: false },
+];
+
+/* El primer año del que consta cada premio, sacado de los datos y no escrito a
+ * mano: si mañana aparece un premio de 1998 en una hemeroteca, la frase se
+ * corrige sola. */
+function desdeCuando(campo) {
+  state.desdeCuando = state.desdeCuando || {};
+  if (state.desdeCuando[campo] === undefined) {
+    const anios = state.editions
+      .filter(e => (e.floats || []).some(f => f[campo] != null))
+      .map(e => e.year);
+    state.desdeCuando[campo] = anios.length ? Math.min(...anios) : null;
+  }
+  return state.desdeCuando[campo];
+}
+
+function bloquePremios(edition) {
+  const fl = edition.floats || [];
+  const botonCarroza = f => `<button class="link t-float" type="button"
+    data-float="${esc(f.id)}">${esc(f.name)}</button>`;
+
+  const filas = PREMIOS.map(({ campo, etiqueta, lista }) => {
+    const tienen = fl.filter(f => f[campo] != null)
+      .sort((a, b) => a[campo] - b[campo]);
+    if (!tienen.length) {
+      const desde = desdeCuando(campo);
+      return `<div class="premio-fila"><span class="premio-et">${etiqueta}</span>
+        <span class="premio-no">${desde
+          ? `consta desde ${desde}; de este año, no`
+          : "no consta en ninguna edición"}</span></div>`;
+    }
+    // Vestidos tiene podio; arte e internacional, ganador por categoría.
+    const texto = lista
+      ? joinEs(tienen.map(f => `${botonCarroza(f)} <small>${f[campo]}.º</small>`))
+      : joinEs(tienen.map(f => botonCarroza(f)
+          + (f.category ? ` <small>(${esc(f.category)})</small>` : "")));
+    return `<div class="premio-fila"><span class="premio-et">${etiqueta}</span>
+      <span>${texto}</span></div>`;
+  });
+
+  const conPuntos = fl.filter(f => f.points != null);
+  const desdePts = desdeCuando("points");
+  filas.push(`<div class="premio-fila"><span class="premio-et">Puntuaciones</span>
+    <span>${conPuntos.length
+      ? `las de las ${num(conPuntos.length)} carrozas, en la tabla de arriba`
+      : `<span class="premio-no">${desdePts
+          ? `constan desde ${desdePts}; de este año, no`
+          : "no constan"}</span>`}</span></div>`);
+
+  const cats = [...new Set(fl.map(f => f.category).filter(Boolean))];
+  const nota = cats.length
+    ? ""
+    : `<p class="chart-note">Las categorías A y B no existen hasta ${CATEGORIES_FROM}:
+       este año fue lista única.</p>`;
+
+  return `<h3 class="section">Premios y puntuaciones</h3>
+    <div class="premios-lista">${filas.join("")}</div>${nota}`;
+}
+
 function renderEditionDetail(edition) {
   const entries = edition.floats || [];
   // Por categoria y luego posicion: si no, A1 y B1 salian juntos y ordenados
@@ -4092,7 +4167,7 @@ function renderEditionDetail(edition) {
         </tbody>
       </table>` : "")}
 
-    ${plegable(edition.status === "planned" ? nocheMagicaBlock(edition) : "", { siempre: true })}
+    ${plegable(bloquePremios(edition))}
 
     ${(() => {
       // Los huecos conocidos no son una nota mas al final: son lo que hay que
@@ -4108,14 +4183,17 @@ function renderEditionDetail(edition) {
           <ul class="plain">${rest.map(note => `<li>${esc(note)}</li>`).join("")}</ul>` : "");
     })()}
 
-    ${plegable(edition.status === "planned" ? "" : nocheMagicaBlock(edition), { siempre: true })}
-
     ${plegable(renderGallery(entries), { siempre: true })}
     ${plegable(renderGallerySinIdentificar(edition), { abierta: false })}
 
     ${plegable(route?.geometry ? `
       <h3 class="section">Recorrido</h3>
       ${renderRouteMap(route.id, { variant: "thumbstrip" })}` : "")}
+
+    ${/* Detrás del recorrido, y una sola vez. La plantilla la escribía dos
+         veces —una para las ediciones «previstas» y otra para el resto— y eso
+         la ponía en dos sitios distintos según el año. */""}
+    ${plegable(nocheMagicaBlock(edition), { siempre: true })}
 
     ${plegable(photoThanks(entries), { abierta: false })}
 

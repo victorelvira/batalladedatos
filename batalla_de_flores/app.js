@@ -3984,7 +3984,7 @@ function pastillaGanador(edition) {
   const boton = g => `<button class="disc disc-ganador t-group" type="button"
     data-group="${esc(slugifyGroup(g))}"
     title="Ver todas las carrozas de ${esc(g)}">
-    ${ICON_TROPHY}<span><small>${grupos.length > 1 ? "¿ganó?" : "ganó"}</small>${esc(g)}</span></button>`;
+    ${ICON_TROPHY}<span><small>${grupos.length > 1 ? "¿ganador?" : "ganador"}</small>${esc(g)}</span></button>`;
   return grupos.map(boton).join("")
     + (grupos.length > 1
       ? `<p class="chart-note ganador-disputa">El primer puesto de este año está en
@@ -4125,6 +4125,7 @@ function renderEditionDetail(edition) {
                      + ". Pulsa para ver por qué no está resuelta.")}">?</button>`
               : ""}</span>` : ""}
       </div>
+      <div class="bloque-cifras">
       <span class="discs">
         ${edition.edition_number
           ? `<span class="disc disc-wide" title="${esc(edition.edition_label || "")}"><b>${edition.edition_number}ª</b>edición</span>`
@@ -4132,8 +4133,9 @@ function renderEditionDetail(edition) {
         <span class="disc"><b>${num(previa ? previa.float_count : (edition.float_count || 0))}</b>carrozas</span>
         <span class="disc"><b>${num(groupCount)}</b>grupos</span>
       </span>
+      ${pastillaGanador(edition)}
+      </div>
     </div>
-    ${pastillaGanador(edition)}
     ${navEdicion}
     <div class="chips">
       ${edition.status !== "published"

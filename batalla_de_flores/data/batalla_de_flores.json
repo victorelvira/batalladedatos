@@ -1,7 +1,7 @@
 {
   "project": "batalla_de_flores",
   "title": "Batalla de Flores de Laredo",
-  "updated_at": "2026-09-06",
+  "updated_at": "2026-09-07",
   "summary": {
     "edition_count": 119,
     "published_editions": 113,
@@ -134894,7 +134894,7 @@
           "image_refs": [
             {
               "url": "batalla_de_flores/fotos/2009-sinfonia-del-cantabrico.jpg",
-              "origen": "Cedida por María Unzueta",
+              "origen": "María Unzueta",
               "por": "fuente",
               "evidencia": "maria-unzueta/97732.jpg",
               "asignacion": "identificada por María Unzueta al cederla: «Foto carroza Sinfonías del Cantábrico Abelardo Landera»",
@@ -137557,7 +137557,7 @@
           "image_refs": [
             {
               "url": "batalla_de_flores/fotos/2009-sinfonia-del-cantabrico.jpg",
-              "origen": "Cedida por María Unzueta",
+              "origen": "María Unzueta",
               "por": "fuente",
               "evidencia": "maria-unzueta/97732.jpg",
               "asignacion": "identificada por María Unzueta al cederla: «Foto carroza Sinfonías del Cantábrico Abelardo Landera»",
@@ -201390,8 +201390,8 @@
     "Asociacion de Carrocistas y festejos de Laredo": "festejos-laredo",
     "Grupo Atalaya": "atalaya"
   },
-  "version": "3.4.25",
-  "app_seal": "192b5371",
+  "version": "3.4.26",
+  "app_seal": "c46713b9",
   "about": {
     "url": "https://batalladedatos.es/",
     "compiled_by": "Víctor Elvira",
@@ -201409,7 +201409,7 @@
     ],
     "note": "Base de datos derivada y estructurada, no una réplica del contenido editorial de las fuentes. Cada entrada lleva su `source_type` y sus `source_urls`. Si reutilizas esto, cita a las fuentes originales."
   },
-  "built_at": "2026-09-06 16:30",
+  "built_at": "2026-09-07 01:08",
   "map_features": [
     {
       "id": "route_origin_1908",

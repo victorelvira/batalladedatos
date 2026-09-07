@@ -1875,16 +1875,23 @@ function filaBarra({ etiqueta, n, total, clase, pie }) {
 /* La procedencia de las FOTOS es otra pregunta que la de los datos y se cuenta
  * por imagen, no por carroza: una misma carroza puede mezclar una foto cedida
  * y tres del archivo. */
+/* Las fotos por quién las aporta.
+ *
+ * `origen` guarda la ruta exacta —«batalladeflores.net» y «batalladeflores.net
+ * (biblioteca de medios)» son dos caminos de la MISMA web— y aquí se suman:
+ * para saber de quién es la foto, la ruta sobra. La ruta sigue entera en la
+ * ficha de cada carroza, que es donde importa. */
 function fotosPorOrigen() {
   const cuenta = new Map();
   state.editions.forEach(e => (e.floats || []).forEach(f =>
     (f.image_refs || []).forEach(r => {
-      const o = r.origen || "sin registrar";
+      const bruto = r.origen || "sin registrar";
+      const o = /^batalladeflores\.net/i.test(bruto) ? "batalladeflores.net" : bruto;
       cuenta.set(o, (cuenta.get(o) || 0) + 1);
     })));
   return [...cuenta.entries()].sort((a, b) => b[1] - a[1])
     .map(([nombre, n]) => ({ nombre, n,
-      clase: /batalladeflores/i.test(nombre) ? "f-NET" : "f-PER" }));
+      clase: /batalladeflores\.net$/i.test(nombre) ? "f-NET" : "f-PER" }));
 }
 
 /* Las fechas se reparten al revés que el resto: aquí manda la hemeroteca. Se
@@ -1932,13 +1939,14 @@ function bloqueFuentes() {
            title="${esc(o.nombre)}: ${num(o.n)} afirmaciones, ${pct(o.n, d.total)}"></i>`).join("")}</div>
       <div class="fuentes-rows">${d.origenes.map(o => filaBarra({
         etiqueta: esc(o.nombre), n: o.n, total: d.total, clase: `f-${o.clave}`,
-        pie: `${esc(o.nota)} Aparece en ${num(o.carrozas)}
-              ${o.carrozas === 1 ? "carroza" : "carrozas"}
-              (${pct(o.carrozas, state.floats.length)} de las ${num(state.floats.length)}).`,
       })).join("")}</div>
-      <p class="chart-note">Y aparte, <b>${num(d.nuestras)}</b> afirmaciones que no son de nadie:
-      reescrituras nuestras del nombre de un grupo. Van contadas fuera a propósito, porque una
-      decisión editorial no es una fuente.</p>`;
+      <h5 class="fuente-h5">Carrozas en las que aparece cada origen</h5>
+      <div class="fuentes-rows">${d.origenes.map(o => filaBarra({
+        etiqueta: esc(o.nombre), n: o.carrozas, total: state.floats.length,
+        clase: `f-${o.clave}`,
+      })).join("")}</div>
+      <p class="chart-note">Otras ${num(d.nuestras)} afirmaciones no las hace ninguna fuente:
+      son reescrituras nuestras del nombre de un grupo, y van contadas aparte.</p>`;
   } else if (vista === "contra") {
     const total = nContra || 1;
     cuerpo = `<p class="chart-note">${num(nContra)} veces dos fuentes dicen cosas distintas del
@@ -1977,58 +1985,45 @@ function bloqueFuentes() {
   const hem = state.dataset.summary?.hemeroteca;
 
   return `
-    <h3 class="section parte-tenemos">Lo que tenemos</h3>
-    <p class="chart-note">Antes de lo que falta, de qué está hecho lo que hay.</p>
-
-    <div class="kpis kpis-fuentes">
-      <div class="kpi"><span>${num(d.total)}</span><small>afirmaciones con una fuente detrás</small></div>
-      <div class="kpi"><span>${pct(d.origenes[0].n, d.total)}</span><small>vienen de una sola web</small></div>
-      <div class="kpi"><span>${num(hem?.con_copia_local ?? 0)}</span><small>fuentes de prensa con copia nuestra</small></div>
-    </div>
-
-    <h4 class="fuente-h4">De dónde salen las afirmaciones</h4>
+    <h3 class="section parte-tenemos">De dónde salen las afirmaciones</h3>
+    <p class="chart-note">El archivo tiene ${num(d.total)} afirmaciones con una fuente detrás.
+    Salen de estos ${num(d.origenes.length)} orígenes.</p>
     <div class="chart-tabs">
       ${tab("todas", "Todas")}${tab("contra", `Se contradicen (${num(nContra)})`)}
       ${tab("coinci", `Coinciden (${num(reales)})`)}
     </div>
     ${cuerpo}
 
-    <h4 class="fuente-h4">En cuántos sitios se apoya cada carroza</h4>
-    <div class="hallazgo">
-      <b>Tres de cada cuatro carrozas se apoyan en un solo origen.</b>
-      <p>${num(solos)} de las ${num(nFloats)} tienen un único sitio detrás. Si esa fuente
-      desapareciera, no habría con qué comprobarlas. Por eso todo lo que se cita se descarga y
-      se guarda aquí.</p>
-    </div>
+    <h4 class="fuente-h4">En cuántos orígenes se apoya cada carroza</h4>
+    <p class="chart-note">${num(solos)} de las ${num(nFloats)} carrozas
+    (${pct(solos, nFloats)}) se apoyan en un solo origen: si esa fuente desapareciera, no habría
+    con qué comprobarlas.</p>
     <div class="fuentes-rows">
       ${[["Un solo origen", apoyos[1], "f-NET"], ["Dos orígenes", apoyos[2], "f-HEM"],
          ["Tres orígenes", apoyos[3], "f-AYT"]]
         .filter(([, n]) => n)
         .map(([etiqueta, n, clase]) => filaBarra({ etiqueta, n, total: nFloats, clase })).join("")}
     </div>
-    <p class="chart-note">Corroborar es que dos sitios independientes digan lo mismo. Lo tienen
-    <b>${num(corroboradas)}</b> carrozas, el ${pct(corroboradas, nFloats)}.</p>
+    <p class="chart-note">${num(corroboradas)} carrozas (${pct(corroboradas, nFloats)}) las
+    sostienen dos o más orígenes distintos.</p>
 
-    <h4 class="fuente-h4">Las fotos van por su cuenta</h4>
-    <p class="chart-note">De una foto hay que responder dos cosas distintas: de quién es y por qué
-    sabemos que retrata a esa carroza. Esto es lo primero, contado foto a foto y no por carroza.</p>
+    <h4 class="fuente-h4">Fotos, por quién las aporta</h4>
+    <p class="chart-note">${num(nFotos)} fotos publicadas, contadas una a una y no por carroza.
+    Esto es de quién es cada imagen; por qué sabemos que retrata a esa carroza va en su ficha.</p>
     <div class="fuentes-rows">
       ${fotos.map(x => filaBarra({ etiqueta: esc(x.nombre), n: x.n, total: nFotos, clase: x.clase })).join("")}
     </div>
 
-    <h4 class="fuente-h4">Las fechas son la excepción</h4>
-    <p class="chart-note">Es el único apartado donde manda la hemeroteca: en el resto del archivo
-    pesa mucho más la web de la fiesta.</p>
+    <h4 class="fuente-h4">Fechas de desfile, por origen</h4>
+    <p class="chart-note">${num(nFechas)} ediciones con fecha conocida.</p>
     <div class="fuentes-rows">
       ${fechas.map(x => filaBarra({ etiqueta: esc(x.nombre), n: x.n, total: nFechas, clase: x.clase })).join("")}
     </div>
 
     ${hem?.por_archivo?.length ? `
-      <h4 class="fuente-h4">Lo que se cita, está guardado</h4>
-      <p class="chart-note">Una URL no es un archivo: las hemerotecas cambian de dirección y
-      cierran. De las <b>${num(hem.total)}</b> fuentes de prensa que sostienen alguna afirmación,
-      <b>${num(hem.con_copia_local)}</b> tienen copia nuestra, y la construcción falla si esa
-      fracción deja de ser completa.</p>
+      <h4 class="fuente-h4">Fuentes de prensa con copia guardada</h4>
+      <p class="chart-note">${num(hem.con_copia_local)} de ${num(hem.total)}. La construcción
+      falla si esa fracción deja de ser completa.</p>
       <div class="fuentes-rows">
         ${hem.por_archivo.map(a => filaBarra({
           etiqueta: esc(a.nombre), n: a.n, total: hem.total, clase: "f-HEM" })).join("")}
